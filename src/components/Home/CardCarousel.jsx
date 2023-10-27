@@ -9,22 +9,34 @@ const cardItems = [
     {
         id: 1,
         title: 'Stacked Card Carousel',
-        copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet dui scelerisque, tempus dui non, blandit nulla. Etiam sed interdum est.',
+        copy: 'Envíopack nos permitió potenciar nuestro e-commerce, en especial cuando quisimos armar nuestro marketplace, para el cual teníamos un proyecto muy ambicioso. La tecnología es muy sólida, pero además, el equipo es muy profesional y flexible lo que nos permitió cubrir todas nuestras expectativas y necesidades.',
+        name:"Nombre apellido, CEO de Frâvega",
+        web:"www.fravega.com",
+        img:"https://via.placeholder.com/160x32",
     },
     {
         id: 2,
-        title: 'Second Item',
-        copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: 'Second Item1',
+        copy: 'Envíopack nos permitió potenciar nuestro e- muy sólida, pero además, el equipo es muy profesional y flexible lo que nos permitió cubrir todas nuestras expectativas y necesidades.',
+        name:"Nombre apellido, CEO de Frâvega",
+        web:"www.google.com",
+        img:"https://via.placeholder.com/159x22",
     },
     {
         id: 3,
         title: 'A Third Card',
-        copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet dui scelerisque, tempus dui non, blandit nulla.',
+        copy: 'Envíopack nos permitió potenciar nuestro e-commerce, en especial cuando quisimos armar nuestro marketplace, para el cual teníamos un proyecto muy ambicioso.',
+        name:"Nombre apellido, CEO de Frâvega",
+        web:"www.taringa.com",
+        img:"https://via.placeholder.com/170x29",
     },
     {
         id: 4,
-        title: 'Fourth',
-        copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        title: 'Fourth1',
+        copy: 'Envíopack nos permitió potenciar nuestro e-commerce, en especial cuando quisimos armar nuestro marketplace, para el cual teníamos un proyecto muy ambicioso. La tecnología es muy sólida, pero además, el equipo es muy profesional y flexible lo que nos permitió cubrir todas nuestras expectativas y necesidades123333333333333333111111111111111.',
+        name:"Nombre apellido, CEO de Frâvega123123123123123123123123213",
+        web:"www.facebook.com",
+        img:"https://via.placeholder.com/179x27",
     },
 ];
 
@@ -75,20 +87,41 @@ const CardCarousel = () => {
     }, [handleCardTransition, indexes]);
 
     return (
-        <div className='container'>
-            <ul className='card-carousel'>
+        <div className='  bg-emerald-300 w-[1512px] h-[890px] flex '>
+
+            <div className='bg-green-600 w-[450px]'>
+                <ul className='card-carousel justify-center flex'>
+                    {cardItems.map((card, index) => (
+                        <li key={card.id} className={`card ${determineClasses(indexes, index)}`}>
+                            <img className='w-max h-max ' src={card.img} alt="" />
+                        </li>
+                    ))}
+                </ul>
+                <ul className='card-dot flex flex-row justify-center '>
                 {cardItems.map((card, index) => (
-                    <li key={card.id} className={`card ${determineClasses(indexes, index)}`}>
-                        <h2>{card.title}</h2>
-                        <p>{card.copy}</p>
-                    </li>
-                ))}
-            </ul>
-            <div>{cardItems.map((card, index) => (
-              <div className={`${(index === indexes.currentIndex)?"active":"hide"}`} key={index}>{card.title}</div>
-            ))} 
+                         <li className={`${(index === indexes.currentIndex) ? 'bg-blue-500' : 'bg-blue-300'} w-[7px] h-[7px] rounded-full mx-1`}  key={card.id}></li>
+                    ))}
+
+                </ul>
             </div>
-        </div>
+
+            <div className='bg-orange-400'>
+                <div>
+                    {cardItems.map((card, index) => (
+                        <div className={`${index === indexes.currentIndex ? 'block' : 'hide'} bg-violet-200 max-w-[556.43px] min-w-[556.43px]`} key={index}>
+                            <p className='w-[100%]'>{card.copy}</p>
+                            <p className='bg-red-200'>{card.name}</p>
+                            <a className='bg-gray-400'href={card.web}>{card.web}</a>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            </div>
+
+        
+
+
     );
 };
 
