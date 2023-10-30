@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Operadores from "./Operadores";
-import ConoceOperar from "./ConoceOperar";
+import Beneficios from "./Beneficios";
 import ConoceServicios from "./ConoceServicios";
 import NuestroEcosistema from "./NuestroEcosistema";
 import KPI from "./KPI";
@@ -14,7 +14,7 @@ export{
     Navbar,
     Hero,
     Operadores,
-    ConoceOperar,
+    Beneficios,
     ConoceServicios,
     NuestroEcosistema,
     KPI,

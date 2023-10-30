@@ -20,7 +20,7 @@ const NuestroEcosistema = () => {
                         </div>
                     </div>
 
-                    <button className='px-5 py-3 bg-blue-500 hover:bg-blue-600 rounded-[40px] justify-center items-center gap-2 inline-flex'>
+                    <button className='px-5 py-3 bg-ep-500 hover:bg-ep-600 rounded-[40px] justify-center items-center gap-2 inline-flex'>
                         <div className='text-white text-base font-medium  leading-normal'>Conectar</div>
                     </button>
 

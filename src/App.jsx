@@ -1,9 +1,11 @@
 import { useState } from "react";
 // import reactLogo from './assets/react.svg'
 import viteLogo from "/vite.svg";
-import "./App.css";
+// import "./App.css";
+import './assets/main.scss'
+
 import React from "react";
-import {Navbar, Hero, Operadores, ConoceOperar, ConoceServicios, NuestroEcosistema, KPI, Testimonials, CTA, Footer,} from "./components";
+import {Navbar, Hero, Operadores, Beneficios, ConoceServicios, NuestroEcosistema, KPI, Testimonials, CTA, Footer,} from "./components";
 import CardCarousel from "./components/Home/CardCarousel";
 
 const App = () => {
@@ -16,14 +18,14 @@ const App = () => {
     <div className="bg-slate-400 ml-auto mr-auto">
         <Hero/>
         <Operadores/>
-        <ConoceOperar/>
+        <Beneficios/>
         <ConoceServicios/>
         <NuestroEcosistema/>
         <KPI/>
         <Testimonials/>
+        <CardCarousel/>
         <CTA/>
         <Footer/>
-        <CardCarousel/>
     </div>
       {/* TRABAJARLO ACA, LUEGO COMPONENTIZARLO
       - PASAR LO DEL HOME A -> HOME Y DE AHI HACER COMPONENTES  */}

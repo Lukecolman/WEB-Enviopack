@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className="w-[1512px] h-[72px] px-[148px] justify-between items-center inline-flex">
+    <div className="w-[1512px] h-[72px] px-[148px] justify-between items-center inline-flex bg-green-200">
     <div className="justify-start items-center gap-4 flex">
       <div className="w-[175px] h-9 relative">
       <img src="./src/assets/imagotipo_enviopack.png" alt="" />

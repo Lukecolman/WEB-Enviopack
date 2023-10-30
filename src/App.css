@@ -12,8 +12,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 200px;
-  margin: 100px auto 250px auto;
+  margin: 100px auto 130px auto;
   align-items: center;
+  background-color: aquamarine;
   position: relative;
 }
 
@@ -29,6 +30,9 @@ body {
   opacity: 0;
   position: absolute;
   transform: scale(0.85) translateX(50px);
+  background-color: blue;
+justify-content: center;
+
 }
 
 .card h2,

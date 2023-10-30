@@ -81,7 +81,7 @@ const CardCarousel = () => {
     useEffect(() => {
         const transitionInterval = setInterval(() => {
             handleCardTransition();
-        }, 4000);
+        }, 44000);
 
         return () => clearInterval(transitionInterval);
     }, [handleCardTransition, indexes]);
@@ -92,8 +92,8 @@ const CardCarousel = () => {
             <div className='bg-green-600 w-[450px]'>
                 <ul className='card-carousel justify-center flex'>
                     {cardItems.map((card, index) => (
-                        <li key={card.id} className={`card ${determineClasses(indexes, index)}`}>
-                            <img className='w-max h-max ' src={card.img} alt="" />
+                        <li key={card.id} className={`card ${determineClasses(indexes, index)} `}>
+                            <img className='w-max h-max absolute top-[50%] translate-y-[-50%]' src={card.img} alt="" />
                         </li>
                     ))}
                 </ul>
