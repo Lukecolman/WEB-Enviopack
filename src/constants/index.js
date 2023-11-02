@@ -74,24 +74,20 @@ export const footerLinks = [
 export const socialMedia = [
     {
         id: 'linkedin',
-        icon: 'linkedin',
+        icon: 'src/assets/icons/icon_linkedin.svg',
         link: '#',
     },
     {
         id: 'instagram',
-        icon: 'instagram',
+        icon: 'src/assets/icons/icon_instagram.svg',
         link: '#',
     },
     {
         id: 'youtube',
-        icon: 'youtube',
+        icon: 'src/assets/icons/icon_youtube.svg',
         link: '#',
     },
-    {
-        id: 'privacyPolicy',
-        title: 'Privacy Policy',
-        link: '#',
-    },
+
     
 ];
 

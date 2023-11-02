@@ -5,7 +5,7 @@ const Hero = () => {
         <>
             <div>Herobanner</div>
 
-            <div className=' bg-red-300 ml-auto mr-auto w-[100%] h-[984.98px] flex-col justify-start items-center gap-8 inline-flex'>
+            <div className=' bg-red-300 w-[100%] h-[984.98px] flex-col justify-start items-center gap-8 inline-flex'>
                 <div className="w-[848px] text-center text-gray-700 text-[64px] font-bold font-['DM Sans'] leading-[74px]">
                     La solución tecnológica
                     <br />

@@ -22,9 +22,10 @@ export default {
         },
       },
       fontFamily: {
-        poppinS: ["Poppins", "sans-serif"],
+        openSans: ["Open Sans"],
         outfit: ['Outfit'],
         dmSans: ['DM Sans'],
+        inter: ['Inter'],
       },
     },
     screens: {

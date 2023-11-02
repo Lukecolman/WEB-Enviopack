@@ -22,6 +22,9 @@ const App = () => {
         <ConoceServicios/>
         <NuestroEcosistema/>
         <KPI/>
+        <section className="h-[600px] w-[100%] bg-red-950 flex justify-center items-center">
+            <div className="w-[60px] h-[60px] bg-red-600 "></div>
+        </section>
         <Testimonials/>
         <CardCarousel/>
         <CTA/>

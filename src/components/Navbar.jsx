@@ -2,6 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
+    <nav  className="w-[100%] flex justify-center bg-red-200">
     <div className="w-[1512px] h-[72px] px-[148px] justify-between items-center inline-flex bg-green-200">
     <div className="justify-start items-center gap-4 flex">
       <div className="w-[175px] h-9 relative">
@@ -51,7 +52,7 @@ const Navbar = () => {
 
     </div>
   </div>
-  
+  </nav>
   )
 }
 
