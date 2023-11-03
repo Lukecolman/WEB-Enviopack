@@ -23,6 +23,37 @@
   items-start
 }
 
+.sectionCenter{
+  @apply
+  w-full 
+  flex 
+  justify-center
+}
+
+.buttonSm{
+  @apply
+  px-5
+  py-3
+  bg-ep-500
+  hover:bg-ep-600
+  rounded-[40px]
+  justify-center
+  items-center
+  inline-flex
+  cursor-pointer
+}
+
+.buttonBasics{
+  @apply
+  bg-blue-500
+  hover:bg-ep-600
+  rounded-[40px]
+  justify-center
+  items-center
+  inline-flex
+  cursor-pointer
+}
+
 .paddingY{
   @apply
   sm:py-16
@@ -32,6 +63,10 @@
 *{ @apply
     font-outfit;
     
+}
+
+@screen md{
+
 }
 
 
@@ -46,7 +81,6 @@
     height: 200px;
     margin: 100px auto 130px auto;
     align-items: center;
-    background-color: aquamarine;
     position: relative;
   }
   
@@ -61,9 +95,9 @@
     transition: all 0.75s ease;
     opacity: 0;
     position: absolute;
-    transform: scale(0.85) translateX(50px);
+    transform: scale(0.90) translateX(50px);
     background-color: blue;
-  justify-content: center;
+    justify-content: center;
   
   }
   
@@ -100,6 +134,3 @@
     display: none;
   }
   
-
-
-//   **********
