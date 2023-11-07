@@ -2,8 +2,8 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Operadores from "./Operadores";
 import Beneficios from "./Beneficios";
-import ConoceServicios from "./ConoceServicios";
-import NuestroEcosistema from "./NuestroEcosistema";
+import Servicios from "./Servicios";
+import Ecosistema from "./Ecosistema";
 import KPI from "./KPI";
 import Testimonials from "./Testimonials";
 import CTA from "./CTA";
@@ -15,8 +15,8 @@ export{
     Hero,
     Operadores,
     Beneficios,
-    ConoceServicios,
-    NuestroEcosistema,
+    Servicios,
+    Ecosistema,
     KPI,
     Testimonials,
     CTA,

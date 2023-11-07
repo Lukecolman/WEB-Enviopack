@@ -22,7 +22,7 @@ export default {
         },
       },
       fontFamily: {
-        openSans: ["Open Sans"],
+        openSans: ['Open Sans'],
         outfit: ['Outfit'],
         dmSans: ['DM Sans'],
         inter: ['Inter'],
