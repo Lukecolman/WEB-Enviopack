@@ -1,0 +1,33 @@
+
+{
+    "beneficios": "Beneficios",
+    "conoce": "💡 CONOCÉ",
+    "porQueOperar": "Por qué operar con Envíopack",
+    "beneficiosItems": [
+      {
+        "title": "Entregas en el día",
+        "content": "Enviá en el día a tus compradores en grandes ciudades."
+      },
+      {
+        "title": "Cobertura en todo el país",
+        "content": "Contamos con la mayor red de operadores logísticos."
+      },
+      {
+        "title": "Rápida integración",
+        "content": "Conectá tus canales de venta online de manera simple y ágil."
+      },
+      {
+        "title": "Personalizá tus envíos",
+        "content": "Establecé tarifas y reglas para tus envíos."
+      },
+      {
+        "title": "Solución logística propia",
+        "content": "Rayo Entregas, nuestra solución de última milla."
+      },
+      {
+        "title": "Plataforma inteligente",
+        "content": "Inteligencia Artificial para optimizar operaciones y procesos."
+      }
+    ]
+  }
+  

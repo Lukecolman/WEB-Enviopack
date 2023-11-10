@@ -8,6 +8,7 @@ import React from "react";
 import {Navbar, Hero, Operadores, Beneficios, Servicios, Ecosistema, KPI, Testimonials, CTA, Footer,} from "./components";
 import CardCarousel from "./components/Home/CardCarousel";
 
+
 const App = () => {
   return (
     <>
