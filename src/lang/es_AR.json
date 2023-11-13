@@ -1,5 +1,22 @@
-
 {
+    "navbar": {
+      "services": "Servicios",
+      "serviceOptions": "Acá ponemos los servicios",
+      "rates": "Tarifas",
+      "trackShipment": "Seguí tu envío",
+      "contact": "Contacto",
+      "login": "Iniciar sesión",
+      "createAccount": "Crear cuenta"
+    },
+
+
+    "hero": {
+        "herobanner": "Herobanner",
+        "solutionTechnology": "La solución tecnológica <br/> para optimizar tu logística <br/> e-commerce",
+        "iaOrganizeShipments": "IA para organizar todos tus envíos, darles seguimiento en tiempo real <br/> y conocer tu rendimiento.",
+        "createFreeAccount": "Creá tu cuenta gratis"
+    },
+
     "beneficios": "Beneficios",
     "conoce": "💡 CONOCÉ",
     "porQueOperar": "Por qué operar con Envíopack",
@@ -28,6 +45,96 @@
         "title": "Plataforma inteligente",
         "content": "Inteligencia Artificial para optimizar operaciones y procesos."
       }
-    ]
+    ],
+    
+    "servicios": {
+        "title": "Servicios",
+        "conoce": "🔍 CONOCÉ",
+        "ourServices": "Nuestros servicios",
+        "serviceImageAlt": "Servicio",
+        "learnMore": "Conocer más +",
+        "serviciosItems": [
+          {
+            "title": "Fullpack",
+            "content": "Nos ocupamos de toda tu cadena logística. Ofrecé tarifas más competitivas sin perder tiempo en la gestión y armado de tus paquetes."
+          },
+          {
+            "title": "Colecta",
+            "content": "Elegí la frecuencia y el día para que retiremos tus paquetes. Más de 15 operadores logísticos brindan seguimiento constante para vos y tus clientes."
+          },
+          {
+            "title": "Despacho en sucursal",
+            "content": "Despachá tus paquetes desde la sucursal del correo más cercana. Con nuestra plataforma, configurá las tarifas a tu medida y sin costo adicional. Envía a cualquier punto del país."
+          }
+          
+        ]
+      },
+
+      "ecosistema": {
+        "ourEcosystem": "🌎 NUESTRO ECOSISTEMA",
+        "integrationsWith": "Integraciones nativas con",
+        "ecommerceAndMarketplaces": "e-Commerces y Marketplaces",
+        "connectOnlineChannels": "Conectá tus canales de venta online y resolvé toda la logística desde un solo lugar. Rápido y simple.",
+        "connect": "Conectar",
+        "logosAltText": "Ecosistema logos"
+      },
+
+      "cta": {
+        "createFreeAccount": "Creá tu cuenta gratis",
+        "getStarted": "Empezar"
+      },
+
+      "footer": {
+        "sections": {
+          "Developers": {
+            "title": "Developers",
+            "links": [
+              {
+                "name": "API Documentation",
+                "link": "#"
+              },
+              {
+                "name": "Integraciones",
+                "link": "#"
+              }
+            ]
+          },
+          "Empresa": {
+            "title": "Empresa",
+            "links": [
+              {
+                "name": "Partners",
+                "link": "#"
+              },
+              {
+                "name": "Blog",
+                "link": "#"
+              }
+            ]
+          },
+          "Recursos": {
+            "title": "Recursos",
+            "links": [
+              {
+                "name": "Help Center 2",
+                "link": "#"
+              },
+              {
+                "name": "FAQs 2",
+                "link": "#"
+              },
+              {
+                "name": "Contacto 1",
+                "link": "#"
+              },
+              {
+                "name": "Trabajá con nosotros 1",
+                "link": "#"
+              }
+            ]
+          }
+        },
+        "allRightsReserved": "© 2023 Envíopack. Todos los derechos reservados."
+      }
   }
-  
+

@@ -129,20 +129,14 @@ export const beneficiosItems = [
 export const serviciosItems = [
     {
         image:'https://via.placeholder.com/378x200',
-        title:'Fullpack',
-        content:'Nos ocupamos de toda tu cadena logística. Ofrecé tarifas más competitivas sin perder tiempo en la gestión y armado de tus paquetes.',
         url:'#',
     },
     {
         image:'https://via.placeholder.com/378x200',
-        title:'Colecta',
-        content:'Elegí la frecuencia y el día para que retiremos tus paquetes. Más de 15 operadores logísticos brindan seguimiento constante para vos y tus clientes.',
         url:'#',
     },
     {
         image:'https://via.placeholder.com/378x200',
-        title:'Despacho en sucursal',
-        content:'Despachá tus paquetes desde la sucursal del correo más cercana. Con nuestra plataforma, configurá las tarifas a tu medida y sin costo adicional. Envía a cualquier punto del país.',
         url:'#',
     },
     

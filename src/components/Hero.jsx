@@ -1,28 +1,29 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
-    return (
-        <>
-            <div>Herobanner</div>
-            <div className='hero-container'>
-                <div className="hero-title font-['DM Sans']">
-                    La solución tecnológica
-                    <br />
-                    para optimizar tu logística e-commerce
-                </div>
-                <div className="hero-subtitle font-['DM Sans']">
-                    IA para organizar todos tus envíos, darles seguimiento en tiempo real
-                    <br />y conocer tu rendimiento.
-                </div>
-                <button className='hero-button buttonBasics'>
-                    <span className="hero-button-text">
-                        Creá tu cuenta gratis
-                    </span>
-                </button>
-                <img className='hero-image' src='./src/assets/hero.png' alt="Herobanner" />
-            </div>
-        </>
-    );
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <div>{t('hero.herobanner')}</div>
+      <div className='hero-container'>
+        <div className="hero-title font-['DM Sans']" 
+        dangerouslySetInnerHTML={{ __html: t('hero.solutionTechnology') }}
+        />
+        <div
+          className="hero-subtitle font-['DM Sans']"
+          dangerouslySetInnerHTML={{ __html: t('hero.iaOrganizeShipments') }}
+        />
+        <button className='hero-button buttonBasics'>
+          <span className="hero-button-text">
+            {t('hero.createFreeAccount')}
+          </span>
+        </button>
+        <img className='hero-image' src='./src/assets/hero.png' alt={t('hero.herobanner')} />
+      </div>
+    </>
+  );
 };
 
 export default Hero;

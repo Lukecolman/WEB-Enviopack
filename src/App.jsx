@@ -12,7 +12,7 @@ import CardCarousel from "./components/Home/CardCarousel";
 const App = () => {
   return (
     <>
-    <div>
+    <div >
         <Navbar/>
     </div>
 
