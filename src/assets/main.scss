@@ -225,6 +225,26 @@
     h-[542.98px];
 }
 
+.text-container {
+  @apply
+    text-sky-950
+    pt-[100px]
+    pb-14
+    text-lg
+    font-normal
+    font-dmSans
+    leading-relaxed;
+}
+
+// Estilos para el marquee
+.marquee-container {
+  @apply h-10;
+
+  .marquee-item {
+    @apply px-12;
+  }
+}
+
 
 /*BENEFICIOS*/
 
@@ -807,4 +827,97 @@
     text-[14px] 
     leading-[28px] ;
     color: rgba(255, 255, 255, 0.8);
+}
+
+
+//KPI
+
+
+/* Estilos generales */
+.kpi-grid {
+  @apply 
+  grid
+    grid-cols-7 
+    grid-rows-2 
+    gap-4 
+    w-[1132px] 
+    h-[416px] 
+    relative 
+    bg-green-100;
+}
+
+/* Estilos específicos para las imágenes */
+.kpi-image {
+  @apply 
+    bg-indigo-600 
+    rounded-xl 
+    shadow 
+    flex 
+    overflow-hidden;
+}
+
+/* Estilos específicos para los textos */
+.kpi-text {
+  @apply 
+    bg-blue-300 
+    rounded-xl 
+    shadow;
+}
+
+
+/* Clases para cajas más grandes */
+.kpi-box {
+  @apply 
+    col-span-1 
+    row-span-1;
+}
+
+.kpi-box-wide {
+  @apply 
+    col-span-2 
+    row-span-1;
+}
+
+.kpi-box-big {
+  @apply 
+    col-span-2 
+    row-span-2;
+}
+
+/* Estilos comunes para la estructura del contenido */
+.kpi-content {
+  @apply 
+    p-4 
+    flex 
+    flex-col 
+    justify-between 
+    h-[100%];
+}
+
+/* Estilos específicos para el texto en el contenido */
+.kpi-text-title {
+  @apply 
+    text-slate-700 
+    text-base 
+    font-medium 
+    font-inter 
+    leading-[18px]
+    w-24;
+}
+
+.kpi-text-number {
+  @apply 
+    text-slate-700 
+    text-[56px] 
+    font-semibold 
+    font-inter 
+    leading-[45px];
+}
+
+/* Estilos específicos para la imagen en el contenido */
+.kpi-image img {
+  @apply 
+    object-cover 
+    w-full 
+    h-full;
 }

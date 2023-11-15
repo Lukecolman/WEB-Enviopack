@@ -14,7 +14,8 @@
         "herobanner": "Herobanner",
         "solutionTechnology": "La solución tecnológica <br/> para optimizar tu logística <br/> e-commerce",
         "iaOrganizeShipments": "IA para organizar todos tus envíos, darles seguimiento en tiempo real <br/> y conocer tu rendimiento.",
-        "createFreeAccount": "Creá tu cuenta gratis"
+        "createFreeAccount": "Creá tu cuenta gratis",
+        "carriers": "📦 Nuestra red de operadores logísticos"
     },
 
     "beneficios": "Beneficios",
@@ -135,6 +136,30 @@
           }
         },
         "allRightsReserved": "© 2023 Envíopack. Todos los derechos reservados."
+      },
+
+
+      "kpi": {
+        "title":"Especialistas en la industria",
+        "content":"Como referentes del sector contamos con toda la información y las herramientas tecnológicas que necesita tu negocio para escalar al siguiente nivel.",
+        "countries": {
+          "title": "países",
+          "number": "3"
+        },
+        "operators": {
+          "title": "operadores logísticos",
+          "number": "+30"
+        },
+        "activeUsers": {
+          "title": "usuarios activos",
+          "number": "+2k"
+        },
+        "shipmentsPerMinute": {
+          "title": "envíos por minuto",
+          "number": "3.2"
+        }
       }
+
+
   }
 

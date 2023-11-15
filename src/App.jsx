@@ -5,7 +5,7 @@ import viteLogo from "/vite.svg";
 import './assets/main.scss'
 
 import React from "react";
-import {Navbar, Hero, Operadores, Beneficios, Servicios, Ecosistema, KPI, Testimonials, CTA, Footer,} from "./components";
+import {Navbar, Hero, Beneficios, Servicios, Ecosistema, KPI, Testimonials, CTA, Footer,} from "./components";
 import CardCarousel from "./components/Home/CardCarousel";
 
 
@@ -18,7 +18,6 @@ const App = () => {
 
     <div className="bg-slate-400 ml-auto mr-auto">
         <Hero/> 
-        <Operadores/>
         <Beneficios/>
         <Servicios/>
         <Ecosistema/>
