@@ -9,12 +9,12 @@ const Testimonials = () => {
             <section className='sectionCenter bg-red-200'>
                 <div className='w-[1512px] h-[890px] relative bg-blue-200'>
                     <img
-                        className='w-[573.46px] h-[597.45px] left-0 top-0 absolute'
-                        src='https://via.placeholder.com/573x597'
+                        className='w-[597.45px] h-[597.45px] left-[-170px] top-[-150px] absolute'
+                        src='src\assets\circle-big.png'
                     />
                     <img
-                        className='w-[162.38px] h-[313.32px] left-[1358.12px] top-[480.31px] absolute'
-                        src='https://via.placeholder.com/162x313'
+                        className='w-[313.32px] h-[313.32px] left-[1358.12px] top-[480.31px] absolute'
+                        src='src\assets\circle-small.png'
                     />
                     <div className='flex justify-center relative top-[173.10px] max-w-[1512px]'>
                         <CardCarousel />
