@@ -104,71 +104,7 @@
 
 
   
-// CARD CAROUSEL
-  
-  .card-carousel {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    margin: 100px auto 130px auto;
-    align-items: center;
-    position: relative;
-  }
-  
-  .card {
-    background: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #eeeeee;
-    padding: 30px;
-    box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
-    -webkit-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
-    width: 400px;
-    height: 400px;
-    transition: all 0.75s ease;
-    opacity: 0;
-    position: absolute;
-    transform: scale(0.90) translateX(50px);
-    background-color: white;
-    justify-content: center;
-  
-  }
-  
-  .card h2,
-  .card p {
-    line-height: 1.5;
-    margin: 0;
-  }
-  
-  .card.active {
-    opacity: 1;
-    transform: scale(1) translateX(0);
-    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  .card.next {
-    opacity: 1;
-    z-index: 0;
-  }
-  
-  .card.prev {
-    transform: scale(1.1) translateX(-50px);
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .active{
-    display: flex;
-  }
-  
-  .hide{
-    display: none;
-  }
-  
+
 
   /*HERO BANNER*/
 
@@ -922,4 +858,181 @@
     object-cover 
     w-full 
     h-full;
+}
+
+
+
+
+
+// CARD CAROUSEL
+.card-carousel-container {
+  @apply
+  flex;
+
+  .card-carousel-image{
+    @apply
+    w-[450px]
+    relative 
+    mt-24 
+    mr-12;
+    
+    .card-image-stack{
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 200px;
+      margin: 100px auto 130px auto;
+      align-items: center;
+      position: relative;
+      @apply
+      justify-center 
+      flex;
+
+     
+    }
+
+    .card-dot{
+      @apply
+      flex
+      flex-row
+      justify-center
+      pt-4
+      absolute
+      left-[45%];
+      
+      li{
+        @apply
+        w-2.5
+        h-2.5
+        rounded-full
+        mx-1;
+      }
+
+      .card-dot-active{
+        @apply
+        bg-ep-500
+        ;
+      }
+
+      .card-dot-inactive{
+        @apply
+        bg-ep-100
+        ;
+      }
+      
+    }
+  }
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+  padding: 30px;
+  box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+  width: 400px;
+  height: 400px;
+  transition: all 0.75s ease;
+  opacity: 0;
+  position: absolute;
+  transform: scale(0.90) translateX(50px);
+  background-color: white;
+  justify-content: center;
+
+
+img{
+  @apply
+  w-max
+  h-max
+  absolute
+  top-[50%]
+  translate-y-[-50%];
+}
+}
+
+
+
+.card.active {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.card.next {
+  opacity: 1;
+  z-index: 0;
+}
+
+.card.prev {
+  transform: scale(1.1) translateX(-50px);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.active{
+  display: flex;
+}
+
+.hide{
+  display: none;
+}
+
+
+.card-carousel-text{
+  .card-titles{
+    @apply
+    text-sky-950
+    hidden
+    flex-col
+    gap-6
+    sm:flex;
+    
+    span{
+      @apply 
+      text-lg 
+      font-bold  
+      leading-[18px];
+    }
+    h1{
+      @apply
+      text-5xl 
+      font-semibold 
+      font-outfit 
+      leading-[55px]; 
+    } 
+  }
+  
+  .card-content{
+    .card-content-testimonials{
+      @apply
+      max-w-[556.43px]  
+      pt-8 
+      text-lg 
+      leading-9;
+
+      .card-content-copy{
+        @apply
+        leading-[30px] 
+        my-8;
+      }
+      .card-content-ceo{
+        @apply
+        mb-8 
+        font-dmSans 
+        italic;
+      }
+      .card-content-url{
+        @apply
+        font-medium 
+        text-ep-400;
+      }
+    }
+  }
+  
 }
