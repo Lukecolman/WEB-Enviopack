@@ -861,7 +861,44 @@
 }
 
 
+//TESTIMONIALS
 
+.testimonial-section{
+  .testimonial-container{
+    @apply
+    w-[1512px] 
+    h-[890px] 
+    relative;
+    
+    .big-circle{
+      @apply
+      w-[597.45px] 
+      h-[597.45px] 
+      left-[-170px] 
+      top-[-150px] 
+      absolute;
+    }
+    .small-circle{
+      @apply
+      w-[313.32px] 
+      h-[313.32px] 
+      left-[1358.12px] 
+      top-[480.31px] 
+      absolute;
+    }
+    .card-carousel{
+      @apply
+      flex 
+      justify-center 
+      relative 
+      top-[173.10px]
+      max-w-[1512px]
+      ;
+    }
+
+  }
+
+}
 
 
 // CARD CAROUSEL
