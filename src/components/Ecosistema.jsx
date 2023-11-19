@@ -5,8 +5,8 @@ const Ecosistema = () => {
   const { t } = useTranslation();
 
   return (
-    <section className='sectionCenter'>
-      <div className='ecosistema-container'>
+    <section className='sectionCenter ecosistema-section'>
+      <div className='ecosistema-container '>
         <div className='ecosistema-content'>
           <div className='ecosistema-header'>
             <span className='ecosistema-text'>{t('ecosistema.ourEcosystem')}</span>

@@ -321,6 +321,7 @@
 .sectionCenter {
   @apply 
   bg-blue-100;
+
 }
 
 .servicios-container {
@@ -423,9 +424,16 @@
 
 /* ECOSISTEMA */
 
+.ecosistema-section{
+  @apply
+  w-[100%]
+  bg-white;
+}
+
 .ecosistema-container {
   @apply 
-  w-[1512px] 
+  w-full
+  max-w-[1512px] 
   h-[784px] 
   p-[124px] 
   bg-white 
@@ -441,8 +449,7 @@
   justify-start 
   items-start 
   gap-12 
-  inline-flex 
-  bg-emerald-300;
+  inline-flex;
 }
 
 .ecosistema-header {
@@ -452,8 +459,7 @@
   justify-start 
   items-start 
   gap-6 
-  flex 
-  bg-violet-300;
+  flex;
 }
 
 .ecosistema-text {
@@ -488,8 +494,7 @@
   @apply 
   w-[633px] 
   h-[536px] 
-  relative 
-  bg-red-300;
+  relative ;
 }
 
 
