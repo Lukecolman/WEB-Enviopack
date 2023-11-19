@@ -7,7 +7,6 @@ const KPI = () => {
 
     return (
         <>
-            <div>KPI</div>
             <section className='flexCenter'>
                 <div className='kpi-container'>
                     <div className='kpi-text-box'>

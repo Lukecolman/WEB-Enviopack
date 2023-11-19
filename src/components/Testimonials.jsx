@@ -5,7 +5,6 @@ import CardCarousel from './Home/CardCarousel';
 const Testimonials = () => {
     return (
         <>
-            Testimonials
             <section className='sectionCenter testimonial-section'>
                 <div className='testimonial-container'>
                     <img

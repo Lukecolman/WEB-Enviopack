@@ -114,6 +114,16 @@
 
   /*HERO BANNER*/
 
+  .hero-bg{
+    @apply
+    w-[100%]
+    max-w-[1920px]
+    absolute
+    top-0
+    -z-50
+    ;
+  }
+
   .hero-container {
     @apply  
     w-full 
@@ -553,7 +563,7 @@
   justify-between 
   items-center 
   inline-flex 
-  bg-green-200;
+  ;
 }
 
 .logo-container {

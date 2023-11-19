@@ -8,8 +8,8 @@ const Hero = () => {
 
     return (
         <>
-            <div>{t('hero.herobanner')}</div>
             <section className='hero-container'>
+                <img className='hero-bg' src='src\assets\hero-circle-bg.svg' alt='' />
                 <div
                     className='hero-title font-dmSans'
                     dangerouslySetInnerHTML={{ __html: t('hero.solutionTechnology') }}
