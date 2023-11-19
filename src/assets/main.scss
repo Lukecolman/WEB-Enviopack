@@ -41,14 +41,14 @@
   items-start 
   gap-6 
   flex 
-  bg-gray-500;
+;
   span{
     @apply
     text-white 
     text-base 
     font-bold 
     font-dmSans
-    bg-gray-300;
+ ;
   }
   h2{
     @apply
@@ -56,7 +56,7 @@
     text-5xl 
     font-semibold 
     leading-[52px] 
-    bg-gray-300;
+ ;
   }
 }
 
@@ -324,6 +324,12 @@
 
 }
 
+.servicios-section{
+  @apply
+  w-[100%]
+  bg-[#2E3B4E];
+}
+
 .servicios-container {
   @apply 
   w-[1512px] 
@@ -334,7 +340,8 @@
   items-start 
   gap-20 
   inline-flex 
-  bg-[#2E3B4E];
+
+  ;
 }
 
 .servicios-header {
@@ -351,8 +358,7 @@
   self-stretch 
   justify-between 
   items-center 
-  inline-flex 
-  bg-red-400;
+  inline-flex;
 }
 
 .servicios-card {
@@ -361,15 +367,16 @@
   justify-start 
   items-start 
   gap-8 
-  inline-flex 
-  bg-red-800;
+  inline-flex;
 }
 
 .servicios-image {
   @apply 
   w-[378px] 
   h-[200px] 
-  rounded-3xl;
+  rounded-3xl
+  object-cover	
+  ;
 }
 
 .servicios-info {
@@ -404,7 +411,7 @@
 .servicios-link-container {
   @apply 
   px-2 
-  py-1 
+  py-3 
   rounded-[40px] 
   justify-center 
   items-center 

@@ -7,9 +7,8 @@ const Servicios = () => {
 
   return (
     <>
-      {t('servicios.title')}
-      <section className='sectionCenter bg-blue-100'>
-        <div className='servicios-container'>
+      <section className='sectionCenter servicios-section '>
+        <div className='servicios-container '>
           <div className='section-header'>
             <span>{t('servicios.conoce')}</span>
             <h2>{t('servicios.ourServices')}</h2>

@@ -125,15 +125,15 @@ export const beneficiosItems = [
 
 export const serviciosItems = [
     {
-        image:'https://via.placeholder.com/378x200',
+        image:'src/assets/Rectangle 3643.png',
         url:'#',
     },
     {
-        image:'https://via.placeholder.com/378x200',
+        image:'src/assets/image 165.png',
         url:'#',
     },
     {
-        image:'https://via.placeholder.com/378x200',
+        image:'src/assets/image_112.png',
         url:'#',
     },
     
