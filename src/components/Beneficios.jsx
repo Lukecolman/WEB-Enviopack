@@ -8,12 +8,11 @@ const Beneficios = () => {
 
   return (
     <>
-      {t('beneficios')}
-      <section className='sectionCenter'>
+      <section className='sectionCenter beneficios-section'>
         <div className='beneficios-container'>
           <div className='beneficios-inner'>
             <div className='beneficios-content'>
-              <div className='section-header'>
+              <div className='section-header dark-text'>
                 <span>{t('conoce')}</span>
                 <h2>{t('porQueOperar')}</h2>
               </div>

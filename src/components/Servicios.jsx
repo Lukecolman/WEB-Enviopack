@@ -9,7 +9,7 @@ const Servicios = () => {
     <>
       <section className='sectionCenter servicios-section '>
         <div className='servicios-container '>
-          <div className='section-header'>
+          <div className='section-header white-text'>
             <span>{t('servicios.conoce')}</span>
             <h2>{t('servicios.ourServices')}</h2>
           </div>

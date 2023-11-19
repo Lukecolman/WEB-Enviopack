@@ -16,7 +16,7 @@ const App = () => {
         <Navbar/>
     </div>
 
-    <div className="bg-slate-400 ml-auto mr-auto">
+    <div className="">
         <Hero/> 
         <Beneficios/>
         <Servicios/>

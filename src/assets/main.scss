@@ -44,7 +44,6 @@
 ;
   span{
     @apply
-    text-white 
     text-base 
     font-bold 
     font-dmSans
@@ -52,14 +51,21 @@
   }
   h2{
     @apply
-    text-white 
     text-5xl 
     font-semibold 
     leading-[52px] 
  ;
   }
 }
+.white-text{
+  @apply
+  text-white;
+}
 
+.dark-text{
+  @apply
+  text-[#002152];
+}
 .paddingY{
   @apply
   sm:py-16
@@ -109,8 +115,7 @@
   /*HERO BANNER*/
 
   .hero-container {
-    @apply 
-    bg-red-300 
+    @apply  
     w-full 
     h-full 
     flex-col 
@@ -186,22 +191,23 @@
 
 /*BENEFICIOS*/
 
-.sectionCenter {
-  @apply 
-  bg-blue-100;
+.beneficios-section{
+  @apply
+  w-[100%]
+  bg-[#FBFBFB]
+  ;
 }
 
 .beneficios-container {
   @apply 
-  w-[1512px] 
-  h-[784.17px] 
-  bg-green-500;
+  max-w-[1512px] 
+  h-[784.17px]
+;
 }
 
 .beneficios-inner {
   @apply 
   flex 
-  bg-yellow-100 
   justify-center 
   items-center 
   content-center;
@@ -216,8 +222,7 @@
   justify-start 
   items-start 
   gap-20 
-  inline-flex 
-  bg-green-100;
+  inline-flex;
 }
 
 .beneficios-title-container {
@@ -226,7 +231,7 @@
   justify-between 
   items-center 
   inline-flex 
-  bg-red-400;
+;
 }
 
 .beneficios-cards-container {
@@ -247,7 +252,7 @@
   h-36 
   pt-12 
   pb-8 
-  bg-blue-100 
+  bg-white
   rounded 
   shadow 
   flex-col 
@@ -318,11 +323,7 @@
 /* SERVICIOS */
 
 
-.sectionCenter {
-  @apply 
-  bg-blue-100;
 
-}
 
 .servicios-section{
   @apply
@@ -541,8 +542,7 @@
 
 .navbar-container {
   @apply 
-  sectionCenter 
-  bg-red-200;
+  sectionCenter;
 }
 
 .navbar-inner {
