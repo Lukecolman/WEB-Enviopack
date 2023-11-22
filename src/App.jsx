@@ -5,7 +5,9 @@ import viteLogo from "/vite.svg";
 import './assets/main.scss'
 
 import React from "react";
-import {Navbar, Hero, Beneficios, Servicios, Ecosistema, KPI, Testimonials, CTA, Footer,} from "./components";
+import {Navbar, Hero, Beneficios, Servicios, Ecosistema, KPI, Testimonials, CTA, Footer, } from "./components";
+// import OverlayService from "./components/Home";
+
 import CardCarousel from "./components/Home/CardCarousel";
 
 

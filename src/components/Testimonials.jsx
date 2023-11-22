@@ -5,8 +5,8 @@ import CardCarousel from './Home/CardCarousel';
 const Testimonials = () => {
     return (
         <>
-            <section className='sectionCenter testimonial-section'>
-                <div className='testimonial-container'>
+            <section className=' testimonial-section '>
+                <div className='testimonial-container  sectionCenter'>
                     <img
                         className='big-circle'
                         src='src\assets\circle-big.png'

@@ -584,34 +584,38 @@
 .nav-item {
   @apply 
   cursor-pointer 
-
   px-4 
   rounded-[5px] 
   justify-center 
   items-center 
   gap-1 
   flex 
-  bg-purple-200;
+  hover:text-ep-400
+;
+}
+
+.nav-item:hover .icon-svg {
+  @apply 
+  fill-ep-400
+
 }
 
 .nav-item-text {
   @apply 
-
+  cursor-pointer 
   text-base 
   font-normal 
   leading-loose 
-  font-dmSans;
+  font-dmSans   
+  hover:text-ep-400
+  ;
 }
 
 .submenu {
   @apply 
   sm:absolute 
   sm:top-10 
-  sm:bg-white 
-  sm:rounded-lg 
-  sm:w-[600px] 
-  px-10 
-  py-6;
+items-center justify-center flex ;
 }
 
 .nav-link {
@@ -913,15 +917,18 @@
   bg-white;
   .testimonial-container{
     @apply
-    w-[1512px] 
+    w-[100%] 
     h-[890px] 
-    relative;
+    relative
+    overflow-hidden	
+    ;  
+    
     
     .big-circle{
       @apply
       w-[597.45px] 
       h-[597.45px] 
-      left-[-170px] 
+      left-[-5vw] 
       top-[-150px] 
       absolute;
     }
@@ -929,7 +936,7 @@
       @apply
       w-[313.32px] 
       h-[313.32px] 
-      left-[1358.12px] 
+      left-[89vw] 
       top-[480.31px] 
       absolute;
     }
