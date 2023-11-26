@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className='navbar-inner'>
         <div className='logo-container'>
           <div className='logo'>
-            <img src='assets/imagotipo_enviopack.png' alt='Logotipo de Enviopack' />
+            <img src='/WEB-Enviopack/assets/imagotipo_enviopack.png' alt='Logotipo de Enviopack' />
           </div>
           <div className='logo-container'>
             <div className='relative'>
