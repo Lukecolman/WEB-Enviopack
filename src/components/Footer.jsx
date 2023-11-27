@@ -78,7 +78,7 @@ const Footer = () => {
                 <div className='footer-top'>
                     <div className='footer-logo-container'>
                         <img
-                            src='src\assets\Isotipo_Envíopack.svg'
+                            src='assets\Isotipo_Envíopack.svg'
                             alt='enviopack'
                             className='footer-logo'
                         />

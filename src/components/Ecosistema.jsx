@@ -26,7 +26,7 @@ const Ecosistema = () => {
         </div>
 
         <div className='ecosistema-image-container'>
-          <img src='./src/assets/logos.png' alt={t('ecosistema.logosAltText')} />
+          <img src='assets/logos.png' alt={t('ecosistema.logosAltText')} />
         </div>
       </div>
     </section>

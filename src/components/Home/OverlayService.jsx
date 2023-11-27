@@ -12,7 +12,7 @@ const OverlayService = () => {
             },
             description: 'Nos ocupamos de toda la cadena logística de tu negocio.',
             url: 'https://tu-enlace-fullpack.com', // Agrega la URL correspondiente
-            icon: 'src/assets/icons/fullpack-icon.svg', // Agrega el ícono correspondiente
+            icon: 'assets/icons/fullpack-icon.svg', // Agrega el ícono correspondiente
         },
         {
             orden: 2,
@@ -24,7 +24,7 @@ const OverlayService = () => {
             },
             description: 'Retiramos paquetes de tu depósito y los distribuimos.',
             url: 'https://tu-enlace-colecta.com', // Agrega la URL correspondiente
-            icon: 'src/assets/icons/collect-Icon.svg', // Agrega el ícono correspondiente
+            icon: 'assets/icons/collect-Icon.svg', // Agrega el ícono correspondiente
         },
         {
             orden: 3,
@@ -36,7 +36,7 @@ const OverlayService = () => {
             },
             description: 'Despachá desde la sucursal de correo más cercana.',
             url: 'https://tu-enlace-despacho.com', // Agrega la URL correspondiente
-            icon: 'src/assets/icons/dispatch-icon.svg', // Agrega el ícono correspondiente
+            icon: 'assets/icons/dispatch-icon.svg', // Agrega el ícono correspondiente
         },
         {
             orden: 4,
@@ -49,7 +49,7 @@ const OverlayService = () => {
             },
             description: 'Hacé tus envíos en el día, en grandes ciudades del país.',
             url: 'https://tu-enlace-same-day.com', // Agrega la URL correspondiente
-            icon: 'src/assets/icons/sameDay-icon.svg', // Agrega el ícono correspondiente
+            icon: 'assets/icons/sameDay-icon.svg', // Agrega el ícono correspondiente
         },
         // Puedes agregar más elementos según sea necesario
     ];
@@ -57,78 +57,78 @@ const OverlayService = () => {
     const logisticPartners = [
         {
             bgColor: 'bg-red-700',
-            image: "src/assets/carriersLogos/partners/Andreani.svg",
+            image: "assets/carriersLogos/partners/Andreani.svg",
             alt: 'Andreani',
         },
         {
             bgColor: 'bg-gradient-to-tl from-cyan-600 to-blue-800',
-            image: 'src/assets/carriersLogos/partners/Rayo entregas.svg',
+            image: 'assets/carriersLogos/partners/Rayo entregas.svg',
             alt: 'Rayo Entregas',
 
         },
         {
             bgColor: 'bg-purple-800',
-            image: 'src/assets/carriersLogos/partners/oca.svg',
+            image: 'assets/carriersLogos/partners/oca.svg',
             alt: 'Oca',
         },
         {
             bgColor: 'bg-blue-800',
-            image: 'src/assets/carriersLogos/partners/smart-post.svg',
+            image: 'assets/carriersLogos/partners/smart-post.svg',
             alt: 'Smart Post',
         },
         {
             bgColor: 'bg-red-600',
-            image: 'src/assets/carriersLogos/partners/Almafuerte.svg',
+            image: 'assets/carriersLogos/partners/Almafuerte.svg',
             alt: 'Almafuerte',
         },
         {
             bgColor: 'bg-gradient-to-b from-cyan-500 to-blue-600',
-            image: 'src/assets/carriersLogos/partners/moova.svg',
+            image: 'assets/carriersLogos/partners/moova.svg',
             alt: 'Moova',
         },
         {
             bgColor: 'bg-red-600',
-            image: "src/assets/carriersLogos/partners/Urbano.svg",
+            image: "assets/carriersLogos/partners/Urbano.svg",
             alt: 'Urbano',
         },
         {
             bgColor: 'bg-fuchsia-800',
-            image: 'src/assets/carriersLogos/partners/CCCargas.svg',
+            image: 'assets/carriersLogos/partners/CCCargas.svg',
             alt: 'CCCargas',
         },
         {
             bgColor: 'bg-sky-800',
-            image: 'src/assets/carriersLogos/partners/Integral Pack.svg',
+            image: 'assets/carriersLogos/partners/Integral Pack.svg',
             alt: 'Integral Pack',
         },
         {
             bgColor: 'bg-orange-600',
-            image: 'src/assets/carriersLogos/partners/lionxpress.svg',
+            image: 'assets/carriersLogos/partners/lionxpress.svg',
             alt: 'Lionxpress',
         },
         {
             bgColor: 'bg-red-600',
-            image: "src/assets/carriersLogos/partners/D.svg",
+            image: "assets/carriersLogos/partners/D.svg",
             alt: 'D',
         },
         {
             bgColor: 'bg-blue-600',
-            image: "src/assets/carriersLogos/partners/Chazki.svg",
+            image: "assets/carriersLogos/partners/Chazki.svg",
             alt: 'Chazki',
         },
         {
             bgColor: 'bg-teal-500',
-            image: 'src/assets/carriersLogos/partners/hop.svg',
+            image: 'assets/carriersLogos/partners/hop.svg',
             alt: 'Hop',
         },
         {
             bgColor: 'bg-blue-900',
-            image: "src/assets/carriersLogos/partners/Cruz del Sur.svg",
+            image: "assets/carriersLogos/partners/Cruz del Sur.svg",
             alt: 'Cruz del Sur',
         },
         {
             bgColor: 'bg-red-600',
-            image: 'src/assets/carriersLogos/partners/fast-track.svg',
+            image: 'assets/carriersLogos/partners/fast-track.svg',
             alt: 'Fast Track',
         },
     ];

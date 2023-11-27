@@ -11,7 +11,7 @@ const CardCarousel = () => {
             copy: t("testimonials.first.copy"),
             name: t("testimonials.first.name"),
             web: t("testimonials.first.web"),
-            img: 'src/assets/testimonials/Imagotipo_Fravega.svg',
+            img: 'assets/testimonials/Imagotipo_Fravega.svg',
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ const CardCarousel = () => {
             copy: t("testimonials.second.copy"),
             name: t("testimonials.second.name"),
             web: t("testimonials.second.web"),
-            img: 'src/assets/testimonials/logo_BGH.svg',
+            img: 'assets/testimonials/logo_BGH.svg',
         },
         {
             id: 3,
@@ -27,7 +27,7 @@ const CardCarousel = () => {
             copy: t("testimonials.third.copy"),
             name: t("testimonials.third.name"),
             web: t("testimonials.third.web"),
-            img: 'src/assets/testimonials/logo_TIFN.svg',
+            img: 'assets/testimonials/logo_TIFN.svg',
         },
         {
             id: 4,
@@ -35,7 +35,7 @@ const CardCarousel = () => {
             copy: t("testimonials.fourth.copy"),
             name: t("testimonials.fourth.name"),
             web: t("testimonials.fourth.web"),
-            img: 'src/assets/testimonials/logo_Wallmart.svg',
+            img: 'assets/testimonials/logo_Wallmart.svg',
         },
     ];
     

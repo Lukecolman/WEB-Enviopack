@@ -9,11 +9,11 @@ const Testimonials = () => {
                 <div className='testimonial-container  sectionCenter'>
                     <img
                         className='big-circle'
-                        src='src\assets\circle-big.png'
+                        src='assets\circle-big.png'
                     />
                     <img
                         className='small-circle'
-                        src='src\assets\circle-small.png'
+                        src='assets\circle-small.png'
                     />
                     <div className='card-carousel'>
                         <CardCarousel />

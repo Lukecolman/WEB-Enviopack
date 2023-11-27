@@ -9,7 +9,7 @@ const Hero = () => {
     return (
         <>
             <section className='hero-container'>
-                <img className='hero-bg' src='src\assets\hero-circle-bg.svg' alt='' />
+                <img className='hero-bg' src='assets\hero-circle-bg.svg' alt='' />
                 <div
                     className='hero-title font-dmSans'
                     dangerouslySetInnerHTML={{ __html: t('hero.solutionTechnology') }}
@@ -21,7 +21,7 @@ const Hero = () => {
                 <button className='hero-button buttonBasics'>
                     <span className='hero-button-text'>{t('hero.createFreeAccount')}</span>
                 </button>
-                <img className='hero-image' src='./src/assets/hero.png' alt={t('hero.herobanner')} />
+                <img className='hero-image' src='assets/hero.png' alt={t('hero.herobanner')} />
 
                 <div className='text-container'>{t('hero.carriers')}</div>
 
