@@ -129,6 +129,7 @@
     @apply 
     max-w-[1512px] 
     h-[784.17px]
+    max-[1090px]:h-[1054.17px] 
 
     ;
   }
@@ -145,6 +146,8 @@
     @apply 
     w-[100%] 
     h-[784.17px] 
+
+
     p-[124px] 
     flex-col 
     justify-start 
