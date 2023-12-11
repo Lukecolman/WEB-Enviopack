@@ -1,0 +1,465 @@
+//TESTIMONIALS
+
+.testimonial-section{
+    @apply
+    bg-white;
+    .testimonial-container{
+      @apply
+      w-[100%] 
+      h-[800px]
+      relative
+      overflow-hidden	
+      ;  
+      
+      
+      .big-circle{
+        @apply
+        hidden
+        ;
+      }
+      .small-circle{
+        @apply
+        hidden
+      ;
+      }
+      .card-carousel{
+        @apply
+        flex 
+        justify-center 
+        relative 
+        top-auto
+        max-w-[1512px]
+        ;
+      }
+  
+    }
+  
+  }
+  
+  
+  // CARD CAROUSEL
+  .card-carousel-container {
+    @apply
+    block
+    max-w-[326px]
+    pt-[60px]
+    ;
+  
+    .card-carousel-image{
+      @apply
+      relative 
+      mt-4
+      mr-12
+  
+      ;
+      
+      .card-image-stack{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        margin: 32px auto;
+        align-items: center;
+        position: relative;
+        @apply
+        justify-center 
+        flex
+        ;
+  
+       
+      }
+  
+      .card-dot{
+        @apply
+        flex
+        flex-row
+        justify-center
+        pt-4
+        absolute
+        left-[45%]
+        top-[263%]
+        ;
+        
+        li{
+          @apply
+          w-1.5
+          h-1.5
+          rounded-full
+          mx-1;
+        }
+  
+        .card-dot-active{
+          @apply
+          bg-ep-500
+          ;
+        }
+  
+        .card-dot-inactive{
+          @apply
+          bg-ep-100
+          ;
+        }
+        
+      }
+    }
+  }
+  
+  
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #eeeeee;
+      padding: 30px;
+      box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+      -webkit-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+      -moz-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+      width: 200px;
+      height: 200px;
+      transition: all 0.75s ease;
+      opacity: 0;
+      position: absolute;
+      transform: scale(0.90) translateX(50px);
+      background-color: white;
+      justify-content: center;
+  
+  
+    img{
+      @apply
+      w-max
+      max-w-[140px]
+      h-max
+      max-h-[60px]
+      absolute
+      top-[50%]
+      translate-y-[-50%];
+    }
+    }
+  
+  
+  
+  .card.active {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .card.next {
+    opacity: 1;
+    z-index: 0;
+  }
+  
+  .card.prev {
+    transform: scale(1.1) translateX(-50px);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .active{
+    display: flex;
+  }
+  
+  .hide{
+    display: none;
+  }
+  
+  .card-titles-mobile{
+    @apply
+    text-sky-950
+    block
+    flex-col
+    ;
+    
+    span{
+      @apply 
+      text-xs 
+      font-bold  
+      ;
+    }
+    h1{
+      @apply
+      text-[22px] 
+      font-semibold 
+      font-outfit 
+      pt-4
+      ; 
+    } 
+  }
+  
+  .card-carousel-text{
+    .card-titles{
+      @apply
+  hidden
+  ;
+    }
+  
+  
+    
+    .card-content{
+      .card-content-testimonials{
+        @apply
+        max-w-[556.43px]  
+        pt-8
+        px-4 
+        text-[12px]
+        ;
+  
+        .card-content-copy{
+          @apply
+          leading-[20px] 
+          my-4;
+        }
+        .card-content-ceo{
+          @apply
+          mb-4 
+          font-dmSans 
+          italic;
+        }
+        .card-content-url{
+          @apply
+          font-medium 
+          text-ep-400;
+        }
+      }
+    }
+    
+  }
+
+
+
+//MEDIA QUERIES SM
+
+@screen sm{
+.testimonial-section{
+    @apply
+    bg-white;
+
+    .testimonial-container{
+      @apply
+      w-[100%] 
+      h-[890px] 
+      relative
+      overflow-hidden	
+      ;  
+      
+      
+      .big-circle{
+        @apply
+        block
+        w-[597.45px] 
+        h-[597.45px] 
+        left-[-5vw] 
+        top-[-150px] 
+        absolute;
+      }
+      .small-circle{
+        @apply
+        block
+        w-[313.32px] 
+        h-[313.32px] 
+        left-[89vw] 
+        top-[480.31px] 
+        absolute;
+      }
+      .card-carousel{
+        @apply
+        flex 
+        justify-center 
+        relative 
+        top-[173.10px]
+        max-w-[1512px]
+        ;
+        @include paddingX-sm;
+
+      }
+    
+    }
+    
+    }
+    
+    
+    // CARD CAROUSEL
+    .card-carousel-container {
+    @apply
+    flex
+    max-w-none
+    pt-0
+    ;
+    
+    .card-carousel-image{
+      @apply
+      w-[450px]
+      relative 
+      mt-24 
+      mr-12;
+      
+      .card-image-stack{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        margin: 100px auto 130px auto;
+        align-items: center;
+        position: relative;
+        @apply
+        justify-center 
+        flex;
+    
+       
+      }
+    
+      .card-dot{
+        @apply
+        flex
+        flex-row
+        justify-center
+        pt-4
+        absolute
+        left-[45%]
+        top-auto
+        ;
+        
+        li{
+          @apply
+          w-2.5
+          h-2.5
+          rounded-full
+          mx-1;
+        }
+    
+        .card-dot-active{
+          @apply
+          bg-ep-500
+          ;
+        }
+    
+        .card-dot-inactive{
+          @apply
+          bg-ep-100
+          ;
+        }
+        
+      }
+    }
+    }
+    
+    
+    .card {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    padding: 30px;
+    box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
+    width: 400px;
+    height: 400px;
+    transition: all 0.75s ease;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0.90) translateX(50px);
+    background-color: white;
+    justify-content: center;
+    
+    
+    img{
+    @apply
+    w-max
+    h-max
+    absolute
+    top-[50%]
+    translate-y-[-50%];
+    }
+    }
+    
+    
+    
+    .card.active {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+    
+    .card.next {
+    opacity: 1;
+    z-index: 0;
+    }
+    
+    .card.prev {
+    transform: scale(1.1) translateX(-50px);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    }
+    
+    .active{
+    display: flex;
+    }
+    
+    .hide{
+    display: none;
+    }
+    
+    .card-titles-mobile{
+      @apply
+      hidden
+      ;
+    }
+    
+    .card-carousel-text{
+    .card-titles{
+      @apply
+      text-sky-950
+      hidden
+      flex-col
+      gap-6
+      sm:flex;
+      
+      span{
+        @apply 
+        text-lg 
+        font-bold  
+        leading-[18px];
+      }
+      h1{
+        @apply
+        text-5xl 
+        font-semibold 
+        font-outfit 
+        leading-[55px]; 
+      } 
+    }
+    
+    .card-content{
+      .card-content-testimonials{
+        @apply
+        max-w-[556.43px]  
+        pt-8 
+        text-lg 
+        leading-9;
+    
+        .card-content-copy{
+          @apply
+          leading-[30px] 
+          my-8;
+        }
+        .card-content-ceo{
+          @apply
+          mb-8 
+          font-dmSans 
+          italic;
+        }
+        .card-content-url{
+          @apply
+          font-medium 
+          text-ep-400;
+        }
+      }
+    }
+    
+    }
+}

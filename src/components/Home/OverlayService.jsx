@@ -1,55 +1,58 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 const OverlayService = () => {
+    const { t } = useTranslation();
+
     const menuItems = [
         {
             orden: 1,
-            tipo: 'texto',
-            title: 'Fullpack',
+            type: 'texto',
+            title: t('overlayService.Fullpack.title'),
             tag: {
-                text: '',
+                text: t('overlayService.Fullpack.text'),
                 color: '',
             },
-            description: 'Nos ocupamos de toda la cadena logística de tu negocio.',
-            url: 'https://tu-enlace-fullpack.com', // Agrega la URL correspondiente
-            icon: 'assets/icons/fullpack-icon.svg', // Agrega el ícono correspondiente
+            description: t('overlayService.Fullpack.description'),
+            url: 'https://tu-enlace-fullpack.com',
+            icon: 'assets/icons/fullpack-icon.svg',
         },
         {
             orden: 2,
-            tipo: 'texto',
-            title: 'Colecta',
+            type: 'texto',
+            title: t('overlayService.Collection.title'),
             tag: {
-                text: '',
+                text: t('overlayService.Collection.text'),
                 color: '',
             },
-            description: 'Retiramos paquetes de tu depósito y los distribuimos.',
-            url: 'https://tu-enlace-colecta.com', // Agrega la URL correspondiente
-            icon: 'assets/icons/collect-Icon.svg', // Agrega el ícono correspondiente
+            description: t('overlayService.Collection.description'),
+            url: 'https://tu-enlace-colecta.com',
+            icon: 'assets/icons/collect-Icon.svg',
         },
         {
             orden: 3,
-            tipo: 'texto',
-            title: 'Despacho en sucursal',
+            type: 'texto',
+            title: t('overlayService.BranchDispatch.title'),
             tag: {
-                text: '',
+                text: t('overlayService.BranchDispatch.text'),
                 color: '',
             },
-            description: 'Despachá desde la sucursal de correo más cercana.',
-            url: 'https://tu-enlace-despacho.com', // Agrega la URL correspondiente
-            icon: 'assets/icons/dispatch-icon.svg', // Agrega el ícono correspondiente
+            description: t('overlayService.BranchDispatch.description'),
+            url: 'https://tu-enlace-despacho.com',
+            icon: 'assets/icons/dispatch-icon.svg',
         },
         {
             orden: 4,
-            tipo: 'texto',
-            title: 'Same Day',
+            type: 'texto',
+            title: t('overlayService.SameDay.title'),
             tag: {
-                text: '¡Próximamente!',
+                text: t('overlayService.SameDay.text'),
                 color: 'text-emerald-700 bg-emerald-50',
-
             },
-            description: 'Hacé tus envíos en el día, en grandes ciudades del país.',
-            url: 'https://tu-enlace-same-day.com', // Agrega la URL correspondiente
-            icon: 'assets/icons/sameDay-icon.svg', // Agrega el ícono correspondiente
+            description: t('overlayService.SameDay.description'),
+            url: 'https://tu-enlace-same-day.com',
+            icon: 'assets/icons/sameDay-icon.svg',
         },
         // Puedes agregar más elementos según sea necesario
     ];
@@ -57,14 +60,13 @@ const OverlayService = () => {
     const logisticPartners = [
         {
             bgColor: 'bg-red-700',
-            image: "assets/carriersLogos/partners/Andreani.svg",
+            image: 'assets/carriersLogos/partners/Andreani.svg',
             alt: 'Andreani',
         },
         {
             bgColor: 'bg-gradient-to-tl from-cyan-600 to-blue-800',
             image: 'assets/carriersLogos/partners/Rayo entregas.svg',
             alt: 'Rayo Entregas',
-
         },
         {
             bgColor: 'bg-purple-800',
@@ -88,7 +90,7 @@ const OverlayService = () => {
         },
         {
             bgColor: 'bg-red-600',
-            image: "assets/carriersLogos/partners/Urbano.svg",
+            image: 'assets/carriersLogos/partners/Urbano.svg',
             alt: 'Urbano',
         },
         {
@@ -108,22 +110,22 @@ const OverlayService = () => {
         },
         {
             bgColor: 'bg-red-600',
-            image: "assets/carriersLogos/partners/D.svg",
+            image: 'assets/carriersLogos/partners/D.svg',
             alt: 'D',
         },
         {
             bgColor: 'bg-blue-600',
-            image: "assets/carriersLogos/partners/Chazki.svg",
+            image: 'assets/carriersLogos/partners/Chazki.svg',
             alt: 'Chazki',
         },
         {
             bgColor: 'bg-teal-500',
-            image: 'assets/carriersLogos/partners/hop.svg',
+            image: 'assets/carriersLogos/partners/HOP.svg',
             alt: 'Hop',
         },
         {
             bgColor: 'bg-blue-900',
-            image: "assets/carriersLogos/partners/Cruz del Sur.svg",
+            image: 'assets/carriersLogos/partners/Cruz del Sur.svg',
             alt: 'Cruz del Sur',
         },
         {
@@ -135,23 +137,22 @@ const OverlayService = () => {
 
     // Ordena los elementos
     const elementosOrdenados = menuItems.sort((a, b) => a.orden - b.orden);
- 
+
     const filas = Array.from({ length: Math.ceil(logisticPartners.length / 3) }, (v, i) =>
-    logisticPartners.slice(i * 3, i * 3 + 3)
-  );
+        logisticPartners.slice(i * 3, i * 3 + 3)
+    );
 
     return (
-        <div className='max-w-[683px] min-h-[464px] px-10 py-6 rounded-3xl shadow justify-center items-start gap-9 inline-flex bg-white'>
+        <div className='max-w-[683px] min-h-[464px] px-10 py-6 rounded-3xl shadow justify-center items-start gap-9 flex flex-col md:inline-flex sm:flex-row bg-white '>
             <div className='w-[283px] flex-col justify-start items-start inline-flex '>
                 {elementosOrdenados.map((elemento, index) => (
-                    <div key={index} className='self-stretch py-3  justify-start items-start gap-4 inline-flex '>
-                        {elemento.tipo === 'texto' && (
-                            <a
-                                href={elemento.url}
-                                target='_blank'
-                                rel='noopener noreferrer'>
+                    <div key={index} className='self-stretch py-3 first:pt-0 justify-start items-start gap-4 inline-flex '>
+                        {elemento.type === 'texto' && (
+                            <a href={elemento.url} target='_blank' rel='noopener noreferrer'>
                                 <div className='self-stretch p-3  justify-start items-start gap-4 inline-flex rounded-lg  hover:bg-ep-25'>
-                                    <div className='w-6 h-6 relative '><img src={elemento.icon} alt="" /></div>
+                                    <div className='w-6 h-6 relative '>
+                                        <img src={elemento.icon} alt='' />
+                                    </div>
                                     <div className='grow shrink basis-0 flex-col justify-start items-start  inline-flex'>
                                         <div className="text-gray-700 text-base font-bold font-['DM Sans'] leading-normal ">
                                             {elemento.title}
@@ -174,39 +175,38 @@ const OverlayService = () => {
                 ))}
             </div>
 
+            <div className='pt-3 flex-col justify-start items-start gap-3 inline-flex '>
+                <div className='justify-start items-center gap-4 inline-flex'>
+                    <div className='h-6 flex-col justify-center items-center gap-2.5 inline-flex'>
+                        <img src='assets\icons\logisticPartners-icon.svg' alt='' />
+                    </div>
+                    <div className="text-gray-700 text-base font-bold font-['DM Sans'] leading-normal">
+                    {t('overlayService.LogisticPartners.title')}
+                    </div>
+                </div>
+                <div className='px-12 py-7 bg-ep-25 rounded-3xl flex-col justify-start items-start gap-5 flex'>
+                    {filas.map((fila, index) => (
+                        <div key={index} className='flex justify-between items-center gap-x-7 gap-y-6'>
+                            {fila.map((partner, subIndex) => (
+                                <div
+                                    key={subIndex}
+                                    className={`w-9 h-9 p-1.5 ${partner.bgColor} rounded-[9px] justify-center items-center gap-2.5 flex`}>
+                                    <img src={partner.image} alt={partner.alt} />
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+                <a href='#' target='_blank' rel='noopener noreferrer'>
+                    <div className='justify-start items-center gap-2.5 inline-flex'>
+                        <div className="text-sky-500 text-base font-medium font-['DM Sans'] leading-normal">
+                        {t('overlayService.LogisticPartners.link')}
+                        </div>
 
-<div className='pt-3 flex-col justify-start items-start gap-3 inline-flex '>
-      <div className='justify-start items-center gap-4 inline-flex'>
-        <div className='h-6 flex-col justify-center items-center gap-2.5 inline-flex'><img src="src\assets\icons\logisticPartners-icon.svg" alt="" /></div>
-        <div className="text-gray-700 text-base font-bold font-['DM Sans'] leading-normal">
-          Partners logísticos
-        </div>
-      </div>
-      <div className='px-12 py-7 bg-ep-25 rounded-3xl flex-col justify-start items-start gap-6 flex'>
-        {filas.map((fila, index) => (
-          <div key={index} className="flex justify-between items-center gap-6">
-            {fila.map((partner, subIndex) => (
-              <div key={subIndex} className={`w-9 h-9 p-1.5 ${partner.bgColor} rounded-[9px] justify-center items-center gap-2.5 flex`}>
-                <img src={partner.image} alt={partner.alt} />
-              </div>
-            ))}
-          </div>
-        ))}
-      </div>
-      <a href="#" target='_blank' rel='noopener noreferrer'>
-      <div className='justify-start items-center gap-2.5 inline-flex'>
-        <div className="text-sky-500 text-base font-medium font-['DM Sans'] leading-normal">
-          Conocer más
-        </div>
-
-
-        <img src='src\assets\icons\ep-forward-arrow-outline.svg' className='w-4 h-4 relative' />
-
-      </div>
-      </a>
-    </div>
-
-
+                        <img src='src\assets\icons\ep-forward-arrow-outline.svg' className='w-4 h-4 relative' />
+                    </div>
+                </a>
+            </div>
         </div>
     );
 };

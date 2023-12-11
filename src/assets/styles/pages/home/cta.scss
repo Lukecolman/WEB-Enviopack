@@ -1,0 +1,61 @@
+/* CTA */
+
+.cta-container {
+    @apply 
+      w-[100%] 
+      h-[335px] 
+      py-[100px] 
+      bg-ep-25 
+      flexCenter 
+      flex-col 
+      gap-8 
+      inline-flex;
+  }
+  
+  .cta-title {
+    @apply 
+      text-gray-800 
+      text-2xl
+      font-semibold 
+      leading-[55px];
+  }
+  
+  .cta-button-container {
+    @apply 
+      justify-center 
+      items-center 
+      gap-4 
+      inline-flex;
+  }
+  
+
+  // MEDIA QUERIES SM
+@screen sm {
+  .cta-container {
+    @apply 
+    w-[100%] 
+    h-[335px] 
+    py-[100px] 
+    bg-ep-25 
+    flexCenter 
+    flex-col 
+    gap-8 
+    inline-flex;
+  }
+
+  .cta-title {
+    @apply 
+    text-gray-800 
+    text-5xl 
+    font-semibold 
+    leading-[55px];
+  }
+
+  .cta-button-container {
+    @apply 
+    justify-center 
+    items-center 
+    gap-4 
+    inline-flex;
+  }
+}

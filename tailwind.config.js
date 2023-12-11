@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  important: true,
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -34,6 +35,7 @@ export default {
       sm: '768px',
       md: '1060px',
       lg: '1200px',
+      lgx: '1390px', 
       xl: '1700px',
     },
   },

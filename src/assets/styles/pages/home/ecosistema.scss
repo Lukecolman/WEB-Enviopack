@@ -1,0 +1,161 @@
+/* ECOSISTEMA */
+
+.ecosistema-section {
+    @apply
+      w-[100%]
+      bg-white;
+  }
+  
+  .ecosistema-container {
+    @apply 
+      w-full
+      h-[784px] 
+      px-[24px] 
+      py-[60px]
+      bg-white 
+      font-dmSans
+      flex
+      flex-col
+      justify-center
+      items-center;
+  }
+  
+  .ecosistema-content {
+    @apply 
+      flex-col 
+      justify-start 
+      items-start 
+      gap-12 
+      inline-flex
+      w-full
+      max-w-[326px];
+  }
+  
+  .ecosistema-header {
+    @apply 
+      text-sky-950 
+      flex-col 
+      justify-start 
+      items-start 
+      gap-6 
+      flex;
+  }
+  
+  .ecosistema-text {
+    @apply 
+      text-xs 
+      font-bold;
+  }
+  
+  .ecosistema-title {
+    @apply 
+      text-[22px] 
+      font-semibold 
+      leading-7;
+  }
+  
+  .ecosistema-highlight {
+    @apply 
+      text-sky-500;
+  }
+  
+  .ecosistema-description {
+    @apply 
+      max-w-[265px]
+      text-sm 
+      font-normal 
+      leading-tight;
+  }
+  
+  .ecosistema-image-container {
+    @apply 
+      w-full
+      max-w-[326px]
+      relative;
+  }
+  
+
+
+  // MEDIA QUERIES SM
+@screen sm {
+  .ecosistema-section {
+    @apply
+    w-[100%]
+    bg-white;
+  }
+
+  .ecosistema-container {
+    @apply 
+    w-full
+    max-w-[1512px] 
+    h-[784px] 
+    bg-white 
+    justify-between 
+    items-start 
+    inline-flex 
+    font-dmSans
+    flex-row
+    ;
+    @include paddingX-sm;
+    @include maxContainer;
+
+  }
+
+  .ecosistema-content {
+    @apply 
+    flex-col 
+    justify-start 
+    items-start 
+    gap-12 
+    inline-flex
+    w-auto
+    max-w-none
+    ;
+  }
+
+  .ecosistema-header {
+    @apply 
+    text-sky-950 
+    flex-col 
+    justify-start 
+    items-start 
+    gap-6 
+    flex;
+  }
+
+  .ecosistema-text {
+    @apply 
+    text-base 
+    font-bold 
+    leading-[18px];
+  }
+
+  .ecosistema-title {
+    @apply 
+    text-[40px] 
+    font-semibold 
+    leading-[52px];
+  }
+
+  .ecosistema-highlight {
+    @apply 
+    text-sky-500;
+  }
+
+  .ecosistema-description {
+    @apply 
+    max-w-none
+    w-[363.33px]
+    text-lg 
+    font-normal 
+    leading-[30px];
+  }
+
+  .ecosistema-image-container {
+    @apply 
+    w-[633px] 
+    h-[536px] 
+    max-w-none
+    relative ;
+  }
+}

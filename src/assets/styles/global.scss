@@ -1,0 +1,222 @@
+//GLOBALS
+
+*{ @apply
+    font-outfit;
+    margin: 0px;  
+    // max-width: 100vw!important;
+  }
+  body{
+    margin: 0px !important;
+    overflow-x: hidden;
+    // max-width: 100vw!important;
+
+  }
+  
+  .flexCenter{
+    @apply
+    flex
+    justify-center
+    items-center
+  }
+  
+  .flexStart{
+    @apply
+    flex
+    justify-center
+    items-start
+  }
+  
+  .sectionCenter{
+    @apply
+    w-full 
+    flex 
+    justify-center
+  }
+  
+  .section-header {
+    @apply 
+    flex-col 
+    justify-start 
+    items-start 
+    gap-4
+    flex 
+  ;
+    span{
+      @apply
+      text-xs 
+      font-bold 
+      font-dmSans
+   ;
+    }
+    h2{
+      @apply
+      text-2xl
+      font-semibold 
+   ;
+    }
+  }
+  .white-text{
+    @apply
+    text-white;
+  }
+  
+  .dark-text{
+    @apply
+    text-[#002152];
+  }
+  
+  
+  .buttonSm{
+    @apply
+    px-5 
+    py-4
+    bg-ep-500
+    hover:bg-ep-600
+    rounded-[40px]
+    justify-center
+    items-center
+    inline-flex
+    cursor-pointer;
+    span{
+      @apply 
+      text-white  
+      text-xs 
+      font-medium 
+      leading-normal
+      font-dmSans;
+    }
+  }
+  
+  .buttonBasics{
+    @apply
+    bg-blue-500
+    hover:bg-ep-600
+    rounded-[40px]
+    justify-center
+    items-center
+    inline-flex
+    cursor-pointer
+  }
+
+
+@screen sm{
+    *{ @apply
+      font-outfit
+      ;
+      
+    }
+    
+    .flexCenter{
+      @apply
+      flex
+      justify-center
+      items-center
+    }
+    
+    .flexStart{
+      @apply
+      flex
+      justify-center
+      items-start
+    }
+    
+    .sectionCenter{
+      @apply
+      w-full 
+      flex 
+      justify-center
+    }
+    
+    .section-header {
+      @apply 
+      flex-col 
+      justify-start 
+      items-start 
+      gap-4
+      flex 
+    ;
+      span{
+        @apply
+        text-base 
+        font-bold 
+        font-dmSans
+     ;
+      }
+      h2{
+        @apply
+        text-2xl
+        font-semibold 
+     ;
+      }
+    }
+    .white-text{
+      @apply
+      text-white;
+    }
+    
+    .dark-text{
+      @apply
+      text-[#002152];
+    }
+    .paddingY{
+      @apply
+      sm:py-16
+      py-6
+    }
+    
+    .buttonSm{
+      @apply
+      px-5
+      py-3
+      bg-ep-500
+      hover:bg-ep-600
+      rounded-[40px]
+      justify-center
+      items-center
+      inline-flex
+      cursor-pointer;
+      span{
+        @apply 
+        text-white  
+        text-base 
+        font-medium 
+        leading-normal
+        font-dmSans;
+      }
+    }
+    
+    .buttonBasics{
+      @apply
+      bg-blue-500
+      hover:bg-ep-600
+      rounded-[40px]
+      justify-center
+      items-center
+      inline-flex
+      cursor-pointer
+    }
+}
+
+@mixin paddingX-sm {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@mixin maxContainer{
+@apply
+max-w-[1420px] 
+;
+}
+
+
+
+@screen sm{
+  .section-header {
+    h2{
+      @apply
+      text-5xl
+      font-semibold 
+   ;
+    }
+  }
+}

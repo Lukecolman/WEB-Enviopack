@@ -83,6 +83,11 @@ const CardCarousel = () => {
     return (
         <div className='card-carousel-container'>
             {/* IMAGE CAROUSEL */}
+            <div className='card-titles-mobile'>
+                    <span>{t("testimonials.span")}</span>
+                    <h1 dangerouslySetInnerHTML={{ __html: t("testimonials.title") }} />
+
+                </div>
             <div className='card-carousel-image'>
                 <ul className='card-image-stack'>
                     {cardItems.map((card, index) => (
@@ -103,11 +108,9 @@ const CardCarousel = () => {
             {/* TEXT CAROUSEL */}
             <div className='card-carousel-text'>
                 <div className='card-titles'>
-                    <span>🚀 CRECÉ</span>
-                    <h1>
-                        Cómo te ayudamos a <br />
-                        potenciar tu negocio
-                    </h1>
+                    <span>{t("testimonials.span")}</span>
+                    <h1 dangerouslySetInnerHTML={{ __html: t("testimonials.title") }} />
+
                 </div>
 
                 <div className='card-content'>
@@ -117,7 +120,7 @@ const CardCarousel = () => {
                                 index === indexes.currentIndex ? 'block' : 'hide' } 
                                 card-content-testimonials`}
                             key={index}>
-                            <img src='src\assets\comillas.svg' alt='' />
+                            <img src='assets\comillas.svg' alt='' />
                             <p className='card-content-copy'>{t(card.copy)}</p>
 
                             <p className='card-content-ceo '>{card.name}</p>

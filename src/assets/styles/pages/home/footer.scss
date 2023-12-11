@@ -1,0 +1,251 @@
+/* FOOTER*/
+
+.footer-container {
+    @apply 
+      px-6
+      flexCenter 
+      paddingY 
+      pt-20
+      pb-10
+      flex-col 
+      bg-[#2E3B4E];
+  }
+  
+  .footer-top {
+    @apply 
+      flexStart 
+      flex-col 
+      mb-8 
+      w-full 
+      max-w-[1016px];
+  }
+  
+  .footer-logo-container {
+    @apply 
+      flex-1 
+      flex 
+      flex-col 
+      justify-start 
+      mr-10
+      mb-[60px]
+      ;
+  }
+  
+  .footer-logo {
+    @apply 
+      w-[50px] 
+      object-contain;
+  }
+  
+  .footer-links-container {
+    @apply 
+      flex-[1.5] 
+      w-full 
+      flex 
+      flex-col
+      justify-between 
+      flex-wrap
+      ;
+  }
+  
+  .footer-link-section {
+    @apply 
+      flex 
+      flex-col 
+      ss:my-0 
+      my-4;
+  }
+  
+  .footer-link-title {
+    @apply 
+      font-inter 
+      text-white 
+      text-base
+      font-normal 
+      mb-[30px];
+  }
+  
+  .footer-link {
+    @apply 
+      cursor-pointer 
+      font-inter 
+      text-[#ACB1BB] 
+      mb-[16px]
+      text-sm;
+  }
+  
+  .footer-link-last {
+    @apply 
+      mb-0;
+  }
+  
+  .footer-bottom {
+    @apply 
+      max-w-[1016px] 
+      w-full 
+      flex 
+      justify-between 
+      flex-col 
+      pt-6;
+  }
+  
+  .footer-social {
+    @apply 
+      flex 
+      flex-row 
+      mt-6;
+  }
+  
+  .footer-social-icon {
+    @apply 
+      w-[21px] 
+      h-[21px] 
+      object-contain 
+      cursor-pointer 
+      mr-6;
+  }
+  
+  .footer-privacy {
+    @apply 
+      cursor-pointer 
+      font-inter 
+      text-[#6E7D91];
+  }
+  
+  .footer-rights {
+    @apply 
+      font-openSans 
+      font-normal 
+      text-left 
+      text-xs 
+      leading-[28px] 
+      mt-[60px]
+      ;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+
+  // MEDIA QUERIES SM
+@screen sm {
+  .footer-container {
+    @apply 
+    h-[563px] 
+    flexCenter 
+    paddingY 
+    flex-col 
+    bg-[#2E3B4E];
+    @include paddingX-sm;
+
+  }
+
+  .footer-top {
+    @apply 
+    flexStart 
+    flex-row 
+    mb-8 
+    w-full 
+    max-w-[1016px];
+  }
+
+  .footer-logo-container {
+    @apply 
+    flex-1 
+    flex 
+    flex-col 
+    justify-start 
+    mr-10;
+  }
+
+  .footer-logo {
+    @apply 
+    w-[50px] 
+    object-contain;
+  }
+
+  .footer-links-container {
+    @apply 
+    flex-[1.5] 
+    w-full 
+    flex 
+    flex-row 
+    justify-between 
+    flex-wrap 
+    mt-10;
+  }
+
+  .footer-link-section {
+    @apply 
+    flex 
+    flex-col 
+    ss:my-0 
+    my-4;
+  }
+
+  .footer-link-title {
+    @apply 
+    font-inter 
+    text-white 
+    text-lg 
+    font-normal 
+    mb-[30px];
+  }
+
+  .footer-link {
+    @apply 
+    cursor-pointer 
+    font-inter 
+    text-[#ACB1BB] 
+    mb-[20px];
+  }
+
+  .footer-link-last {
+    @apply 
+    mb-0;
+  }
+
+  .footer-bottom {
+    @apply 
+    max-w-[1016px] 
+    w-full 
+    flex 
+    justify-between 
+    items-center 
+    flex-col 
+    pt-6;
+  }
+
+  .footer-social {
+    @apply 
+    flex 
+    flex-row 
+    mt-6;
+  }
+
+  .footer-social-icon {
+    @apply 
+    w-[21px] 
+    h-[21px] 
+    object-contain 
+    cursor-pointer 
+    mr-6;
+  }
+
+  .footer-privacy {
+    @apply 
+    cursor-pointer 
+    font-inter 
+    text-[#6E7D91];
+  }
+
+  .footer-rights {
+    @apply 
+    font-openSans 
+    font-normal 
+    text-center 
+    text-sm
+    leading-[28px] 
+    mt-[0]
+    ;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

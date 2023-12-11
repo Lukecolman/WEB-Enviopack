@@ -6,9 +6,10 @@ import './assets/main.scss'
 
 import React from "react";
 import {Navbar, Hero, Beneficios, Servicios, Ecosistema, KPI, Testimonials, CTA, Footer, } from "./components";
-// import OverlayService from "./components/Home";
+import OverlayService from "./components/Home/OverlayService";
 
 import CardCarousel from "./components/Home/CardCarousel";
+import Carousel from '/src/components/Home/Carousel.jsx';
 
 
 const App = () => {
@@ -19,16 +20,13 @@ const App = () => {
     </div>
 
     <div className="">
+
         <Hero/> 
         <Beneficios/>
         <Servicios/>
         <Ecosistema/>
         <KPI/>
-        {/* <section className="h-[600px] w-[100%] bg-red-950 flex justify-center items-center">
-            <div className="w-[60px] h-[60px] bg-red-600 "></div>
-        </section> */}
         <Testimonials/>
-        {/* <CardCarousel/> */}
         <CTA/>
         <Footer/>
     </div>

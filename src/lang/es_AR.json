@@ -10,6 +10,34 @@
     },
 
 
+    "overlayService":{
+        "Fullpack": {
+          "title": "Fullpack",
+          "description": "Nos ocupamos de toda la cadena logística de tu negocio.",
+          "text": ""
+        },
+        "Collection": {
+          "title": "Colecta",
+          "description": "Retiramos paquetes de tu depósito y los distribuimos.",
+          "text": ""
+        },
+        "BranchDispatch": {
+          "title": "Despacho en sucursal",
+          "description": "Despachá des1de la sucursal de correo más cercana.",
+          "text": ""
+        },
+        "SameDay": {
+          "title": "Same Day",
+          "description": "Hacé tus envíos en el día, en grandes ciudades del país.",
+          "text": "¡Próximamente!"
+        },
+        "LogisticPartners": {
+          "title": "Partners logísticos",
+          "link": "Conocer más"
+        }
+    },
+
+
     "hero": {
         "herobanner": "Herobanner",
         "solutionTechnology": "La solución tecnológica <br/> para optimizar tu logística <br/> e-commerce",
@@ -162,6 +190,8 @@
 
 
       "testimonials": {
+        "title":"Cómo te ayudamos a <br/> potenciar tu negocio",
+        "span":"🚀 CRECÉ",
         "first": {
           "title": "Fravega",
           "copy": "Envíopack nos permitió potenciar nuestro e-commerce, en especial cuando quisimos armar nuestro marketplace, para el cual teníamos un proyecto muy ambicioso. La tecnología es muy sólida, pero además, el equipo es muy profesional y flexible lo que nos permitió cubrir todas nuestras expectativas y necesidades.",

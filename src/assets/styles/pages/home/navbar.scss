@@ -1,0 +1,300 @@
+/* NAVBAR */
+
+.navbar-container {
+    @apply 
+      sectionCenter;
+  }
+  
+  .navbar-inner {
+    @apply 
+      w-[1512px] 
+      h-[72px] 
+      px-5
+      justify-between 
+      items-center 
+      inline-flex 
+      ;
+  }
+  
+  .logo-container {
+    @apply 
+      justify-start 
+      items-center 
+      gap-4 
+      flex;
+  }
+  
+  .logo-container-mobile {
+    @apply 
+      justify-start 
+      items-start 
+      gap-6
+      flex
+      flex-col
+      w-full
+      pb-6
+      ;
+  }
+  
+  .nav-buttons-mobile{
+    @apply
+      justify-center 
+      items-center 
+      w-full 
+      gap-4 
+      flex-col 
+      flex
+      px-4
+      ;
+  }
+  
+  .nav-item-mobile-container{
+    @apply
+      relative 
+      w-full
+      ;
+  }
+  
+  .nav-item-mobile {
+    @apply 
+      cursor-pointer 
+      px-4 
+      rounded-[5px] 
+      justify-start 
+      items-center 
+      gap-1 
+      flex 
+      w-full
+      hover:text-ep-400
+      ;
+  }
+  
+  .logo {
+    @apply 
+      w-[117px] 
+      relative
+      ;
+  }
+  
+  .nav-item {
+    @apply 
+      cursor-pointer 
+      px-4 
+      rounded-[5px] 
+      justify-center 
+      items-center 
+      gap-1 
+      flex 
+      hover:text-ep-400
+      ;
+  }
+  
+  .nav-item-mobile:hover .icon-svg {
+    @apply 
+      fill-ep-400
+  }
+  
+  .nav-item:hover  .icon-svg {
+    @apply 
+      fill-ep-400
+  }
+  
+  .nav-item-text {
+    @apply 
+      cursor-pointer 
+      text-base 
+      font-normal 
+      leading-loose 
+      font-dmSans   
+      hover:text-ep-400
+      ;
+  }
+  
+  .submenu {
+    @apply 
+      top-10 
+      items-center justify-center flex 
+      ;
+  }
+  
+  .nav-link {
+    @apply 
+      px-4 
+      rounded-[5px] 
+      justify-start 
+      items-start 
+      gap-2 
+      flex
+      w-full
+      cursor-pointer
+      hover:text-ep-400
+      ;
+  }
+  
+  .login-button {
+    @apply 
+      px-4 
+      py-2.5 
+      rounded-[40px] 
+      border 
+      border-blue-500 
+      justify-center 
+      items-center 
+      gap-2 
+      flex
+      w-full
+      max-w-[500px]
+      ;
+  }
+  
+  .login-text {
+    @apply 
+      text-blue-500 
+      text-sm 
+      font-medium 
+      leading-tight 
+      font-dmSans;
+  }
+  
+  .signup-button {
+    @apply 
+      px-4 
+      py-2.5 
+      w-full
+      max-w-[500px]
+    ;
+  }
+  
+  .signup-text {
+    @apply 
+      text-white 
+      text-sm 
+      font-medium 
+      leading-tight 
+      font-dmSans;
+  }
+  
+
+
+  // MEDIA QUERIES SM
+@screen sm {
+  .navbar-container {
+    @apply 
+    sectionCenter;
+    
+  }
+
+  .navbar-inner {
+    @apply 
+    w-[1512px] 
+    h-[72px] 
+    justify-between 
+    items-center 
+    inline-flex;
+    @include paddingX-sm;
+    @include maxContainer;
+
+
+  }
+
+  .logo-container {
+    @apply 
+    justify-start 
+    items-center 
+    gap-4 
+    flex;
+  }
+
+  .logo {
+    @apply 
+    w-[175px] 
+    h-9 
+    relative;
+  }
+
+  .nav-item {
+    @apply 
+    cursor-pointer 
+    px-4 
+    rounded-[5px] 
+    justify-center 
+    items-center 
+    gap-1 
+    flex 
+    hover:text-ep-400;
+  }
+
+  .nav-item:hover .icon-svg {
+    @apply 
+    fill-ep-400;
+  }
+
+  .nav-item-text {
+    @apply 
+    cursor-pointer 
+    text-base 
+    font-normal 
+    leading-loose 
+    font-dmSans   
+    hover:text-ep-400;
+  }
+
+  .submenu {
+    @apply 
+    lg:absolute 
+    top-10 
+    items-center 
+    justify-center 
+    flex;
+  }
+
+  .nav-link {
+    @apply 
+    px-4 
+    rounded-[5px] 
+    justify-center 
+    items-center 
+    gap-2 
+    flex
+    w-auto;
+  }
+
+  .login-button {
+    @apply 
+    px-4 
+    py-2.5 
+    rounded-[40px] 
+    border 
+    border-blue-500 
+    justify-center 
+    items-center 
+    gap-2 
+    flex
+    w-auto;
+  }
+
+  .login-text {
+    @apply 
+    text-blue-500 
+    text-sm 
+    font-medium 
+    leading-tight 
+    font-dmSans;
+  }
+
+  .signup-button {
+    @apply 
+    px-4 
+    py-2.5 
+    w-auto;
+  }
+
+  .signup-text {
+    @apply 
+    text-white 
+    text-sm 
+    font-medium 
+    leading-tight 
+    font-dmSans;
+  }
+}

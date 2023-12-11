@@ -1,0 +1,264 @@
+/* BENEFICIOS */
+
+.beneficios-section {
+    @apply
+      w-[100%]
+      bg-[#FBFBFB];
+  }
+  
+  .beneficios-container {
+    @apply 
+      h-[100%];
+  }
+  
+  .beneficios-content {
+    @apply 
+      w-full
+      px-[24px]
+      py-[60px] 
+      flex-col 
+      justify-start 
+      items-start 
+      gap-12 
+      inline-flex;
+  }
+  
+  .beneficios-title-container {
+    @apply 
+      self-stretch 
+      justify-between 
+      items-center 
+      inline-flex;
+  }
+  
+  .beneficios-cards-container {
+    @apply 
+      w-[100%] 
+      gap-6
+      flex
+      flex-col
+      justify-center
+      items-center;
+  }
+  
+  .beneficios-card {
+    @apply 
+      w-72
+      h-36 
+      pt-10
+      pb-8 
+      bg-white
+      rounded 
+      shadow 
+      flex-col 
+      justify-start 
+      items-center 
+      inline-flex 
+      drop-shadow-lg
+      gap-1
+      my-6;
+  }
+  
+  .beneficios-icon-container {
+    @apply 
+      w-[55px] 
+      h-[55px] 
+      relative;
+  }
+  
+  .beneficios-icon-background {
+    @apply 
+      w-[55px] 
+      h-[55px] 
+      p-3 
+      left-0 
+      top-[-70px] 
+      absolute 
+      bg-sky-100 
+      rounded-[27.50px] 
+      justify-center 
+      items-center 
+      inline-flex;
+  }
+  
+  .beneficios-icon {
+    @apply 
+      self-stretch 
+      justify-start 
+      items-start 
+      inline-flex;
+  }
+  
+  .beneficios-icon-img {
+    @apply 
+      w-[31px] 
+      h-[31px] 
+      relative;
+  }
+  
+  .beneficios-title {
+    @apply 
+      text-center 
+      text-sky-950 
+      text-sm 
+      font-bold 
+      leading-normal;
+  }
+  
+  .beneficios-content-text {
+    @apply 
+      w-[186px] 
+      text-center 
+      text-sky-950 
+      text-xs 
+      font-normal 
+      leading-[18px];
+  }
+  
+
+  // MEDIA QUERIES sm
+@screen sm {
+  .beneficios-section {
+    @apply
+    w-[100%]
+    bg-[#FBFBFB]
+    ;
+  }
+
+  .beneficios-container {
+    @apply 
+    max-w-[1512px] 
+    h-[784.17px]
+
+    ;
+  }
+
+  .beneficios-inner {
+    @apply 
+    flex 
+    justify-center 
+    items-center 
+    content-center;
+  }
+
+  .beneficios-content {
+    @apply 
+    w-[100%] 
+    h-[784.17px] 
+    p-[124px] 
+    flex-col 
+    justify-start 
+    items-start 
+    gap-20 
+    inline-flex;
+  }
+
+  .beneficios-title-container {
+    @apply 
+    self-stretch 
+    justify-between 
+    items-center 
+    inline-flex 
+    ;
+  }
+
+  .beneficios-cards-container {
+    @apply 
+    w-[100%] 
+    mx-auto 
+    grid 
+    grid-cols-3 
+    max-[1090px]:grid-cols-2
+    gap-[3.27rem] 
+    justify-center 
+    items-center 
+    content-center;
+  }
+
+  .beneficios-card {
+    @apply 
+    w-72 
+    h-36 
+    pt-12 
+    pb-8 
+    bg-white
+    rounded 
+    shadow 
+    flex-col 
+    justify-start 
+    items-center 
+    gap-1 
+    inline-flex 
+    drop-shadow-lg;
+  }
+
+  .beneficios-icon-container {
+    @apply 
+    w-[55px] 
+    h-[55px] 
+    relative;
+  }
+
+  .beneficios-icon-background {
+    @apply 
+    w-[55px] 
+    h-[55px] 
+    p-3 
+    left-0 
+    top-[-70px] 
+    absolute 
+    bg-sky-100 
+    rounded-[27.50px] 
+    justify-center 
+    items-center 
+    inline-flex;
+  }
+
+  .beneficios-icon {
+    @apply 
+    self-stretch 
+    justify-start 
+    items-start 
+    inline-flex;
+  }
+
+  .beneficios-icon-img {
+    @apply 
+    w-[31px] 
+    h-[31px] 
+    relative;
+  }
+
+  .beneficios-title {
+    @apply 
+    text-center 
+    text-sky-950 
+    text-lg 
+    font-bold 
+    leading-normal;
+  }
+
+  .beneficios-content-text {
+    @apply 
+    w-[226px] 
+    text-center 
+    text-sky-950 
+    text-sm 
+    font-normal 
+    leading-[18px];
+  }
+}
+
+
+  // MEDIA QUERIES lgx
+  @screen lgx {
+  
+    .beneficios-card {
+      @apply 
+      w-[386px] 
+;
+    }
+  
+
+  }
+  

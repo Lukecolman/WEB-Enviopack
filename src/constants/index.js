@@ -203,35 +203,35 @@ export const kpiImages = [
         {
             orden: 1,
             tipo: 'image',
-            className: 'kpi-image',
+            className: 'kpi-gal-1',
             src: 'assets/distribucion-08.jpg',
             alt: 'distribucion',
         },
         {
             orden: 2,
             tipo: 'image',
-            className: 'kpi-image kpi-box-big',
+            className: 'kpi-gal-2',
             src: 'assets/distribucion-02.jpg',
             alt: 'distribucion',
         },
         {
             orden: 4,
             tipo: 'image',
-            className: 'kpi-image',
+            className: 'kpi-gal-4',
             src: 'assets/distribucion-04.jpg',
             alt: 'distribucion',
         },
         {
             orden: 5,
             tipo: 'image',
-            className: 'kpi-image kpi-box-wide',
+            className: 'kpi-gal-5',
             src: 'assets/seller-03.jpg',
             alt: 'seller',
         },       
         {
             orden: 8,
             tipo: 'image',
-            className: 'kpi-image',
+            className: 'kpi-gal-8',
             src: 'assets/fulfillment-03.jpg',
             alt: 'fulfillment',
         },
@@ -239,4 +239,11 @@ export const kpiImages = [
         // ... (otros elementos de imagen)
     ];
 
-    
+    export const customArrowButton = [
+        {
+            left: "assets/icons/ep-carousel-arrow-left.svg",
+            right: "assets/icons/ep-carousel-arrow-right.svg",
+        },
+
+    ]
+
