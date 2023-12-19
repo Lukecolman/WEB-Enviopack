@@ -1,0 +1,93 @@
+.ctaPages-section{
+    @apply
+    flexCenter
+    h-[368px]
+    ;
+
+    .ctaPages-container{
+@apply
+bg-white
+;
+    
+        .ctaPages-title{
+            @apply
+            text-2xl
+            px-16 text-center 
+            text-sky-950 
+            text-[22px] 
+            font-semibold 
+            font-outfit
+            leading-normal 
+            ;
+        }
+        .ctaPages-content{
+            @apply
+            w-[292px] 
+            text-center 
+            text-gray-700 
+            text-sm 
+            font-normal 
+            font-dmSans 
+            leading-tight
+            ;
+        }
+        .ctaPages-button-container{
+            .ctaPages-button{
+                @apply
+                buttonSm
+                ;
+            }
+        }
+
+    
+    
+    }
+}
+
+  // MEDIA QUERIES SM
+  @screen sm {
+    .ctaPages-section{
+@apply
+h-[498px]
+;
+.ctaPages-container{
+    @apply
+    flexCenter 
+    flex-col 
+    gap-8
+    inline-flex
+    bg-ep-25
+    w-[88%] 
+    rounded-2xl
+    h-[298px] 
+    max-w-[1260px]
+
+
+    ;
+
+    .ctaPages-title{
+        @apply
+        text-[28px]
+        
+        ;
+    }
+    .ctaPages-content{
+        @apply
+        w-full
+text-lg
+
+        ;
+    }
+    cta-button-container{
+        @apply
+        bg-white
+        ;
+    }
+
+
+}
+    }
+
+
+  }
+

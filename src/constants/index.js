@@ -122,6 +122,25 @@ export const beneficiosItems = [
     },
 ];
 
+export const beneficiosColectaIcon = [
+    {
+        icon: 'assets/icons/servicioOptimizacionLogistica.svg',
+        title: 'Optimizá tu logística',
+    },
+    {
+        icon: 'assets/icons/servicioMedida.svg',
+        title: 'Servicio a tu medida',
+    },
+    {
+        icon: 'assets/icons/servicioSeguimientoReal.svg',
+        title: 'Seguimiento en tiempo real',
+    },
+    {
+        icon: 'assets/icons/servicioRedNacional.svg',
+        title: 'Red con cobertura nacional',
+    }
+];
+
 
 export const serviciosItems = [
     {
