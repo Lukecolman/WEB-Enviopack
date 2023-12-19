@@ -8,7 +8,9 @@
   
   .beneficios-container {
     @apply 
-      h-[100%];
+      h-[100%]
+      w-full
+      ;
   }
   
   .beneficios-content {
@@ -56,8 +58,22 @@
       inline-flex 
       drop-shadow-lg
       gap-1
-      my-6;
+      text-center
+      my-6
+      font-dmSans
+      ;
   }
+
+  .subBeneficios-card {
+    @apply 
+  h-[130px] 
+  w-[280px] 
+  pt-8 
+  pb-4 
+  px-4
+  ;
+
+}
   
   .beneficios-icon-container {
     @apply 
@@ -98,7 +114,6 @@
   
   .beneficios-title {
     @apply 
-      text-center 
       text-sky-950 
       text-sm 
       font-bold 
@@ -108,12 +123,56 @@
   .beneficios-content-text {
     @apply 
       w-[186px] 
-      text-center 
       text-sky-950 
       text-xs 
       font-normal 
-      leading-[18px];
+      leading-[18px]
+      ;
   }
+
+
+
+  // SUB BENEFICIOS
+.subBeneficios-cards-container {
+  @extend .beneficios-cards-container;
+}
+
+.subBeneficios-card {
+
+@extend .beneficios-card;
+}
+
+.subBeneficios-title-container{
+  @apply
+  justify-center 
+  self-center  
+  items-center 
+  ;
+}
+.subBeneficios-container{
+  @apply
+  w-full
+  ;
+  .beneficios-icon-container{
+    @apply absolute top-[-25px];
+    }
+    
+  .subBeneficios-title{
+    @extend .beneficios-title;
+    img{
+      display:none;
+    }
+
+  }
+
+  .subBeneficios-content-text{
+    @extend .beneficios-content-text;
+    @apply
+    w-full
+    ;
+  }
+}
+
   
 
   // MEDIA QUERIES sm
@@ -127,7 +186,7 @@
 
   .beneficios-container {
     @apply 
-    max-w-[1512px] 
+    max-w-[1420px] 
     h-[784.17px]
     max-[1090px]:h-[1054.17px] 
 
@@ -143,12 +202,14 @@
   }
 
   .beneficios-content {
+    @include paddingX-sm;
+
     @apply 
     w-[100%] 
     h-[784.17px] 
 
 
-    p-[124px] 
+    p-[5rem] 
     flex-col 
     justify-start 
     items-start 
@@ -250,6 +311,88 @@
     font-normal 
     leading-[18px];
   }
+
+
+// SUB BENEFICIOS
+.subBeneficios-container {
+    @apply 
+    max-w-[1420px] 
+    h-[784.17px]
+    max-[1090px]:h-full
+  ;
+}
+
+
+
+.subBeneficios-cards-container {
+  @apply 
+  w-full
+  mx-auto 
+  grid 
+  grid-cols-2 
+  gap-[2.25rem] 
+  justify-center 
+  items-center 
+  content-center
+
+  ;
+}
+
+.subBeneficios-top-icon{
+  display:none;
+}
+
+.subBeneficios-card {
+  @apply 
+  max-w-[478px]
+  w-full
+  h-56
+  pt-12 
+  pb-8 
+  min-[971px]:px-7
+  bg-white
+  rounded 
+  shadow 
+  flex-col 
+  justify-start 
+  items-center 
+  gap-1 
+  inline-flex 
+  drop-shadow-lg
+  my-0
+
+  ;
+
+  .subBeneficios-title{
+    @apply
+    flex
+    text-left
+    w-full
+    items-center
+    text-xl
+    max-[875px]:text-base
+    mt-[-15px]
+    pb-3
+    
+    ;
+    img{
+      padding-right:10px;
+      display:block;
+    }
+  }
+  .subBeneficios-content-text{
+    @apply
+    text-left
+    w-full
+    text-lg
+    max-[875px]:text-base
+    leading-6
+    ;
+  }
+}
+
+
+
 }
 
 
@@ -259,9 +402,13 @@
     .beneficios-card {
       @apply 
       w-[386px] 
-;
+      ;
     }
-  
+    .subBeneficios-card {
+      @apply 
+      w-[550px] 
+      ;
+    }
 
   }
   

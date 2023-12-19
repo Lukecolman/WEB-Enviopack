@@ -1,0 +1,246 @@
+// Tu archivo de estilos SCSS
+
+.header-section {
+    @extend .sectionCenter;
+
+    @apply 
+    w-full 
+    h-[736px] 
+    py-16 
+    flex-col 
+    justify-start 
+    items-center 
+    gap-[60px] 
+    inline-flex
+    font-dmSans
+    overflow-hidden
+    ;
+}
+
+
+.header-container {
+    @apply 
+    max-w-[1512px] 
+        flex-col
+        justify-center
+        items-center
+        gap-[60px]
+        flex
+    ;
+}
+
+.header-content {
+    @apply 
+        flex
+        flex-col
+        justify-start
+        items-start
+        h-[264px]
+        gap-[38px]
+    ;
+}
+
+.header-title {
+    @apply 
+        text-gray-700
+        text-2xl
+        font-medium
+        leading-[30px]
+    ;
+}
+
+.header-title-bold {
+    @apply 
+        font-bold
+    ;
+}
+
+.header-description {
+    @apply 
+        w-[312px]
+        text-gray-700
+        text-sm
+        font-normal
+        leading-tight
+    ;
+}
+
+.header-button {
+    @apply 
+        inline-flex
+        px-[22px]
+        py-4
+        bg-sky-500
+        rounded-[34px]
+        shadow
+        justify-center
+        items-center
+        gap-[9px]
+    ;
+}
+
+
+.button-text {
+    @apply 
+    text-center 
+    text-white 
+    text-xs 
+    font-bold 
+    leading-none
+    ;
+}
+
+.header-image {
+    @apply 
+    w-[312px] 
+    h-[218px]
+
+    ;
+}
+
+.header-image-content {
+    @apply 
+    w-[312px] 
+    h-[250.70px] 
+    object-cover
+    rounded-3xl	    
+    ;
+}
+
+.header-bg-circle{
+    @apply 
+    absolute
+    w-[271.03px]
+    -top-[9.875rem]
+    -right-[9.875rem]
+    ml-[16.875rem]
+    -z-10
+    ;
+}
+
+
+@screen sm{
+
+    
+    .header-container {
+        @include paddingX-sm;
+        @apply 
+        max-w-[1420px]
+        h-[1412px]
+        w-full
+        flex
+flex-row
+justify-between
+        ;
+    }
+    
+    .header-content {
+        @apply 
+        w-full
+        text-gray-700 
+        text-[56px] 
+        font-bold  
+        leading-[66px]
+        h-full
+        justify-center
+        max-w-[552.97px] 
+        ;
+    }
+    
+    .header-title {
+        @apply 
+            text-[56px]
+            font-semibold
+            leading-[66px]
+            tracking-tight
+        ;
+ 
+    }
+    
+    .header-title-bold {
+        @apply 
+            font-bold
+        ;
+    }
+    
+    .header-description {
+        @apply 
+        w-full
+        text-2xl
+        font-normal 
+        leading-8
+        ;
+    }
+    
+    .header-button {
+        @apply 
+        px-7 
+        py-5 
+        bg-sky-500 
+        rounded-[34px] 
+        shadow 
+        justify-center 
+        items-center 
+        gap-[9px] 
+        inline-flex
+        ;
+    }
+    
+    
+    .button-text {
+        @apply 
+        text-white 
+        text-base 
+        font-bold  
+        leading-none
+        ;
+    }
+    
+    .header-image {
+        @apply 
+
+        w-full
+        max-w-[552.97px] 
+        ;
+    }
+    
+    .header-image-content {
+        @apply 
+        h-[250.70px] 
+        left-0 
+        top-0
+        
+        ;
+    }
+
+    .header-bg-circle{
+        @apply 
+        max-[1059px]:top-[2.875rem]
+        max-[1059px]:-right-[2.875rem]
+        w-[271.03px]
+        top-[12.875rem]
+        -right-[4.875rem]
+        ml-[16.875rem]
+        -z-10
+        ;
+    }
+}
+
+@screen md{
+
+    .header-image {
+        @apply 
+        w-[498px] 
+        h-[412px]
+        ;
+    }
+
+    .header-image-content {
+        @apply 
+        w-[498px] 
+        h-[370px]
+        left-0 
+        top-0
+        ;
+    }
+}

@@ -1,7 +1,6 @@
 //GLOBALS
 
-*{ @apply
-    font-outfit;
+*{ 
     margin: 0px;  
     // max-width: 100vw!important;
   }
@@ -11,6 +10,7 @@
     // max-width: 100vw!important;
 
   }
+
   
   .flexCenter{
     @apply
@@ -51,7 +51,8 @@
     h2{
       @apply
       text-2xl
-      font-semibold 
+      font-semibold
+      font-outfit 
    ;
     }
   }
@@ -80,7 +81,7 @@
     span{
       @apply 
       text-white  
-      text-xs 
+      text-base
       font-medium 
       leading-normal
       font-dmSans;
@@ -100,11 +101,7 @@
 
 
 @screen sm{
-    *{ @apply
-      font-outfit
-      ;
-      
-    }
+
     
     .flexCenter{
       @apply
@@ -178,7 +175,6 @@
       span{
         @apply 
         text-white  
-        text-base 
         font-medium 
         leading-normal
         font-dmSans;

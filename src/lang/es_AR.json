@@ -75,6 +75,30 @@
         "content": "Inteligencia Artificial para optimizar operaciones y procesos."
       }
     ],
+
+    "beneficiosColectaText": [
+      {
+        "key": "1",
+        "title": "Optimizá tu logística",
+        "content": "Prepará tus paquetes, nosotros los asamos a buscar por tu local o depósito y los entregamos."
+      },
+      {
+        "key": "2",
+        "title": "Servicio a tu medida",
+        "content": "Elegí la frecuencia para que pasemos a retirar, dependiendo del volumen a despachar. ¡No hay un mínimo requerido!"
+      },
+      {
+        "key": "3",
+        "title": "Seguimiento en tiempo real",
+        "content": "Nuestro sistema de tracking te da visibilidad a vos y a tu cliente de dónde está el paquete, sin importar el correo que elegiste para enviarlo."
+      },
+      {
+        "key": "4",
+        "title": "Red con cobertura nacional",
+        "content": "Conectamos tu negocio con más de 15 operadores logísticos para que elijas los que quieras y llegues a todo el país."
+      }
+    ],
+
     
     "servicios": {
         "title": "Servicios",
@@ -82,21 +106,21 @@
         "ourServices": "Nuestros servicios",
         "serviceImageAlt": "Servicio",
         "learnMore": "Conocer más +",
-        "serviciosItems": [
-          {
-            "title": "Fullpack",
-            "content": "Nos ocupamos de toda tu cadena logística. Ofrecé tarifas más competitivas sin perder tiempo en la gestión y armado de tus paquetes."
-          },
-          {
+        "serviciosItems": {
+          "0":{           "title": "Fullpack",
+          "content": "Nos ocupamos de toda tu cadena logística. Ofrecé tarifas más competitivas sin perder tiempo en la gestión y armado de tus paquetes."},
+
+      "1":{
             "title": "Colecta",
             "content": "Elegí la frecuencia y el día para que retiremos tus paquetes. Más de 15 operadores logísticos brindan seguimiento constante para vos y tus clientes."
           },
-          {
+"2":{
             "title": "Despacho en sucursal",
             "content": "Despachá tus paquetes desde la sucursal del correo más cercana. Con nuestra plataforma, configurá las tarifas a tu medida y sin costo adicional. Envía a cualquier punto del país."
           }
+          }
           
-        ]
+
       },
 
       "ecosistema": {
@@ -111,6 +135,12 @@
       "cta": {
         "createFreeAccount": "Creá tu cuenta gratis",
         "getStarted": "Empezar"
+      },
+
+      "ctaPages": {
+        "tittle": "¿Querés conocer más sobre el servicio?",
+        "content": "Contá con cobertura en todo el país despachando desde una sucursal de correo.",
+        "button": "Conoce más"
       },
 
       "footer": {
