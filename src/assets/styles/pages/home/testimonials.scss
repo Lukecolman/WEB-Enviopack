@@ -175,7 +175,8 @@
     span{
       @apply 
       text-xs 
-      font-bold  
+      font-bold 
+      font-dmSans 
       ;
     }
     h1{
@@ -204,12 +205,15 @@
         pt-8
         px-4 
         text-[12px]
+        font-outfit
+
         ;
   
         .card-content-copy{
           @apply
           leading-[20px] 
-          my-4;
+          my-4
+          ;
         }
         .card-content-ceo{
           @apply
@@ -422,7 +426,8 @@
       span{
         @apply 
         text-lg 
-        font-bold  
+        font-bold
+        font-dmSans  
         leading-[18px];
       }
       h1{
@@ -440,7 +445,9 @@
         max-w-[556.43px]  
         pt-8 
         text-lg 
-        leading-9;
+        leading-9
+        font-outfit
+        ;
     
         .card-content-copy{
           @apply

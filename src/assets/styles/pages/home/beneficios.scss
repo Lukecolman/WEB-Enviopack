@@ -59,12 +59,21 @@
       drop-shadow-lg
       gap-1
       text-center
-      my-6;
+      my-6
+      font-dmSans
+      ;
   }
 
   .subBeneficios-card {
     @apply 
-  h-[130px] w-[280px] pt-8 pb-4 px-4;}
+  h-[130px] 
+  w-[280px] 
+  pt-8 
+  pb-4 
+  px-4
+  ;
+
+}
   
   .beneficios-icon-container {
     @apply 
@@ -117,7 +126,8 @@
       text-sky-950 
       text-xs 
       font-normal 
-      leading-[18px];
+      leading-[18px]
+      ;
   }
 
 

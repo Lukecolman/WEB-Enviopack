@@ -30,8 +30,8 @@ const Beneficios = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="beneficios-title font-['DM Sans']">{t(`beneficiosItems.${index}.title`)}</div>
-                      <div className="beneficios-content-text font-['DM Sans']">
+                      <div className="beneficios-title">{t(`beneficiosItems.${index}.title`)}</div>
+                      <div className="beneficios-content-text">
                         {t(`beneficiosItems.${index}.content`)}
                       </div>
                     </div>
