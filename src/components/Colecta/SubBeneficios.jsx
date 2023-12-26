@@ -6,6 +6,7 @@ const SubBeneficios = ({ sectionTitle, itemsIcon, itemsText}) => {
 
     const { t } = useTranslation();
 
+
   return (
     <>
       <section className='sectionCenter beneficios-section bg-gradient-to-b from-[#F2F5FF] to-[#CFE8FC]'>
@@ -25,10 +26,10 @@ const SubBeneficios = ({ sectionTitle, itemsIcon, itemsText}) => {
                       <div className="subBeneficios-title ">
                       <img src={item.icon} alt="" />
 
-                        {t(itemsText[index].title)}
+                        {t(itemsText.benefits[index].title)}
                         </div>
                       <div className="subBeneficios-content-text">
-                        {t(itemsText[index].content)}
+                        {t(itemsText.benefits[index].content)}
                       </div>
                     </div>
                   ))}

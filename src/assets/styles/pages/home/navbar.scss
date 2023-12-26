@@ -2,7 +2,8 @@
 
 .navbar-container {
     @apply 
-      sectionCenter;
+      sectionCenter
+      ;
   }
   
   .navbar-inner {
@@ -114,6 +115,7 @@
     @apply 
       top-10 
       items-center justify-center flex 
+      z-50
       ;
   }
   

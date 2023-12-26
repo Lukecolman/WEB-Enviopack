@@ -1,0 +1,75 @@
+.highlight-header {
+    @apply flex-col 
+    justify-start 
+    items-start 
+    gap-4
+    flex
+    ;
+    span {
+        @apply text-xs 
+      font-bold 
+      font-dmSans
+      ;
+    }
+    h2 {
+        @apply text-2xl
+      font-semibold
+      font-outfit 
+      ;
+    }
+}
+
+.highlight-description {
+    @apply w-[312px]
+        text-gray-700
+        text-sm
+        font-normal
+        leading-5
+        ;
+}
+
+@screen sm {
+    .highlight-header {
+        span {
+            @apply text-base
+            ;
+        }
+        h2 {
+            @apply text-4xl
+            ;
+        }
+    }
+
+    .highlight-description {
+        @apply w-full
+        text-lg
+        leading-6
+        ;
+    }
+}
+
+@screen md {
+    .highlight-container {
+        @extend .header-container;
+        max-width: 1288px;
+    }
+
+    .highlight-content {
+        @extend .header-content;
+        max-width: 429px;
+    }
+
+    .highlight-header {
+        h2 {
+            @apply text-5xl
+            ;
+        }
+    }
+
+    .highlight-description {
+        @apply w-full
+        text-xl
+        leading-8
+        ;
+    }
+}

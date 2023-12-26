@@ -9,6 +9,58 @@
       "createAccount": "Crear cuenta"
     },
 
+    "footer": {
+      "sections": {
+        "Developers": {
+          "title": "Developers",
+          "links": [
+            {
+              "name": "API Documentation",
+              "link": "#"
+            },
+            {
+              "name": "Integraciones",
+              "link": "#"
+            }
+          ]
+        },
+        "Empresa": {
+          "title": "Empresa",
+          "links": [
+            {
+              "name": "Partners",
+              "link": "#"
+            },
+            {
+              "name": "Blog",
+              "link": "#"
+            }
+          ]
+        },
+        "Recursos": {
+          "title": "Recursos",
+          "links": [
+            {
+              "name": "Help Center 2",
+              "link": "#"
+            },
+            {
+              "name": "FAQs 2",
+              "link": "#"
+            },
+            {
+              "name": "Contacto 1",
+              "link": "#"
+            },
+            {
+              "name": "Trabajá con nosotros 1",
+              "link": "#"
+            }
+          ]
+        }
+      },
+      "allRightsReserved": "© 2023 Envíopack. Todos los derechos reservados."
+    },
 
     "overlayService":{
         "Fullpack": {
@@ -36,7 +88,6 @@
           "link": "Conocer más"
         }
     },
-
 
     "hero": {
         "herobanner": "Herobanner",
@@ -75,30 +126,6 @@
         "content": "Inteligencia Artificial para optimizar operaciones y procesos."
       }
     ],
-
-    "beneficiosColectaText": [
-      {
-        "key": "1",
-        "title": "Optimizá tu logística",
-        "content": "Prepará tus paquetes, nosotros los asamos a buscar por tu local o depósito y los entregamos."
-      },
-      {
-        "key": "2",
-        "title": "Servicio a tu medida",
-        "content": "Elegí la frecuencia para que pasemos a retirar, dependiendo del volumen a despachar. ¡No hay un mínimo requerido!"
-      },
-      {
-        "key": "3",
-        "title": "Seguimiento en tiempo real",
-        "content": "Nuestro sistema de tracking te da visibilidad a vos y a tu cliente de dónde está el paquete, sin importar el correo que elegiste para enviarlo."
-      },
-      {
-        "key": "4",
-        "title": "Red con cobertura nacional",
-        "content": "Conectamos tu negocio con más de 15 operadores logísticos para que elijas los que quieras y llegues a todo el país."
-      }
-    ],
-
     
     "servicios": {
         "title": "Servicios",
@@ -108,13 +135,14 @@
         "learnMore": "Conocer más +",
         "serviciosItems": {
           "0":{           "title": "Fullpack",
-          "content": "Nos ocupamos de toda tu cadena logística. Ofrecé tarifas más competitivas sin perder tiempo en la gestión y armado de tus paquetes."},
+            "content": "Nos ocupamos de toda tu cadena logística. Ofrecé tarifas más competitivas sin perder tiempo en la gestión y armado de tus paquetes."
+          },
 
-      "1":{
+          "1":{
             "title": "Colecta",
             "content": "Elegí la frecuencia y el día para que retiremos tus paquetes. Más de 15 operadores logísticos brindan seguimiento constante para vos y tus clientes."
           },
-"2":{
+          "2":{
             "title": "Despacho en sucursal",
             "content": "Despachá tus paquetes desde la sucursal del correo más cercana. Con nuestra plataforma, configurá las tarifas a tu medida y sin costo adicional. Envía a cualquier punto del país."
           }
@@ -143,60 +171,6 @@
         "button": "Conoce más"
       },
 
-      "footer": {
-        "sections": {
-          "Developers": {
-            "title": "Developers",
-            "links": [
-              {
-                "name": "API Documentation",
-                "link": "#"
-              },
-              {
-                "name": "Integraciones",
-                "link": "#"
-              }
-            ]
-          },
-          "Empresa": {
-            "title": "Empresa",
-            "links": [
-              {
-                "name": "Partners",
-                "link": "#"
-              },
-              {
-                "name": "Blog",
-                "link": "#"
-              }
-            ]
-          },
-          "Recursos": {
-            "title": "Recursos",
-            "links": [
-              {
-                "name": "Help Center 2",
-                "link": "#"
-              },
-              {
-                "name": "FAQs 2",
-                "link": "#"
-              },
-              {
-                "name": "Contacto 1",
-                "link": "#"
-              },
-              {
-                "name": "Trabajá con nosotros 1",
-                "link": "#"
-              }
-            ]
-          }
-        },
-        "allRightsReserved": "© 2023 Envíopack. Todos los derechos reservados."
-      },
-
-
       "kpi": {
         "title":"Especialistas en la industria",
         "content":"Como referentes del sector contamos con toda la información y las herramientas tecnológicas que necesita tu negocio para escalar al siguiente nivel.",
@@ -217,7 +191,6 @@
           "number": "3.2"
         }
       },
-
 
       "testimonials": {
         "title":"Cómo te ayudamos a <br/> potenciar tu negocio",
@@ -248,6 +221,284 @@
 
 }
 
-  }
+  },
+
+"pagesHeaderButton":"Crea tu cuenta gratis",
+
+
+  "collectPage": {
+      "header":{
+        "title": "Colecta",
+        "subtitle": "Logística a tu medida",
+        "content": "Pasamos a buscar los paquetes por tu local o depósito con la frecuencia que elijas y sin mínimos requeridos. Entregá en el día en CABA o al día siguiente en todo AMBA."
+      },
+
+      "benefits": [
+        {
+          "key": "1",
+          "title": "Optimizá tu logística",
+          "content": "Prepará tus paquetes, nosotros los asamos a buscar por tu local o depósito y los entregamos."
+        },
+        {
+          "key": "2",
+          "title": "Servicio a tu medida",
+          "content": "Elegí la frecuencia para que pasemos a retirar, dependiendo del volumen a despachar. ¡No hay un mínimo requerido!"
+        },
+        {
+          "key": "3",
+          "title": "Seguimiento en tiempo real",
+          "content": "Nuestro sistema de tracking te da visibilidad a vos y a tu cliente de dónde está el paquete, sin importar el correo que elegiste para enviarlo."
+        },
+        {
+          "key": "4",
+          "title": "Red con cobertura nacional",
+          "content": "Conectamos tu negocio con más de 15 operadores logísticos para que elijas los que quieras y llegues a todo el país."
+        }
+      ],
+
+      "stepsHeader": {
+        "subtitle": "🏷️ PASO A PASO",
+        "title": "¿Cómo funciona Colecta?"
+      },
+
+      "steps": [
+
+        { 
+          "key": "1",
+          "description": "Solicitá el alta del servicio en la sección Configuración de tu cuenta"
+        },
+          { 
+          "key": "2",
+          "description": "Prepará tus paquetes y nos avisas para que los retiremos"
+        },
+          { 
+          "key": "3",
+          "description": "Enviamos un vehículo acorde a la cantidad y tamaño de tus envíos"
+        },
+          { 
+          "key": "4",
+          "description": "Entregamos en 24/48 hs o coordinamos con el correo para envíos nacionales"
+        },
+          { 
+          "key": "5",
+          "description": "Tenés seguimiento constante tanto vos como tu cliente"
+        }
+
+      ]
+
+},
+
+"fullpackPage": {
+  "header": {
+    "title": "Fullpack",
+    "subtitle": "Nuestra solución Fulfillment",
+    "content": "Almacenamos tu stock en nuestro depósito, preparamos los paquetes como quieras y enviamos con el correo que elijas. Ofrecé tarifas mas competitivas y enviá a todo el país."
+  },
+
+  "benefits": [
+    {
+      "key": "1",
+      "title": "Stock en manos de especialistas",
+      "content": "Guardamos tu mercadería de baja o alta rotación y le damos el cuidado requerido, de acuerdo a las especificaciones de tu producto."
+    },
+    {
+      "key": "2",
+      "title": "Packing a tu medida",
+      "content": "Preparamos tus pedidos cuando vas concretando las ventas, de acuerdo a los requerimientos que nos indiques."
+    },
+    {
+      "key": "3",
+      "title": "Cobertura nacional ",
+      "content": "Enviamos tus paquetes con el correo que quieras para entregar en el día en AMBA o llegues a todo el país lo antes posible."
+    },
+    {
+      "key": "4",
+      "title": "Tecnología aplicada a la logística",
+      "content": "Seguí tu operación de manera automatizada gracias a nuestra solución tecnológica y llevá el control en todo momento."
+    }
+  ],
+
+  "stepsHeader": {
+    "subtitle": "🏷️ PASO A PASO",
+    "title": "¿Cómo funciona Fullpack?"
+  },
+
+  "steps": [
+
+    { 
+      "key": "1",
+      "description": "Solicitá el alta del servicio en la sección Configuración de tu cuenta"
+    },
+      { 
+      "key": "2",
+      "description": "Recibimos tu stock en nuestro centro de distribución"
+    },
+      { 
+      "key": "3",
+      "description": "Preparamos tus pedidos a medida para enviarlos"
+    },
+      { 
+      "key": "4",
+      "description": "Despachamos tus paquetes con el correo que elijas"
+    },
+      { 
+      "key": "5",
+      "description": "Controlá tu operación e inventario desde un solo lugar con nuestra tecnología especializada"
+    }
+
+  ]
+
+},
+
+"dispatchPage": {
+  "header": {
+    "title": "Despacho en sucursal",
+    "subtitle": "La opción ideal para empezar a escalar",
+    "content": "Elegí la sucursal de correo más cercana y llevá tus paquetes con nuestras etiquetas listos para enviar."
+  },
+
+  "benefits": [
+    {
+      "key": "1",
+      "title": "Logística a demanda",
+      "content": "Tus primero envíos son importantes, por eso empezá a crecer con una logística organizada y sin fricción."
+    },
+    {
+      "key": "2",
+      "title": "Controlá la primera milla",
+      "content": "Llevá tus paquetes hasta la oficina del correo más cercana para que se envíen."
+    },
+    {
+      "key": "3",
+      "title": "Seguimiento en tiempo real",
+      "content": "Con nuestro sistema de tracking, vos y tu cliente pueden seguir el envío."
+    },
+    {
+      "key": "4",
+      "title": "Etiqueta de Envíopack",
+      "content": "Generá la etiqueta con el detalle de tu envío desde nuestra plataforma."
+    }
+  ],
+
+  "stepsHeader": {
+    "subtitle": "🏷️ PASO A PASO",
+    "title": "¿Cómo funciona Despacho en sucursal?"
+  },
+
+  "steps": [
+
+    { 
+      "key": "1",
+      "description": "El servicio se activa cuando creas tu cuenta en Envíopack"
+    },
+      { 
+      "key": "2",
+      "description": "Configuras tus tarifas de acuerdo a tus necesidades"
+    },
+      { 
+      "key": "3",
+      "description": "Elegís los correos y las sucursales a donde vas a llevar tus paquetess"
+    },
+      { 
+      "key": "4",
+      "description": "Seguí el paquete, tanto vos como tu cliente, desde una única plataforma, sin importar el correo elegido"
+    }
+
+  ]
+
+},
+
+
+"carriersPage": {
+  "header":{
+    "title": "Una plataforma todos los operadores logísticos",
+    "description": "Conectate  con los principales correos del país a través y gestioná tus envíos desde un solo lugar.",
+    "carriers":[
+      {
+        "carrier":"OCA"
+      },
+      {
+        "carrier":"Rayo Entregas"
+      },
+      {
+        "carrier":"Andreani"
+      },
+      {
+        "carrier":"Urbano"
+      },
+      {
+        "carrier":"Smart Post"
+      },
+      {
+        "carrier":"Andesmar"
+      },
+      {
+        "carrier":"Fast Track"
+      },
+      {
+        "carrier":"Chazki"
+      },
+      {
+        "carrier":"Integral Pack"
+      },
+      {
+        "carrier":"HOP"
+      },
+      {
+        "carrier":"LionXpress"
+      },
+      {
+        "carrier":"Treggo"
+      },
+      {
+        "carrier":"Demonte"
+      },
+      {
+        "carrier":"OCASA"
+      }
+    ]
+  },
+  "highlightSection":{
+    "subtitle": "⚡️ SIN INTERMEDIARIOS",
+    "title": "Rayo entregas, nuestra  solución para última milla",
+    "content": "Sabemos de logística y de tecnología. Por eso desarrollamos un correo propio, para que la entrega final a tus clientes quede en nuestras manos.",
+    "button":"Conocé Rayo Entregas"
+  },
+
+  "stepsHeader": {
+    "subtitle": "",
+    "title": "Beneficios de Rayo entregas"
+  },
+
+  "steps": [
+
+    { 
+      "key": "1",
+      "description": "Entregamos tus productos en menos tiempo"
+    },
+      { 
+      "key": "2",
+      "description": "Tarifas competitivas que benefician a tu negocio"
+    },
+      { 
+      "key": "3",
+      "description": "Inteligencia artificial para administración de demanda y uso responsable de flota"
+    },
+      { 
+      "key": "4",
+      "description": "Reducimos intermediarios logísticos entre vos y tu cliente"
+    },
+      { 
+      "key": "5",
+      "description": "Claridad y rapidez de respuesta ante consultas"
+    }
+
+  ]
+
 }
+
+
+
+}
+
 

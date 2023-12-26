@@ -1,6 +1,3 @@
-import { useTranslation } from 'react-i18next';
-
-
 export const navLinks = [
     {
         id: 'servicios',
@@ -122,24 +119,7 @@ export const beneficiosItems = [
     },
 ];
 
-export const beneficiosColectaIcon = [
-    {
-        icon: 'assets/icons/servicioOptimizacionLogistica.svg',
-        title: 'Optimizá tu logística',
-    },
-    {
-        icon: 'assets/icons/servicioMedida.svg',
-        title: 'Servicio a tu medida',
-    },
-    {
-        icon: 'assets/icons/servicioSeguimientoReal.svg',
-        title: 'Seguimiento en tiempo real',
-    },
-    {
-        icon: 'assets/icons/servicioRedNacional.svg',
-        title: 'Red con cobertura nacional',
-    }
-];
+
 
 
 export const serviciosItems = [
@@ -264,5 +244,221 @@ export const kpiImages = [
             right: "assets/icons/ep-carousel-arrow-right.svg",
         },
 
-    ]
+    ];
 
+    export const beneficiosColectaIcon = [
+        {
+            icon: 'assets/icons/servicioOptimizacionLogistica.svg',
+            title: 'Optimizá tu logística',
+        },
+        {
+            icon: 'assets/icons/servicioMedida.svg',
+            title: 'Servicio a tu medida',
+        },
+        {
+            icon: 'assets/icons/servicioSeguimientoReal.svg',
+            title: 'Seguimiento en tiempo real',
+        },
+        {
+            icon: 'assets/icons/servicioRedNacional.svg',
+            title: 'Red con cobertura nacional',
+        }
+    ];
+    
+
+    export const collectSteps = [
+        { 
+        key: "1",
+        alt: 'Alta del servicio', 
+        icon: 'assets/icons/steps-collect-servicio.svg'  
+      },
+        { 
+        key: "2",
+        alt: 'Paquetes', 
+        icon: 'assets/icons/steps-collect-paquetes.svg' 
+      },
+        { 
+        key: "3",
+        alt: 'Envio de vehiculo', 
+        icon: 'assets/icons/steps-collect-vehiculo.svg'  
+      },
+        { 
+        key: "4",
+        alt: 'Entrega en 24/48hs', 
+        icon: 'assets/icons/steps-collect-tiempo.svg'  
+      },
+        { 
+        key: "5",
+        alt: 'Seguimiento constante', 
+        icon: 'assets/icons/steps-collect-seguimiento.svg'  
+      }
+      ];
+
+      
+      export const fullpackBenefitsIcon = [
+        {
+            icon: 'assets/icons/beneficiosStock.svg',
+            title: 'Stock en manos de especialistas',
+        },
+        {
+            icon: 'assets/icons/beneficiosPacking.svg',
+            title: 'Packing a tu medida',
+        },
+        {
+            icon: 'assets/icons/beneficiosCobertura.svg',
+            title: 'Cobertura nacional ',
+        },
+        {
+            icon: 'assets/icons/beneficiosTecnologia.svg',
+            title: 'Tecnología aplicada a la logística',
+        }
+    ];
+
+      export const fullpackSteps = [
+        { 
+        key: "1",
+        alt: 'Alta del servicio', 
+        icon: 'assets/icons/steps-fullpack-servicio.svg'  
+      },
+        { 
+        key: "2",
+        alt: 'Stock', 
+        icon: 'assets/icons/steps-fullpack-stock.svg' 
+      },
+        { 
+        key: "3",
+        alt: 'Preparación de envios', 
+        icon: 'assets/icons/steps-fullpack-preparacion.svg'  
+      },
+        { 
+        key: "4",
+        alt: 'Despacho de paquetes', 
+        icon: 'assets/icons/steps-fullpack-despacho.svg'  
+      },
+        { 
+        key: "5",
+        alt: 'Control de operación e inventario', 
+        icon: 'assets/icons/steps-fullpack-tecnologia.svg'  
+      }
+      ];
+
+      export const dispatchBenefitsIcon = [
+        {
+            icon: 'assets/icons/beneficiosOnDemand.svg',
+            title: 'Logística a demanda',
+        },
+        {
+            icon: 'assets/icons/beneficiosControl.svg',
+            title: 'Controlá la primera milla',
+        },
+        {
+            icon: 'assets/icons/beneficiosTracking.svg',
+            title: 'Seguimiento en tiempo real',
+        },
+        {
+            icon: 'assets/icons/beneficiosTicket.svg',
+            title: 'Etiqueta de Envíopack',
+        }
+    ];
+
+      export const dispatchSteps = [
+        { 
+        key: "1",
+        alt: 'Alta del servicio', 
+        icon: 'assets/icons/steps-dispatch-service.svg'  
+      },
+        { 
+        key: "2",
+        alt: 'Configuració', 
+        icon: 'assets/icons/steps-dispatch-configuration.svg' 
+      },
+        { 
+        key: "3",
+        alt: 'Correo', 
+        icon: 'assets/icons/steps-dispatch-mail.svg'  
+      },
+        { 
+        key: "4",
+        alt: 'Plataforma', 
+        icon: 'assets/icons/steps-dispatch-plataform.svg'  
+      }
+      ];
+
+      export const carriersSteps = [
+        { 
+        key: "1",
+        alt: 'Time', 
+        icon: 'assets/icons/beneficiosTime.svg'  
+      },
+        { 
+        key: "2",
+        alt: 'Rate', 
+        icon: 'assets/icons/beneficiosTarifas.svg' 
+      },
+        { 
+        key: "3",
+        alt: 'AI', 
+        icon: 'assets/icons/beneficiosAI.svg'  
+      },
+        { 
+        key: "4",
+        alt: 'Logistics', 
+        icon: 'assets/icons/beneficiosLogistics.svg'  
+      },
+        { 
+        key: "5",
+        alt: 'Support', 
+        icon: 'assets/icons/beneficiosSupport.svg'  
+      }
+      ];
+
+      export const carriersIcons = [
+        {
+            img: 'assets/carriersLogos/carriersIcons/OCA.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Rayo Entregas.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Andreani.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Urbano.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Smart Post.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Andesmar.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Fast Track.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Chazki.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Integral Pack.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/HOP.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/LionXpress.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Treggo.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/Expreso Demonte.svg',
+        },
+        {
+            img: 'assets/carriersLogos/carriersIcons/OCASA.svg',
+        },
+    ];
+
+    export const carriersHighlight =[
+        {
+            img: 'assets/image166.png',
+        },
+    ]
