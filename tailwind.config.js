@@ -24,6 +24,7 @@ export default {
                 outfit: ['Outfit'],
                 dmSans: ['DM Sans'],
                 inter: ['Inter'],
+                // sfPro: ['SF Pro Text'],
             },
         },
         screens: {

@@ -102,6 +102,7 @@
   
   .nav-item-text {
     @apply 
+    select-none	
       cursor-pointer 
       text-base 
       font-normal 

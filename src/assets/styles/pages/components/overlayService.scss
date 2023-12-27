@@ -1,0 +1,69 @@
+
+.overlay-service {
+    @apply max-w-[683px] min-h-[464px] px-10 py-6 rounded-3xl shadow justify-center items-start gap-9 flex flex-col md:inline-flex sm:flex-row bg-white;
+}
+
+.overlay-service-menu {
+    @apply w-[283px] flex-col justify-start items-start inline-flex ;
+}
+
+.overlay-service-item-container {
+    @apply self-stretch py-3 first:pt-0 justify-start items-start gap-4 inline-flex ;
+}
+
+.overlay-service-item {
+    @apply self-stretch p-3  justify-start items-start gap-4 inline-flex rounded-lg  hover:bg-ep-25
+    ;
+}
+
+.overlay-service-icon {
+    @apply w-6 h-6 relative;
+}
+
+.overlay-service-details {
+    @apply grow shrink basis-0 flex-col justify-start items-start inline-flex;
+}
+
+.overlay-service-title {
+    @apply text-gray-700 text-base font-bold font-dmSans leading-normal;
+}
+
+.overlay-service-tag {
+    @apply px-2.5 py-0.5 rounded-xl ml-2 text-xs font-medium font-outfit leading-tight;
+}
+
+.overlay-service-description {
+    @apply self-stretch text-gray-700 text-sm font-normal font-dmSans leading-tight tracking-tight;
+}
+
+.overlay-service-partners {
+    @apply pt-3 flex-col justify-start items-start gap-3 inline-flex;
+}
+
+.overlay-service-logistic-title {
+    @apply justify-start items-center gap-4 inline-flex;
+}
+
+.overlay-service-logistic-icon {
+    @apply h-6 flex-col justify-center items-center gap-2.5 inline-flex;
+}
+
+.overlay-service-logistic-partners {
+    @apply px-12 py-7 bg-ep-25 rounded-3xl flex-col justify-start items-start gap-5 flex;
+}
+
+.overlay-service-logistic-row {
+    @apply flex justify-between items-center gap-x-7 gap-y-6;
+}
+
+.overlay-service-logistic-item {
+    @apply w-9 h-9 p-1.5 rounded-[9px] justify-center items-center gap-2.5 flex;
+}
+
+.overlay-service-link {
+    @apply text-sky-500 text-base font-medium font-dmSans leading-normal;
+}
+
+.overlay-service-forward-icon {
+    @apply w-4 h-4 relative;
+}

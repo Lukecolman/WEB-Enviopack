@@ -3,6 +3,8 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 
 const Carousel = ({ visibleItems, fillColor }) => {
     const { t } = useTranslation();
@@ -15,27 +17,28 @@ const Carousel = ({ visibleItems, fillColor }) => {
 
     const itemsToDisplay = [
         {
+            // FULLPACK
             key: '0',
-
             image: 'assets/Rectangle 3643.png',
             title: t('servicios.serviciosItems.0.title'),
             content: t('servicios.serviciosItems.0.content'),
-            url: 'url1',
+            url: '/fullpack',
         },
         {
+            // COLECTA
             key: '1',
-
             image: 'assets/image 165.png',
             title: t('servicios.serviciosItems.1.title'),
             content: t('servicios.serviciosItems.1.content'),
-            url: 'url2',
+            url: '/collect',
         },
         {
+            // DESPACHO
             key: '2',
             image: 'assets/image_112.png',
             title: t('servicios.serviciosItems.2.title'),
             content: t('servicios.serviciosItems.2.content'),
-            url: 'url3',
+            url: '/dispatch',
         },
     ].filter((_, index) => visibleItems.includes(index));
 
@@ -81,9 +84,9 @@ const Carousel = ({ visibleItems, fillColor }) => {
                         <div className='servicios-content'>{t(servicio.content)}</div>
                     </div>
                     <div className='servicios-link-container'>
-                        <a href={servicio.url} className='servicios-link'>
+                        <Link to={servicio.url} className='servicios-link'>
                             {t('servicios.learnMore')}
-                        </a>
+                        </Link>
                     </div>
                 </div>
             ))}
