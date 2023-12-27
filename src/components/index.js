@@ -7,6 +7,7 @@ import KPI from "./KPI";
 import Testimonials from "./Testimonials";
 import CTA from "./CTA";
 import Footer from "./Footer";
+import WorkInProgress from './WorkInProgress';
 
 
 export{
@@ -19,4 +20,5 @@ export{
     Testimonials,
     CTA,
     Footer,
+    WorkInProgress,
 };

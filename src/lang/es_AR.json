@@ -13,53 +13,31 @@
       "sections": {
         "Developers": {
           "title": "Developers",
-          "links": [
-            {
-              "name": "API Documentation",
-              "link": "#"
-            },
-            {
-              "name": "Integraciones",
-              "link": "#"
-            }
-          ]
+          "links": {
+            "API": "API Documentation",
+            "Integrations": "Integraciones"
+          }
         },
         "Empresa": {
           "title": "Empresa",
-          "links": [
-            {
-              "name": "Partners",
-              "link": "#"
-            },
-            {
-              "name": "Blog",
-              "link": "#"
-            }
-          ]
+          "links": {
+            "Partners": "Partners",
+            "Blog": "Blog"
+          }
         },
         "Recursos": {
           "title": "Recursos",
-          "links": [
-            {
-              "name": "Help Center 2",
-              "link": "#"
-            },
-            {
-              "name": "FAQs 2",
-              "link": "#"
-            },
-            {
-              "name": "Contacto 1",
-              "link": "#"
-            },
-            {
-              "name": "Trabajá con nosotros 1",
-              "link": "#"
-            }
-          ]
+          "links": {
+            "HelpCenter": "Help Center",
+            "FAQs": "FAQs",
+            "Contacto": "Contacto",
+            "TrabajaConNosotros": "Trabajá con nosotros"
+          }
         }
       },
+      "privacyPolicy":"Privacy policy",
       "allRightsReserved": "© 2023 Envíopack. Todos los derechos reservados."
+
     },
 
     "overlayService":{

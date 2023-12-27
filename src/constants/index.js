@@ -23,53 +23,111 @@ export const navLinks = [
 
 export const footerLinks = [
     {
-        title: 'Developers',
-        links: [
-            {
-                name: 'API Documentation',
-                link: '#',
-            },
-            {
-                name: 'Integraciones',
-                link: '#',
-            },
-        ],
+      title: "Developers",
+      links: [
+        {
+          id: 1,
+          linkKey: "footer.sections.Developers.links.API",
+          linkUrl: "#"
+        },
+        {
+          id: 2,
+          linkKey: "footer.sections.Developers.links.Integrations",
+          linkUrl: "#"
+        }
+      ]
     },
     {
-        title: 'Empresa',
-        links: [
-            {
-                name: 'Partners',
-                link: '#',
-            },
-            {
-                name: 'Blog',
-                link: '#',
-            },
-        ],
+      title: "Empresa",
+      links: [
+        {
+          id: 3,
+          linkKey: "footer.sections.Empresa.links.Partners",
+          linkUrl: "#"
+        },
+        {
+          id: 4,
+          linkKey: "footer.sections.Empresa.links.Blog",
+          linkUrl: "#"
+        }
+      ]
     },
     {
-        title: 'Recursos',
-        links: [
-            {
-                name: 'Help Center',
-                link: '#',
-            },
-            {
-                name: 'FAQs',
-                link: '#',
-            },
-            {
-                name: 'Contacto',
-                link: '#',
-            },
-            {
-                name: 'Trabajá con nosotros',
-                link: '#',
-            },
-        ],
-    },
-];
+      title: "Recursos",
+      links: [
+        {
+          id: 5,
+          linkKey: "footer.sections.Recursos.links.HelpCenter",
+          linkUrl: "#"
+        },
+        {
+          id: 6,
+          linkKey: "footer.sections.Recursos.links.FAQs",
+          linkUrl: "#"
+        },
+        {
+          id: 7,
+          linkKey: "footer.sections.Recursos.links.Contacto",
+          linkUrl: "#"
+        },
+        {
+          id: 8,
+          linkKey: "footer.sections.Recursos.links.TrabajaConNosotros",
+          linkUrl: "#"
+        }
+      ]
+    }
+  ];
+
+// export const footerLinks = [
+//     {
+//         title: 'Developers',
+//         links: [
+//             {
+//                 name: 'API Documentation',
+//                 link: '#',
+//             },
+//             {
+//                 name: 'Integraciones',
+//                 link: '#',
+//             },
+//         ],
+//     },
+//     {
+//         title: 'Empresa',
+//         links: [
+//             {
+//                 name: 'Partners',
+//                 link: '#',
+//             },
+//             {
+//                 name: 'Blog',
+//                 link: '#',
+//             },
+//         ],
+//     },
+//     {
+//         title: 'Recursos',
+//         links: [
+//             {
+//                 name: 'Help Center',
+//                 link: '#',
+//             },
+//             {
+//                 name: 'FAQs',
+//                 link: '#',
+//             },
+//             {
+//                 name: 'Contacto',
+//                 link: '#',
+//             },
+//             {
+//                 name: 'Trabajá con nosotros',
+//                 link: '#',
+//             },
+//         ],
+//     },
+// ];
 
 export const socialMedia = [
     {

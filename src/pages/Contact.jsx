@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { WorkInProgress } from '../components';
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
+    return (
+        <div>
+            Contact
+            <WorkInProgress />
+        </div>
+    );
+};
 
-export default Contact
+export default Contact;

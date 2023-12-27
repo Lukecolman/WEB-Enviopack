@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { WorkInProgress } from '../components';
+
 
 const Integrations = () => {
-  return (
-    <div>Integrations</div>
-  )
-}
+    return (
+        <div>
+            Integrations
+            <WorkInProgress />
+        </div>
+    );
+};
 
-export default Integrations
+export default Integrations;

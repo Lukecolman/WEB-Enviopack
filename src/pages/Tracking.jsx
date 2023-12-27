@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { WorkInProgress } from '../components';
 
 const Tracking = () => {
-  return (
-    <div>Tracking</div>
-  )
-}
+    return (
+        <div>
+            Tracking
+            <WorkInProgress />
+        </div>
+    );
+};
 
-export default Tracking
+export default Tracking;
