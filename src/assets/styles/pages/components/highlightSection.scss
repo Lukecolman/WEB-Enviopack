@@ -1,3 +1,10 @@
+.highlight-section-bg{
+    @apply
+    bg-ep-25
+    h-[799px]
+    ;
+}
+
 .highlight-header {
     @apply flex-col 
     justify-start 
@@ -26,9 +33,21 @@
         font-normal
         leading-5
         ;
+        .highlight-description-url{
+            @apply
+            underline
+            text-[#1A9CFF]
+            ;
+        }
 }
 
 @screen sm {
+    .highlight-section-bg{
+        @apply
+        h-[699px]
+        ;
+    }
+
     .highlight-header {
         span {
             @apply text-base
@@ -49,6 +68,12 @@
 }
 
 @screen md {
+    .highlight-section-bg{
+        @apply
+        h-[762px]
+        ;
+    }
+    
     .highlight-container {
         @extend .header-container;
         max-width: 1288px;
@@ -56,7 +81,7 @@
 
     .highlight-content {
         @extend .header-content;
-        max-width: 429px;
+        max-width: 480px;
     }
 
     .highlight-header {

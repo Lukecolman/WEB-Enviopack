@@ -28,12 +28,12 @@ export const footerLinks = [
         {
           id: 1,
           linkKey: "footer.sections.Developers.links.API",
-          linkUrl: "#"
+          linkUrl: '#'
         },
         {
           id: 2,
           linkKey: "footer.sections.Developers.links.Integrations",
-          linkUrl: "#"
+          linkUrl: '#'
         }
       ]
     },
@@ -43,12 +43,12 @@ export const footerLinks = [
         {
           id: 3,
           linkKey: "footer.sections.Empresa.links.Partners",
-          linkUrl: "#"
+          linkUrl: '#'
         },
         {
           id: 4,
           linkKey: "footer.sections.Empresa.links.Blog",
-          linkUrl: "#"
+          linkUrl: '#'
         }
       ]
     },
@@ -58,76 +58,27 @@ export const footerLinks = [
         {
           id: 5,
           linkKey: "footer.sections.Recursos.links.HelpCenter",
-          linkUrl: "#"
+          linkUrl: '#'
         },
         {
           id: 6,
           linkKey: "footer.sections.Recursos.links.FAQs",
-          linkUrl: "#"
+          linkUrl: '#'
         },
         {
           id: 7,
           linkKey: "footer.sections.Recursos.links.Contacto",
-          linkUrl: "#"
+          linkUrl: '#'
         },
         {
           id: 8,
           linkKey: "footer.sections.Recursos.links.TrabajaConNosotros",
-          linkUrl: "#"
+          linkUrl: '#'
         }
       ]
     }
   ];
 
-// export const footerLinks = [
-//     {
-//         title: 'Developers',
-//         links: [
-//             {
-//                 name: 'API Documentation',
-//                 link: '#',
-//             },
-//             {
-//                 name: 'Integraciones',
-//                 link: '#',
-//             },
-//         ],
-//     },
-//     {
-//         title: 'Empresa',
-//         links: [
-//             {
-//                 name: 'Partners',
-//                 link: '#',
-//             },
-//             {
-//                 name: 'Blog',
-//                 link: '#',
-//             },
-//         ],
-//     },
-//     {
-//         title: 'Recursos',
-//         links: [
-//             {
-//                 name: 'Help Center',
-//                 link: '#',
-//             },
-//             {
-//                 name: 'FAQs',
-//                 link: '#',
-//             },
-//             {
-//                 name: 'Contacto',
-//                 link: '#',
-//             },
-//             {
-//                 name: 'Trabajá con nosotros',
-//                 link: '#',
-//             },
-//         ],
-//     },
-// ];
 
 export const socialMedia = [
     {
@@ -518,5 +469,18 @@ export const kpiImages = [
     export const carriersHighlight =[
         {
             img: 'assets/image166.png',
+        },
+    ]
+
+    export const integrationsHighlightContentLink =[
+        {
+            url: 'https://docs.google.com/forms/d/e/1FAIpQLSfy2EPtJ-DTZbO8Q-YEWmsOAQ03Nt2uIIw7tpvxDbByuU02Rg/viewform',
+        },
+    ]
+
+    
+    export const integrationsHighlight =[
+        {
+            img: 'assets/image168.jpg',
         },
     ]

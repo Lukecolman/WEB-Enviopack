@@ -1,3 +1,24 @@
+.text-header-color-section{
+    @apply
+    flexCenter
+    mt-14
+    ;
+    .text-header-color-container{
+        @apply
+        flexCenter 
+        flex-col 
+        inline-flex
+        bg-ep-25
+        w-[88%] 
+        rounded-2xl
+        h-[266px] 
+        max-w-[1260px]
+
+    
+        ;
+    }
+}
+
 .text-header-container {
     @apply sectionCenter
         my-16;
@@ -8,6 +29,7 @@
         flex-col
         items-center
         gap-8;
+        text-wrap: pretty;
 }
 
 .text-title {
@@ -51,6 +73,14 @@
 }
 
 @screen xs {
+    .text-header-color-section{
+        .text-header-color-container{
+            @apply
+            h-[298px] 
+            ;
+        }
+    }
+
     .text-header-content {
         @apply w-full;
     }
@@ -61,7 +91,7 @@
     }
 
     .text-description {
-        @apply max-w-[443px]
+        @apply max-w-[743px]
             text-xl;
     }
     .textHeader-container {
@@ -83,16 +113,29 @@
             opacity-20;
         }
     }
+    
 }
 
 @screen md {
+    .text-header-color-section{
+
+        .text-header-color-container{
+            @apply
+            h-[373px] 
+            max-w-[1319px]
+            pt-7
+            ;
+        }
+    }
     .text-header-container {
         @apply mt-20
             mb-[120px];
     }
 
     .text-header-content {
-        @apply w-[943px];
+        @apply 
+        max-w-[1950px]
+        w-[950px];
     }
 
     .text-title {
@@ -104,6 +147,8 @@
     .text-description {
         @apply max-w-[847px]
             text-2xl
-            leading-loose;
+            leading-loose
+            px-0
+            ;
     }
 }

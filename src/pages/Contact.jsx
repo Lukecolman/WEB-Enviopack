@@ -1,5 +1,5 @@
 import React from 'react';
-import { WorkInProgress } from '../components';
+import { WorkInProgress, CTAPages, TextHeader } from '../components';
 
 const Contact = () => {
     return (

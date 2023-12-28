@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 
-const HighlightSection = ({ currentHighlight, highlightImg }) => {
+const HighlightSection = ({ currentHighlight, highlightImg, highlightURL, highlightImgClass }) => {
     const { t } = useTranslation();
 
   const firstImage = highlightImg && highlightImg.length > 0 && highlightImg[0];
@@ -22,9 +22,10 @@ const HighlightSection = ({ currentHighlight, highlightImg }) => {
                                 {t(currentHighlight.highlightSection.title)}
                             </h2>
                         </div>
-                        <div className="highlight-description ">
+                        <p className="highlight-description ">
                             {currentHighlight.highlightSection.content}
-                        </div>
+                            <a className='highlight-description-url' href={highlightURL && highlightURL.length > 0 ? highlightURL[0].url : '#'} target="_blank" rel="noopener noreferrer" >{t(currentHighlight.highlightSection.linkText)}</a>
+                        </p>
                         <button className='header-button'>
                             <div className="button-text">
                             {t(currentHighlight.highlightSection.button)}
@@ -33,7 +34,9 @@ const HighlightSection = ({ currentHighlight, highlightImg }) => {
                     </div>
 
                     <div className='header-image relative'>
-                        <img className='header-image-content' src={imgSrc} alt={t(currentHighlight.highlightSection.button)} />
+                        {/* <img className={`header-image-content ${highlightImgClass}`} src={imgSrc} alt={t(currentHighlight.highlightSection.button)} /> */}
+
+                        <img className={`header-image-content${highlightImgClass ? ' ' + highlightImgClass : ''}`} src={imgSrc} alt={t(currentHighlight.highlightSection.button)} />
                     </div>
                 </div>
             </div>

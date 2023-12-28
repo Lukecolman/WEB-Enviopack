@@ -3,11 +3,16 @@
 *{ 
     margin: 0px;  
     // max-width: 100vw!important;
+    
   }
   body{
     margin: 0px !important;
     overflow-x: hidden;
     // max-width: 100vw!important;
+
+  }
+  p{
+    white-space: pre-line;
 
   }
 
@@ -196,6 +201,11 @@
 @mixin paddingX-sm {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+@mixin paddingX-md {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @mixin maxContainer{

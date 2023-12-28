@@ -177,6 +177,16 @@
 }
 
 @screen md {
+    .header-container {
+        @include paddingX-md;
+        @apply max-w-[1420px]
+        h-[1412px]
+        w-full
+        flex
+        flex-row
+        justify-between;
+    }
+    
     .header-image {
         @apply w-[498px] 
         h-[412px];
@@ -186,6 +196,14 @@
         @apply w-[498px] 
         h-[370px]
         left-0 
-        top-0;
+        top-0
+        ;
+    }
+
+    .header-image-content.integrations-img{
+        @apply
+        h-[482px]
+        -mt-5
+        ;
     }
 }

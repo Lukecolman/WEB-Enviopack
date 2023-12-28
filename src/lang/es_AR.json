@@ -9,6 +9,33 @@
       "createAccount": "Crear cuenta"
     },
 
+    "overlayService":{
+        "Fullpack": {
+          "title": "Fullpack",
+          "description": "Nos ocupamos de toda la cadena logística de tu negocio.",
+          "text": ""
+        },
+        "Collection": {
+          "title": "Colecta",
+          "description": "Retiramos paquetes de tu depósito y los distribuimos.",
+          "text": ""
+        },
+        "BranchDispatch": {
+          "title": "Despacho en sucursal",
+          "description": "Despachá des1de la sucursal de correo más cercana.",
+          "text": ""
+        },
+        "SameDay": {
+          "title": "Same Day",
+          "description": "Hacé tus envíos en el día, en grandes ciudades del país.",
+          "text": "¡Próximamente!"
+        },
+        "LogisticPartners": {
+          "title": "Partners logísticos",
+          "link": "Conocer más"
+        }
+    },
+
     "footer": {
       "sections": {
         "Developers": {
@@ -40,33 +67,7 @@
 
     },
 
-    "overlayService":{
-        "Fullpack": {
-          "title": "Fullpack",
-          "description": "Nos ocupamos de toda la cadena logística de tu negocio.",
-          "text": ""
-        },
-        "Collection": {
-          "title": "Colecta",
-          "description": "Retiramos paquetes de tu depósito y los distribuimos.",
-          "text": ""
-        },
-        "BranchDispatch": {
-          "title": "Despacho en sucursal",
-          "description": "Despachá des1de la sucursal de correo más cercana.",
-          "text": ""
-        },
-        "SameDay": {
-          "title": "Same Day",
-          "description": "Hacé tus envíos en el día, en grandes ciudades del país.",
-          "text": "¡Próximamente!"
-        },
-        "LogisticPartners": {
-          "title": "Partners logísticos",
-          "link": "Conocer más"
-        }
-    },
-
+    
     "hero": {
         "herobanner": "Herobanner",
         "solutionTechnology": "La solución tecnológica <br/> para optimizar tu logística <br/> e-commerce",
@@ -202,7 +203,6 @@
   },
 
 "pagesHeaderButton":"Crea tu cuenta gratis",
-
 
   "collectPage": {
       "header":{
@@ -473,8 +473,52 @@
 
   ]
 
-}
+},
 
+"integrationsPage": {
+  "header":{
+    "title": "Conectate para automatizar tus envíos",
+    "description": "Importá todos sus pedidos de forma automática en una única interfaz y seleccioná la mejor alternativa de envío para cada paquete."
+  },
+  "highlightSection":{
+    "subtitle": "🌎 NUESTRO ECOSISTEMA",
+    "title": "Servicio exclusivo para Marketplaces",
+    "content": "Trabajamos con los principales marketplaces  de LatAm: Garbarino, Frávega, Megatone, Cetrogar, Me gusta, Claro Shop, Liverpool, Sears, Compumundo y Familia Bercomat.\n\nSi estás interesado en conocer el funcionamiento de los servicios ofrecidos para estas cuentas ",
+    "linkText":"contáctate con nosotros.",
+    "button":"Conocé el servicio"
+  },
+
+  "stepsHeader": {
+    "subtitle": "",
+    "title": "Beneficios de Rayo entregas"
+  },
+
+  "steps": [
+
+    { 
+      "key": "1",
+      "description": "Entregamos tus productos en menos tiempo"
+    },
+      { 
+      "key": "2",
+      "description": "Tarifas competitivas que benefician a tu negocio"
+    },
+      { 
+      "key": "3",
+      "description": "Inteligencia artificial para administración de demanda y uso responsable de flota"
+    },
+      { 
+      "key": "4",
+      "description": "Reducimos intermediarios logísticos entre vos y tu cliente"
+    },
+      { 
+      "key": "5",
+      "description": "Claridad y rapidez de respuesta ante consultas"
+    }
+
+  ]
+
+}
 
 
 }
