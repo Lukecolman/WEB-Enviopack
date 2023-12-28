@@ -1,0 +1,226 @@
+{
+    "navbar": {
+      "services": "Services",
+      "serviceOptions": "Acá ponemos los servicios",
+      "rates": "Shipping Rates",
+      "trackShipment": "Track your shipment",
+      "contact": "Contact",
+      "login": "Login",
+      "createAccount": "Sign in"
+    },
+
+    "overlayService":{
+        "Fullpack": {
+          "title": "Fullpack",
+          "description": "We take care of your entire logistic chain.",
+          "text": ""
+        },
+        "Collection": {
+          "title": "Pickup",
+          "description": "We pick up packages from your store with the frequency of your choice.",
+          "text": ""
+        },
+        "BranchDispatch": {
+          "title": "Drop-off",
+          "description": "Drop off your packages in the nearest post office to your store.",
+          "text": ""
+        },
+        "SameDay": {
+          "title": "Same Day",
+          "description": "We offer same-day delivery in the major cities of the country.",
+          "text": "Coming soon!"
+        },
+        "LogisticPartners": {
+          "title": "Logistic providers",
+          "link": "About them"
+        }
+    },
+
+    "footer": {
+      "sections": {
+        "Developers": {
+          "title": "Developers",
+          "links": {
+            "API": "API Documentation",
+            "Integrations": "Integrations"
+          }
+        },
+        "Empresa": {
+          "title": "Company",
+          "links": {
+            "Partners": "Partners",
+            "Blog": "Blog"
+          }
+        },
+        "Recursos": {
+          "title": "Resources",
+          "links": {
+            "HelpCenter": "Help Center",
+            "FAQs": "FAQs",
+            "Contacto": "Contact",
+            "TrabajaConNosotros": "Work with us"
+          }
+        }
+      },
+      "privacyPolicy":"Privacy policy",
+      "allRightsReserved": "© 2023 Envíopack. All rights reserved."
+
+    },
+
+    "hero": {
+        "herobanner": "Herobanner",
+        "solutionTechnology": "The technological solution <br/> to optimize your <br/> e-commerce logistics",
+        "iaOrganizeShipments": "AI to organize all your shipments, to offer real-time tracking <br/> and to measure your performance.",
+        "createFreeAccount": "Create your free account now",
+        "carriers": "📦 Our network of logistic providers"
+    },
+
+    "beneficios": "Beneficios",
+    "conoce": "💡 CONNECT",
+    "porQueOperar": "What are the advantages of operating with Envíopack?",
+    "beneficiosItems": [
+      {
+        "title": "Same Day in major cities",
+        "content": "We offer same-day delivery service to your buyers."
+      },
+      {
+        "title": "National network of logistic operators",
+        "content": "The largest logistic ecosystem in LatAm for nationwide shipping."
+      },
+      {
+        "title": "Platforms & marketplaces integrations",
+        "content": "Connect your online sales channels easily and quickly.."
+      },
+      {
+        "title": "Customizable logistics",
+        "content": "Customize your rates and set rules for your shipments."
+      },
+      {
+        "title": "In-house logistics ",
+        "content": "For last-mile delivery we have our own distribution, with fast service and competitive rates."
+      },
+      {
+        "title": "Omnichannel platform",
+        "content": "Comprehensive platform in order to provide multiple logistic solutions in one place."
+      }
+    ],
+ 
+    "servicios": {
+        "title": "Servicios",
+        "conoce": "🔍 ABOUT",
+        "ourServices": "Our services",
+        "serviceImageAlt": "Servicio",
+        "learnMore": "Learn more +",
+        "serviciosItems": {
+          "0":{           "title": "Fullpack",
+          "content": "We take care of your entire logistic chain: store, prepare, and ship. Your company offers more competitive rates without wasting time on management and packing."},
+
+      "1":{
+            "title": "Pickup",
+            "content": "We pick up packages from your store or warehouse with the frequency of your choice. Over 15 logistic operators provide continuous tracking for you and your customer."
+          },
+"2":{
+            "title": "Drop-off",
+            "content": "Take your packages to a post office and use the platform. Set rates and customize them without additional cost; you will only pay for the label. Nationwide shipping."
+          }
+          }
+          
+
+      },
+
+      "ecosistema": {
+        "ourEcosystem": "🌎 OUR ECOSYSTEM",
+        "integrationsWith": "Native integrations with",
+        "ecommerceAndMarketplaces": "e-Commerces y Marketplaces",
+        "connectOnlineChannels": "Connect your store and account on marketplaces to operate all logistics from one place. Fast and simple. We are partners with the main references in the e-commerce ecosystem in LatAm.",
+        "connect": "Integrate",
+        "logosAltText": "Ecosistema logos"
+      },
+
+      "cta": {
+        "createFreeAccount": "Create your account for free",
+        "getStarted": "Start shipping with us"
+      },
+
+      "ctaPages": {
+        "tittle": "¿Querés conocer más sobre el servicio?",
+        "content": "Contá con cobertura en todo el país despachando desde una sucursal de correo.",
+        "button": "Conoce más"
+      },
+      
+      "kpi": {
+        "title":"Industry specialists",
+        "content":"As industry leaders, we provide all the information and technological tools that your business needs to scale to the next level.",
+        "countries": {
+          "title": "countries",
+          "number": "3"
+        },
+        "operators": {
+          "title": "logistic providers",
+          "number": "+30"
+        },
+        "activeUsers": {
+          "title": "active users",
+          "number": "+2k"
+        },
+        "shipmentsPerMinute": {
+          "title": "ships per minute",
+          "number": "3.2"
+        }
+      },
+
+      "testimonials": {
+        "title":"How can we help you <br/> boost your business?",
+        "span":"🚀 BOOST",
+        "first": {
+          "title": "Fravega",
+          "copy": "Envíopack allowed us to boost our e-commerce, especially when we wanted to set up our marketplace, for which we had a very ambitious project. The technology is very solid, but moreover, the team is very professional and flexible, allowing us to meet all our expectations and needs.",
+          "name": "Nombre apellido, CEO de Frávega",
+          "web": "www.fravega.com"
+        },
+        "second": {
+          "title": "BGH",
+          "copy": "Our logistics were divided among multiple sales channels, suppliers, and technological solutions. We knew that to invest in online commerce, we had to start unifying tools and devising a logistics strategy that adapts to e-commerce needs. Envíopack provides us with the technology and options necessary for our business.",
+          "name": "Nombre apellido, CEO de BGH",
+          "web": "www.bgh.com"
+        },
+        "third": {
+          "title": "This is Feliz Navidad",
+          "copy": "We are more flexible thanks to Envíopack. We needed a platform that would give us access to many distribution options with different logistics providers. The good thing is that with a single integration, we can now choose from more than 20 providers with just one click, allowing us to adapt quickly to the needs of our customers.",
+          "name": "Nombre apellido, CEO de This is feliz navidad",
+          "web": "www.thisisnavidad.com"
+        },
+        "fourth": {
+          "title": "Wallmart",
+          "copy": "Our focus is on growing our E-commerce channel, and for that, we needed a technological tool that would allow us to grow and be more agile. It also facilitated decision-making, having real-time information. It is key to have partners like Envíopack to build a long-term growth strategy.",
+          "name": "Nombre apellido, CEO de Wallmart",
+          "web": "www.wallmart.com"
+
+}
+
+  },
+
+  "beneficiosColectaText": [
+    {
+      "key": "1",
+      "title": "Optimizá tu logística",
+      "content": "Prepará tus paquetes, nosotros los asamos a buscar por tu local o depósito y los entregamos."
+    },
+    {
+      "key": "2",
+      "title": "Servicio a tu medida",
+      "content": "Elegí la frecuencia para que pasemos a retirar, dependiendo del volumen a despachar. ¡No hay un mínimo requerido!"
+    },
+    {
+      "key": "3",
+      "title": "Seguimiento en tiempo real",
+      "content": "Nuestro sistema de tracking te da visibilidad a vos y a tu cliente de dónde está el paquete, sin importar el correo que elegiste para enviarlo."
+    },
+    {
+      "key": "4",
+      "title": "Red con cobertura nacional",
+      "content": "Conectamos tu negocio con más de 15 operadores logísticos para que elijas los que quieras y llegues a todo el país."
+    }
+  ]
+}
+
