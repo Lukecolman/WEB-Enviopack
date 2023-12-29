@@ -28,7 +28,7 @@ export const footerLinks = [
         {
           id: 1,
           linkKey: "footer.sections.Developers.links.API",
-          linkUrl: '#'
+          linkUrl: 'https://www.enviopack.com/documentacion/consideraciones-iniciales'
         },
         {
           id: 2,
@@ -58,23 +58,23 @@ export const footerLinks = [
         {
           id: 5,
           linkKey: "footer.sections.Recursos.links.HelpCenter",
-          linkUrl: '#'
+          linkUrl: 'https://ayuda.enviopack.com/hc/es-419'
         },
-        {
-          id: 6,
-          linkKey: "footer.sections.Recursos.links.FAQs",
-          linkUrl: '#'
-        },
+        // {
+        //   id: 6,
+        //   linkKey: "footer.sections.Recursos.links.FAQs",
+        //   linkUrl: '#'
+        // },
         {
           id: 7,
           linkKey: "footer.sections.Recursos.links.Contacto",
           linkUrl: '#'
         },
-        {
-          id: 8,
-          linkKey: "footer.sections.Recursos.links.TrabajaConNosotros",
-          linkUrl: '#'
-        }
+        // {
+        //   id: 8,
+        //   linkKey: "footer.sections.Recursos.links.TrabajaConNosotros",
+        //   linkUrl: '#'
+        // }
       ]
     }
   ];
@@ -84,17 +84,17 @@ export const socialMedia = [
     {
         id: 'linkedin',
         icon: 'assets/icons/icon_linkedin.svg',
-        link: '#',
+        link: 'https://www.linkedin.com/company/enviopack/',
     },
     {
         id: 'instagram',
         icon: 'assets/icons/icon_instagram.svg',
-        link: '#',
+        link: 'https://www.instagram.com/enviopack',
     },
     {
         id: 'youtube',
         icon: 'assets/icons/icon_youtube.svg',
-        link: '#',
+        link: 'https://youtube.com/@Enviopack',
     },
 
     

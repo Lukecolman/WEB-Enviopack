@@ -488,35 +488,39 @@
     "button":"Conocé el servicio"
   },
 
-  "stepsHeader": {
-    "subtitle": "",
-    "title": "Beneficios de Rayo entregas"
-  },
-
-  "steps": [
-
-    { 
-      "key": "1",
-      "description": "Entregamos tus productos en menos tiempo"
-    },
-      { 
-      "key": "2",
-      "description": "Tarifas competitivas que benefician a tu negocio"
-    },
-      { 
-      "key": "3",
-      "description": "Inteligencia artificial para administración de demanda y uso responsable de flota"
-    },
-      { 
-      "key": "4",
-      "description": "Reducimos intermediarios logísticos entre vos y tu cliente"
-    },
-      { 
-      "key": "5",
-      "description": "Claridad y rapidez de respuesta ante consultas"
+      "integrationCards": {
+        "card-1": {
+          "title": "Mercado Libre",
+          "marketName": "Marketplace"
+        },
+        "card-2": {
+          "title": "Tiendanube",
+          "marketName": "eCommerce"
+        },
+        "card-3": {
+          "title": "VTEX",
+          "marketName": "eCommerce"
+        },
+        "card-4": {
+          "title": "Shopify",
+          "marketName": "eCommerce"
+        },
+        "card-5": {
+          "title": "PrestaShop",
+          "marketName": "eCommerce"
+        },
+        "card-6": {
+          "title": "WooCommerce",
+          "marketName": "eCommerce"
+        },
+        "card-7": {
+          "title": "Magento",
+          "marketName": "eCommerce"
+        },
+        "connect": "Conectar"
     }
 
-  ]
+
 
 }
 

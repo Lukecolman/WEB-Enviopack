@@ -13,6 +13,8 @@ import Footer from "./Footer";
 import CarriersLogos from './pages/CarriersLogos';
 import HighlightSection from './pages/HighlightSection';
 import TextHeader from './pages/TextHeader';
+import IntegrationCards from './pages/IntegrationCards';
+
 
 // HOME
 import CardCarousel from './Home/CardCarousel';
@@ -45,6 +47,7 @@ export{
     CarriersLogos,
     HighlightSection,
     TextHeader,
+    IntegrationCards,
 
     // HOME
     CardCarousel,

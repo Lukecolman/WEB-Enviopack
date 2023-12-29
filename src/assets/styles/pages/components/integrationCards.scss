@@ -1,0 +1,181 @@
+.integration-cards-section {
+    @apply 
+        py-20
+        sectionCenter
+        justify-center
+    ;
+}
+
+.integration-cards-container {
+    @apply 
+        flex
+        flex-col
+        gap-8
+    ;
+}
+
+.integration-card {
+    @apply 
+        w-[312px]
+        h-[172px]
+        flex-col
+        inline-flex
+    ;
+}
+
+.integration-card-top {
+    @apply 
+        self-stretch
+        h-[104px]
+        p-4
+        rounded-t-xl
+        border
+        border-zinc-300
+        flex-col
+        gap-4
+        flex
+        bg-white
+    ;
+}
+
+.integration-card-logo {
+    @apply 
+        gap-2
+        inline-flex
+    ;
+}
+
+.integration-logo-container {
+    @apply 
+        w-14
+        h-14
+        p-1.5
+        rounded-[9px]
+        justify-center
+        items-center
+        gap-2.5
+        inline-flex
+    ;
+}
+
+.integration-logo-img {
+    @apply 
+        w-8
+        h-8
+    ;
+}
+
+.integration-market-details {
+    @apply 
+        flex-col
+        inline-flex
+        h-14
+    ;
+}
+
+.integration-card-title {
+    @apply 
+        text-gray-700
+        text-2xl
+        font-bold
+        font-dmSans
+    ;
+}
+
+.integration-card-market-name {
+    @apply 
+        text-sky-500
+        text-base
+        font-normal
+        font-dmSans
+        leading-loose
+    ;
+}
+
+.integration-card-bottom {
+    @apply 
+        self-stretch
+        h-[68px]
+        p-4
+        bg-white
+        rounded-b-xl
+        border-l
+        border-r
+        border-b
+        border-zinc-300
+        flex-col
+        justify-center
+        items-end
+        flex
+    ;
+}
+
+.integration-connect-box {
+    @apply 
+        px-3.5
+        py-2
+        rounded-[40px]
+        border
+        border-ep-500
+        text-ep-500
+        text-sm
+        font-medium
+        font-dmSans
+        leading-tight
+    ;
+}
+@screen xs{
+    .integration-cards-container{
+        @include paddingX-sm;
+        @apply
+        flex-row
+        flex-wrap
+        gap-12
+        justify-evenly
+        max-w-[1185px]
+        ;
+    }
+
+    .integration-card {
+        @apply 
+            w-full
+            max-w-[361px]
+            h-[191px]
+        ;
+    }
+    
+    .integration-card-top {
+        @apply 
+            h-full
+        ;
+    }
+
+    .integration-card-bottom {
+        @apply 
+            h-[73px]
+        ;
+    }
+
+}
+
+
+@screen lg{
+    .integration-cards-section {
+        @apply 
+        pt-24
+        pb-32
+        ;
+    }
+    .integration-cards-container{
+        @apply
+        min-[1243px]:justify-between
+        max-w-[1185px]
+        px-0
+        mx-8
+        ;
+    }
+
+
+
+
+}
