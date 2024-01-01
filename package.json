@@ -12,6 +12,7 @@
     "deploy": "vite build"
   },
   "dependencies": {
+    "formik": "^2.4.5",
     "i18next": "^23.6.0",
     "react": "^18.2.0",
     "react-alice-carousel": "^2.8.0",

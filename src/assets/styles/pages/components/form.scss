@@ -1,0 +1,280 @@
+.contactForm-section {
+    @include paddingX-sm;
+    @apply sectionCenter 
+    gap-[6%]
+    pt-[60px]
+    pb-[51px];
+
+    .contactForm-bgCircle {
+        @apply absolute 
+        -top-[127px] 
+        -left-[90px];
+    }
+}
+
+.contactForm-container {
+    @apply w-[312px]  
+    flex-col 
+    justify-start 
+    items-start 
+    gap-[60px] 
+    inline-flex;
+}
+
+.contactForm-header {
+    @apply self-stretch
+    flex-col 
+    justify-start 
+    items-start 
+    gap-[38px] 
+    flex;
+    h2 {
+        @apply self-stretch 
+        text-gray-700 
+        text-2xl 
+        font-bold 
+        font-dmSans 
+        leading-[30px];
+    }
+    p {
+        @apply text-gray-700 
+        text-sm 
+        font-normal 
+        font-dmSans 
+        leading-tight;
+    }
+}
+
+.contactForm {
+    @apply flex-col
+    justify-start
+    items-center
+    gap-4
+    flex
+    font-dmSans
+    font-medium
+    text-sm
+    w-full;
+
+    .input-container {
+        @apply flex-col
+        justify-start
+        items-start
+        gap-1
+        flex
+        w-full;
+        background-image: 'assets/check-checkbox.svg';
+
+        label {
+            @apply text-neutral-700
+            leading-none;
+        }
+        input {
+            @apply self-stretch
+            p-2.5
+            rounded-md
+            border
+            border-gray-300
+            text-slate-500
+            leading-[18px] 
+            hover:border-[#50555C];
+        }
+        input:focus {
+            outline: 1.2px solid #387af8;
+            transition: 0.2s all ease-in-out;
+        }
+        select {
+            @apply self-stretch
+            p-2.5
+            rounded-md
+            border
+            border-gray-300
+            text-slate-500
+            leading-[18px]   
+            hover:cursor-pointer;
+        }
+        textarea {
+            @apply min-h-[74px]
+            self-stretch
+            p-2.5
+            rounded-md
+            border
+            border-gray-300
+            text-slate-500
+            leading-[18px]   
+            hover:border-[#50555C];
+        }
+        textarea:focus {
+            outline: 1.2px solid #387af8;
+            transition: 0.2s all ease-in-out;
+        }
+
+        .radio-container {
+            @apply flex 
+            flex-col 
+            gap-2;
+            .radio-label {
+                @apply flex  
+                items-center  
+                pl-1  
+                hover:cursor-pointer;
+            }
+            .radio-input {
+                @apply appearance-none
+                w-[16px]
+                self-center
+                hover:cursor-pointer;
+
+                border-radius: 15%;
+                outline: 2px solid #586474;
+                outline-offset: -2px;
+                transition: 0.2s all ease-in-out;
+            }
+            .radio-input:checked {
+                @apply bg-[#064CF9]
+                    bg-[url('/assets/check-checkbox.svg')]
+                    bg-contain
+                    bg-center
+                    bg-no-repeat;
+                outline: 2px solid #064cf9;
+                background-size: 13px;
+            }
+
+            span {
+                @apply ml-2 
+                p-1 
+                text-slate-500  
+                text-sm 
+                font-medium;
+            }
+        }
+    }
+    .terminos-container input[type='checkbox']:checked {
+        @apply bg-[#064CF9]
+        bg-[url('/assets/check-checkbox.svg')]
+        bg-contain
+        bg-center
+        bg-no-repeat;
+        outline: 2px solid #064cf9;
+        background-size: 13px;
+    }
+    .terminos-container input[type='checkbox'] {
+        @apply w-5 
+        h-5 
+        pl-1 
+        ml-1 
+        appearance-none
+        hover:cursor-pointer;
+        border-radius: 15%;
+        outline: 2px solid #586474;
+        outline-offset: -2px;
+        transition: 0.2s all ease-in-out;
+    }
+    .terminos-container {
+        @apply w-[312px] 
+    justify-start 
+    items-center 
+    gap-1 
+    inline-flex;
+        label {
+            @apply text-slate-500 
+        leading-[18px] 
+        grow 
+        shrink 
+        basis-0;
+            a {
+                @apply underline;
+            }
+        }
+    }
+
+    .form-button {
+        @apply self-stretch 
+    px-5 
+    py-3 
+    bg-ep-500 
+    rounded-[40px] 
+    justify-center 
+    items-center 
+    gap-2 
+    inline-flex 
+    text-white 
+    text-base 
+    leading-normal
+    hover:bg-ep-600 
+    disabled:bg-ep-100;
+    }
+}
+
+.contactForm-img-container {
+    @apply hidden;
+}
+
+@screen sm {
+    .contactForm-section {
+        @apply mt-0
+        mb-[120px];
+    }
+    .contactForm-container {
+        @apply w-full
+        max-w-[555px]
+        min-w-[555px]
+        gap-[33px];
+    }
+
+    .contactForm-header {
+        @apply gap-6;
+
+        h2 {
+            @apply text-[50px] 
+            leading-[60px];
+        }
+        p {
+            @apply max-w-lg
+            text-xl
+            leading-8;
+        }
+    }
+
+    .contactForm {
+        @apply gap-6
+        flex-row
+        flex-wrap
+        justify-center
+        h-full;
+        .input-container-flex {
+            @apply max-w-[265px]
+            self-start;
+        }
+
+        .terminos-container {
+            @apply w-full
+        gap-2;
+            label {
+                @apply tracking-tight;
+                a {
+                    @apply underline;
+                }
+            }
+        }
+
+        .form-button {
+            @apply w-full
+        max-w-[176px]
+        py-3;
+        }
+    }
+}
+
+@screen lg {
+    .contactForm-img-container {
+        @apply max-w-[570px]
+        block;
+        img {
+            @apply object-cover 
+            h-full 
+            object-right 
+            rounded-2xl;
+        }
+    }
+}

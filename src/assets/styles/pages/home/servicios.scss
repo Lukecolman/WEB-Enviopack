@@ -16,6 +16,14 @@
       text-[#2E3B4E];
 }
 
+.servicios-section-lightBlue {
+    @apply py-14
+    sectionCenter
+      w-[100%]
+      bg-ep-25
+      text-[#2E3B4E];
+}
+
 .servicios-container {
     @apply max-w-[1512px] 
       w-full

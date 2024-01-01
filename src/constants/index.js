@@ -484,3 +484,52 @@ export const kpiImages = [
             img: 'assets/image168.jpg',
         },
     ]
+
+
+
+    export const brandsLogos = [
+        {
+            name: "Fravega",
+            img: 'assets/brandsLogos/Fravega Logo.svg',
+        },
+        {
+            name: "SONY",
+            img: 'assets/brandsLogos/Sony Logo.svg',
+        },
+        {
+            name: "Walmart",
+            img: 'assets/brandsLogos/Walmart Logo.svg',
+        },
+        {
+            name: "mabe",
+            img: 'assets/brandsLogos/mabe Logo.svg',
+        },
+        {
+            name: "Springwall",
+            img: 'assets/brandsLogos/Springwall Logo.svg',
+        },
+        {
+            name: "Tramontina",
+            img: 'assets/brandsLogos/Tramontina Logo.svg',
+        },
+        {
+            name: "PRUNE",
+            img: 'assets/brandsLogos/PRUNE Logo.svg',
+        },
+        {
+            name: "BGH",
+            img: 'assets/brandsLogos/BGH Logo.svg',
+        },
+        {
+            name: "Samsung",
+            img: 'assets/brandsLogos/Samsung Logo.svg',
+        },
+        {
+            name: "Bangho",
+            img: 'assets/brandsLogos/Bangho Logo.svg',
+        },
+        {
+            name: "Liliana",
+            img: 'assets/brandsLogos/Liliana Logo.svg',
+        },
+    ];

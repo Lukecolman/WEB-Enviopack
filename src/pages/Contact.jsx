@@ -1,11 +1,10 @@
 import React from 'react';
-import { WorkInProgress, CTAPages, TextHeader } from '../components';
+import { WorkInProgress, ContactForm } from '../components';
 
 const Contact = () => {
     return (
         <div>
-            Contact
-            <WorkInProgress />
+            <ContactForm />
         </div>
     );
 };

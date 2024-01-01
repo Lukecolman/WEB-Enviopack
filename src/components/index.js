@@ -14,6 +14,10 @@ import CarriersLogos from './pages/CarriersLogos';
 import HighlightSection from './pages/HighlightSection';
 import TextHeader from './pages/TextHeader';
 import IntegrationCards from './pages/IntegrationCards';
+import Calculator from './pages/Calculator';
+import ContactForm from './pages/ContactForm';
+
+
 
 
 // HOME
@@ -48,6 +52,8 @@ export{
     HighlightSection,
     TextHeader,
     IntegrationCards,
+    Calculator,
+    ContactForm,
 
     // HOME
     CardCarousel,

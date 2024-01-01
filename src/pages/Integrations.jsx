@@ -1,6 +1,6 @@
 import React from 'react';
-import { WorkInProgress, TextHeader, HighlightSection, IntegrationCards } from '../components';
-import { integrationsPage, carriersPage } from '../lang/es_AR.json';
+import { TextHeader, HighlightSection, IntegrationCards } from '../components';
+import { integrationsPage} from '../lang/es_AR.json';
 
 import { integrationsHighlight, carriersSteps, integrationsHighlightContentLink } from '../constants';
 

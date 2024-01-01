@@ -480,50 +480,99 @@
     "title": "Conectate para automatizar tus envíos",
     "description": "Importá todos sus pedidos de forma automática en una única interfaz y seleccioná la mejor alternativa de envío para cada paquete."
   },
+
+  "integrationCards": {
+    "card-1": {
+      "title": "Mercado Libre",
+      "marketName": "Marketplace"
+    },
+    "card-2": {
+      "title": "Tiendanube",
+      "marketName": "eCommerce"
+    },
+    "card-3": {
+      "title": "VTEX",
+      "marketName": "eCommerce"
+    },
+    "card-4": {
+      "title": "Shopify",
+      "marketName": "eCommerce"
+    },
+    "card-5": {
+      "title": "PrestaShop",
+      "marketName": "eCommerce"
+    },
+    "card-6": {
+      "title": "WooCommerce",
+      "marketName": "eCommerce"
+    },
+    "card-7": {
+      "title": "Magento",
+      "marketName": "eCommerce"
+    },
+    "connect": "Conectar"
+  },
+
   "highlightSection":{
     "subtitle": "🌎 NUESTRO ECOSISTEMA",
     "title": "Servicio exclusivo para Marketplaces",
     "content": "Trabajamos con los principales marketplaces  de LatAm: Garbarino, Frávega, Megatone, Cetrogar, Me gusta, Claro Shop, Liverpool, Sears, Compumundo y Familia Bercomat.\n\nSi estás interesado en conocer el funcionamiento de los servicios ofrecidos para estas cuentas ",
     "linkText":"contáctate con nosotros.",
     "button":"Conocé el servicio"
+  }
+
+},
+
+"ratesPage": {
+  "header":{
+    "title": "Calculadora de envíos",
+    "description": "Accedé a precios preferenciales para enviar tus paquetes a todo el país con los principales operadores logísticos."
   },
 
-      "integrationCards": {
-        "card-1": {
-          "title": "Mercado Libre",
-          "marketName": "Marketplace"
-        },
-        "card-2": {
-          "title": "Tiendanube",
-          "marketName": "eCommerce"
-        },
-        "card-3": {
-          "title": "VTEX",
-          "marketName": "eCommerce"
-        },
-        "card-4": {
-          "title": "Shopify",
-          "marketName": "eCommerce"
-        },
-        "card-5": {
-          "title": "PrestaShop",
-          "marketName": "eCommerce"
-        },
-        "card-6": {
-          "title": "WooCommerce",
-          "marketName": "eCommerce"
-        },
-        "card-7": {
-          "title": "Magento",
-          "marketName": "eCommerce"
-        },
-        "connect": "Conectar"
-    }
+  "brandLogosTitle":"🚀 Unite a las +2000 marcas que envían sus paquetes con Envíopack"
 
+},
 
+"contactPage": {
+  "header":{
+    "title": "Optimizá tu logística",
+    "description": "Escribinos, nuestro equipo especializado se contactará con vos a la brevedad."
+  },
+
+  "name": "Nombre",
+  "lastName": "Apellido",
+  "email": "Email",
+  "phone":{
+    "label": "Celular",
+    "placeholder": "+54 9 11 23456789"
+  },
+  "companyName":"Nombre de tu empresa",
+  "companyType":{
+    "label": "Tipo de empresa",
+    "option1": "E-commerce",
+    "option2": "Marketplace",
+    "option3": "Agencia",
+    "option4": "Otro"
+  },
+  "estimatedShipments":{
+    "label": "Envíos estimados por mes",
+    "placeholder":"Seleccione una opción",
+    "option1": "Hasta 49",
+    "option2": "50 - 99"
+  },
+  "message":{
+    "label": "¿Cómo podemos ayudarte?",
+    "placeholder": "Escribí tus preguntas"
+  },
+
+  
+  "acceptTerms": "Acepto los <Link1 to='/fullpack'>Términos y Condiciones</Link1> y las <Link2 to='#'>Políticas de Privacidad</Link2> de Envíopack.",
+  "termsLink": "Términos y Condiciones",
+  "privacyLink": "Políticas de Privacidad",
+  "sendButton": "Enviar"
+  
 
 }
-
 
 }
 
