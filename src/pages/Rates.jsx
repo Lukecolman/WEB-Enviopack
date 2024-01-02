@@ -14,11 +14,11 @@ const Rates = () => {
         <>
             <div>Rates</div>
             <TextHeader currentTextHeader={ratesPage} />
-            <Calculator/>
+            {/* <Calculator/> */}
             <WorkInProgress />
 
             <div className='text-container'>{t('ratesPage.brandLogosTitle')}</div>
-            <Marquee className='marquee-container'>
+            <Marquee className='marquee-container pb-10'>
                 {brandsLogos.map((carrier, alt) => (
                     <div className='marquee-item' key={alt.name}>
                         <img src={carrier.img} alt={alt.name} />
