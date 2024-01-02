@@ -18,7 +18,7 @@ const Rates = () => {
             <WorkInProgress />
 
             <div className='text-container'>{t('ratesPage.brandLogosTitle')}</div>
-            <Marquee className='marquee-container pb-10'>
+            <Marquee className='marquee-container mb-16'>
                 {brandsLogos.map((carrier, alt) => (
                     <div className='marquee-item' key={alt.name}>
                         <img src={carrier.img} alt={alt.name} />
