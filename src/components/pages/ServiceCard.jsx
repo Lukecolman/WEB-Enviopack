@@ -101,8 +101,8 @@ const ServiceCard = ({ serviceIcon, serviceIconBg, serviceCarrier, duration, pri
         {detailsVisible && (
           <div className='calculatorService-details-content'>
             {/* Detalles de servicio */}
-            <div className='service-details-info'>
-              <div className="service-details-label">
+            <div className='service-details-info serviceDetails-label'>
+              <div className="service-details-label ">
               {t("ratesPage.serviceCards.cardInfo.details.detailsTitle")}
               </div>
               <span className="service-detail-text"

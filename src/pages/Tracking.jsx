@@ -4,8 +4,9 @@ import { WorkInProgress } from '../components';
 const Tracking = () => {
     return (
         <div>
-            Tracking
             <WorkInProgress />
+
+            
         </div>
     );
 };

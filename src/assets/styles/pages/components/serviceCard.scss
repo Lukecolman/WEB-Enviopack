@@ -80,7 +80,8 @@
                     justify-center
                     items-center
                     gap-1 
-                    w-[87px];
+                    w-[87px]
+                    pr-6;
 
                 .duration {
                     @apply 
@@ -393,6 +394,7 @@
                 @apply 
                     flex-row 
                     justify-center 
+                    float-left
                     ;
 
                 .service-details-info {
@@ -400,8 +402,21 @@
                         justify-start
                         min-w-[202px]
                         max-w-[496px]
+                        w-full
                         ;
-                }
+                        service-details-label{
+                            @apply
+                            justify-start
+                            self-start
+                            ;
+                        }
+                    }
+                    .serviceDetails-label{
+                        @apply
+                        max-w-[202px]
+                        w-full
+                        ;
+                    }
             }
         }
     }
