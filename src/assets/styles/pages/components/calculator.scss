@@ -1,0 +1,363 @@
+.calculator-section{
+    @apply
+    w-full 
+    sectionCenter 
+    flex-col 
+    items-center 
+    overflow-x-hidden
+    ;
+}
+
+.calculator-container{    
+    @apply
+    w-[312px] 
+    px-4 
+    py-8 
+    rounded-lg 
+    shadow-xl
+    flex-col 
+    justify-start 
+    items-start 
+    gap-8 
+    inline-flex
+    bg-white
+    border-[0.5px]
+    border-zinc-100;
+    ;
+}
+
+// HEADER
+.calculator-header-container {
+    @apply
+        self-stretch
+        h-16
+        flex-col
+        justify-start
+        items-start
+        gap-2
+        flex
+    ;
+}
+
+.calculator-header-title {
+    @apply
+        text-gray-700
+        text-base
+        font-bold
+        font-outfit
+        leading-tight
+    ;
+}
+
+.calculator-header-text {
+    @apply
+        self-stretch
+        text-slate-500
+        text-sm
+        font-normal
+        font-dmSans
+        leading-[18px]
+    ;
+}
+
+// INPUTS
+
+.calculator-postalCode-container {
+    @apply
+        self-stretch
+        flex-col
+        justify-start
+        items-start
+        gap-1
+        flex
+    ;
+}
+
+.calculator-input-label {
+    @apply
+        text-neutral-700
+        text-sm
+        font-medium
+        font-dmSans
+        leading-none
+    ;
+}
+
+.calculator-input {
+    @apply
+        self-stretch
+        h-[38px]
+        p-2.5
+        rounded
+        border
+        border-gray-300
+        text-neutral-700
+        text-sm
+        font-medium
+        font-dmSans
+        leading-[18px]
+    ;
+}
+
+
+
+.calculator-measuredPrice-container{
+    @apply
+    calculator-postalCode-container
+    relative
+    ;
+}
+
+.calculator-measuredPrice-input{
+    @apply
+    calculator-input
+    ;
+    padding-right: 2.25rem;
+}
+
+.calculator-measuredPrice-input-span{
+    @apply
+    absolute 
+    right-2 
+    bottom-3 
+    text-neutral-500 
+    text-sm 
+    font-medium 
+    font-dmSans 
+    leading-[18px]
+    ;
+}
+
+
+// PRECIO AFORADO
+
+.measuredPrice-container{
+    @apply
+    self-stretch 
+    px-6 
+    py-7 
+    rounded-lg 
+    justify-between 
+    items-center 
+    inline-flex 
+    bg-[#F6FAFF]
+    ;
+}
+
+.measuredPrice-label{
+    @apply
+    text-neutral-700 
+    text-sm 
+    font-bold 
+    font-dmSans 
+    flex 
+    gap-2
+    ;
+}
+
+.measuredPrice-total{
+    @apply
+    text-right 
+    text-neutral-700 
+    text-base 
+    font-bold 
+    font-dmSans
+    ;
+}
+
+// TOOLTIP
+
+.tooltip-container {
+    @apply
+    relative
+    ;
+}
+
+.tooltip {
+    @apply
+    relative
+    inline-block
+    ;
+}
+
+.tooltip-img{
+    @apply
+    w-3.5 
+    h-full
+    ;
+}
+
+.tooltip-text {
+    @apply
+    hidden
+    absolute
+    z-30
+    w-[266px]
+    bottom-[35px]
+    left-[50%]
+    -ml-[135px]
+    bg-[#444444]
+    py-1.5
+    px-2
+    rounded-md
+    text-xs
+    text-white
+    font-dmSans
+    ;
+
+}
+
+
+
+.tooltip-point{
+    @apply
+    block
+    absolute
+    w-3
+    h-3
+    left-[50%]
+    -ml-[5px]
+    -bottom-[4px]
+    rotate-45
+    bg-[#444444]
+    -z-20
+}
+
+.tooltip:hover .tooltip-text {
+    @apply
+    block
+    ;
+}
+
+//BUTTON
+
+    .calculator-button{
+        @apply
+        buttonBasics
+        self-stretch 
+        px-3.5 
+        py-2   
+        text-sm 
+        font-medium 
+        font-dmSans 
+        leading-tight
+        ;
+    }
+
+.calculator-button:disabled{
+    @apply
+    buttonDisable
+    self-stretch 
+    px-3.5 
+    py-2   
+    text-sm 
+    font-medium 
+    font-dmSans 
+    leading-tight
+    ;
+}
+
+
+// MEDIA QUERIES XS
+
+@screen xs{
+
+    .calculator-container{    
+        @apply
+        min-w-[416px] 
+        px-9
+        pt-12
+        pb-[58px]
+        rounded-xl
+        ;
+    }
+
+
+// HEADER
+.calculator-header-container {
+    @apply
+        h-auto
+        flex-col
+        gap-x-36
+    ;
+}
+
+.calculator-header-title {
+    @apply
+        text-gray-700
+        text-[26px]
+    ;
+}
+
+
+// INPUTS
+
+
+
+.calculator-input {
+    @apply
+        h-[40px]
+        rounded-md
+    ;
+}
+
+
+// PRECIO AFORADO
+
+
+
+.measuredPrice-label{
+    @apply
+    text-base
+    ;
+}
+
+.measuredPrice-total{
+    @apply
+    text-xl 
+    ;
+}
+
+// TOOLTIP
+
+.tooltip-img{
+    @apply
+    w-[18.23px]
+    ;
+}
+
+//BUTTON
+
+.calculator-button{
+    @apply 
+    text-base   
+    leading-relaxed
+    ;
+}
+
+
+.calculator-button:disabled{
+    @apply
+    buttonDisable
+    text-base   
+    leading-relaxed
+    ;
+}
+
+
+}
+
+@screen sm{
+    .calculator-section{
+        @apply
+        ml-6
+    flex-row
+    items-start
+    overflow-visible
+        ;
+    }
+
+
+
+}
+

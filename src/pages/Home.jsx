@@ -13,8 +13,6 @@ function Home() {
                 <Testimonials />
                 <CTA />
             </div>
-
-            {/* TRABAJARLO ACA, LUEGO COMPONENTIZARLO PASAR LO DEL HOME A -> HOME Y DE AHI HACER COMPONENTES  */}
         </>
     );
 }

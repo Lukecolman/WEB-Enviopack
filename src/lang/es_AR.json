@@ -529,7 +529,75 @@
     "description": "Accedé a precios preferenciales para enviar tus paquetes a todo el país con los principales operadores logísticos."
   },
 
-  "brandLogosTitle":"🚀 Unite a las +2000 marcas que envían sus paquetes con Envíopack"
+  "brandLogosTitle":"🚀 Unite a las +2000 marcas que envían sus paquetes con Envíopack",
+
+  "calculator":{
+    "header":{
+      "title":"Compará, ahorrá y enviá",
+      "text":"Simulá el envío que quieras realizar para conocer nuestras tarifas."
+
+    },
+    "form":{
+      "origin":{
+        "label":"Origen",
+        "span":"Ingresá el código postal de origen"
+      },
+      "destination":{
+        "label":"Destino",
+        "span":"Ingresá el código postal de destino"
+      },
+      "length":{
+        "label":"Largo"
+      },
+      "height":{
+        "label":"Alto"
+      },
+      "width":{
+        "label":"Ancho"
+      },
+      "measuredPriceSpan":"cm",
+      "chargeableWeight":{
+        "label":"Peso aforado",
+        "tooltip":"Resultado de Largo x Alto x Ancho / 4000. Los carriers comparan este valor con el peso real y cotizan sobre el valor más alto."
+      },
+      "searchButton":"Buscar"
+    },
+
+    "mainScreen":{
+      "title":"¡Calculá tu envío!",
+      "content":"Acá vas a ver los resultados de tu búsqueda"
+    },
+
+    "errorScreen":{
+      "title":"¡Lo sentimos!",
+      "content":"No encontramos resultados para tu búsqueda"
+    }
+  },
+
+  "serviceCards":{
+    "dropdownOrder":{
+      "order":"Ordenar por",
+      "economic":"Más económico",
+      "fastest":"Más rápido"
+    },
+
+    "cardInfo":{
+      "days":"días",
+      "tax":"sin IVA",
+      "branch":"Desde una sucursal",
+      "address":"Hacia un domicilio",
+      "pickService":"Contratar",
+      "details":{
+        "display":"Ver detalles",
+        "hide":"Ocultar detalles",
+        "detailsTitle":"Detalles de los servicios",
+        "information":"Información Envíopack"
+      }
+
+    }
+  }
+
+
 
 },
 

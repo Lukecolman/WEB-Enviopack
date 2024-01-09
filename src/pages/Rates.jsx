@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ratesPage } from '../lang/es_AR.json';
 import Marquee from 'react-fast-marquee';
-import { WorkInProgress, Carousel, TextHeader, Calculator } from '../components';
+import { Carousel, TextHeader, Calculator } from '../components';
 import { brandsLogos } from '../constants';
 
 const Rates = () => {
@@ -12,13 +12,13 @@ const Rates = () => {
 
     return (
         <>
-            <div>Rates</div>
             <TextHeader currentTextHeader={ratesPage} />
-            {/* <Calculator/> */}
-            <WorkInProgress />
+            <div className='sectionCenter'>
+                <Calculator />
+            </div>
 
             <div className='text-container'>{t('ratesPage.brandLogosTitle')}</div>
-            <Marquee className='marquee-container mb-16'>
+            <Marquee className='marquee-container mb-16 '>
                 {brandsLogos.map((carrier, alt) => (
                     <div className='marquee-item' key={alt.name}>
                         <img src={carrier.img} alt={alt.name} />

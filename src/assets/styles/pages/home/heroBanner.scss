@@ -65,14 +65,30 @@
     @apply
       text-sky-950
       pt-14
+      px-5
       pb-14
       text-lg
-      font-bold
+      font-medium
       font-dmSans
       leading-normal
       text-center
       ;
   }
+
+  .marquee-container {
+    @apply h-full;
+    
+    .marquee-item {
+      @apply px-3;
+
+      img{
+        @apply
+        h-10
+        ;
+      }
+    }
+    }
+  
 
 
   // MEDIA QUERIES SM
@@ -151,99 +167,22 @@
     pt-[100px]
     pb-14
     text-lg
-    font-normal
-    font-dmSans
     leading-relaxed;
   }
   
   // Estilos para el marquee
   .marquee-container {
-  @apply h-10;
+  @apply h-full ;
   
   .marquee-item {
-    @apply px-12;
+    @apply px-6;
+          img{
+        @apply
+        // bg-red-200
+        h-14
+        ;
+      }
   }
   }
 
-}
-
-// HERO BANNER
-//MEDIA QUERIES SM
-
-
-@screen sm {
-  .hero-bg {
-    @apply
-    w-[100%]
-    max-w-[1920px]
-    absolute
-    top-0
-    -z-50
-    ;
-  }
-
-  .hero-container {
-    @apply  
-    w-full 
-    h-full 
-    flex-col 
-    justify-start 
-    items-center 
-    gap-8 
-    inline-flex 
-    pt-[85px] 
-    pb-32;
-  }
-
-  .hero-title {
-    @apply 
-    w-[848px] 
-    text-center 
-    text-gray-700 
-    text-[64px] 
-    font-bold 
-    leading-[74px];
-  }
-
-  .hero-subtitle {
-    @apply 
-    w-[709.14px] 
-    text-center 
-    text-gray-700 
-    text-xl 
-    font-normal 
-    leading-loose;
-  }
-
-  .hero-button {
-    @apply 
-    px-7 
-    py-4;
-  }
-
-  .hero-button-text {
-    @apply 
-    text-white 
-    text-lg 
-    font-medium 
-    leading-7
-    font-dmSans;
-  }
-
-  .hero-image {
-    @apply 
-    w-[932.87px] 
-    h-[542.98px];
-  }
-
-  .text-container {
-    @apply
-    text-sky-950
-    pt-[100px]
-    pb-14
-    text-lg
-    font-normal
-    font-dmSans
-    leading-relaxed;
-  }
 }

@@ -1,0 +1,408 @@
+.calculatorService-card-container {
+    @apply 
+        w-full 
+        shadow-xl 
+        flex-col 
+        justify-start 
+        items-center 
+        flex  
+        rounded-lg
+        bg-white
+        border-[0.5px]
+        border-zinc-100;
+
+    .service-info-container {
+        @apply 
+            w-full 
+            grid 
+            grid-cols-2 
+            gap-4 
+            px-6 
+            pt-6 
+            pb-4 
+            rounded-tl-lg 
+            rounded-tr-lg 
+            font-normal 
+            font-dmSans  
+            text-[#3D4550] 
+            ;
+
+        .service-carrier-info {
+            @apply 
+                flex 
+                place-content-center 
+                items-center 
+                gap-2 
+                rounded 
+                col-span-2;
+
+            .carrier-info-imgContainer {
+                @apply 
+                    w-8 
+                    h-8 
+                    p-1.5 
+                    rounded-[7px]
+                    flex
+                    items-center
+                    justify-center
+                    ;
+
+                img {
+                    @apply 
+                        w-5 
+                        h-5
+                        ;
+                }
+            }
+
+            span {
+                @apply 
+                    text-sm 
+                    font-bold  
+                    leading-snug
+                    ;
+            }
+        }
+
+        .service-duration-container {
+            @apply 
+                flex 
+                items-center 
+                justify-start 
+                gap-5  
+                rounded 
+                h-full
+                ;
+
+            .service-duration-info {
+                @apply 
+                    flex 
+                    justify-center
+                    items-center
+                    gap-1 
+                    w-[87px];
+
+                .duration {
+                    @apply 
+                        text-2xl;
+                }
+
+                span {
+                    @apply 
+                        text-lg;
+                }
+            }
+        }
+
+        .service-price-container {
+            @apply 
+                justify-self-end 
+                text-end 
+                rounded 
+                h-full;
+
+            .service-price-info {
+                @apply 
+                    text-2xl;
+
+                span {
+                    @apply 
+                        text-lg;
+                }
+            }
+
+            .service-iva {
+                @apply 
+                    text-slate-600 
+                    text-sm;
+            }
+        }
+
+        .service-branch-container {
+            @apply 
+                flex 
+                items-center  
+                ;
+        }
+
+        .service-address-container {
+            @apply 
+                flex 
+                flex-col 
+                items-end 
+                ;
+        }
+
+        .service-branch-address-info {
+            @apply 
+                gap-1 
+                flex-col 
+                flex;
+
+            .service-branch-address-label {
+                @apply 
+                    text-xs 
+                    font-bold  
+                    leading-none;
+            }
+
+            .service-branch-address-data {
+                @apply 
+                    flex 
+                    gap-2;
+
+                img {
+                    @apply 
+                        h-3 
+                        w-3 
+                        ;
+                }
+
+                span {
+                    @apply 
+                        text-slate-600 
+                        text-xs 
+                        font-medium 
+                        leading-none;
+                }
+            }
+        }
+    }
+
+    // SEPARADOR
+    .calculatorService-separator {
+        @apply 
+            self-stretch 
+            h-[0px] 
+            border 
+            border-zinc-100;
+    }
+
+    // DETALLES
+    .calculatorService-details-container {
+        @apply 
+            flex 
+            w-full  
+            px-6 
+            pt-3 
+            pb-3 
+            rounded-b-lg 
+            flex-col 
+            font-dmSans  
+            gap-4  
+            ;
+
+        .details-buttons-container {
+            @apply 
+                justify-between  
+                inline-flex 
+                ;
+
+            .details-button {
+                @apply 
+                    px-2 
+                    py-1   
+                    gap-2 
+                    flex 
+                    cursor-pointer  
+                    text-gray-400 
+                    text-sm   
+                    leading-tight 
+                    select-none;
+            }
+
+            .contract-button {
+                @apply 
+                    px-2 
+                    py-1 
+                    gap-2 
+                    flex 
+                    cursor-pointer 
+                    select-none  
+                    text-blue-500 
+                    text-sm 
+                    leading-tight 
+                    ;
+            }
+        }
+
+        .calculatorService-details-content {
+            @apply 
+                flex-col 
+                justify-start 
+                px-2  
+                py-6 
+                gap-6 
+                flex  
+                text-xs 
+                leading-5 
+                font-dmSans 
+                ;
+
+            .service-details-info {
+                @apply 
+                    flex-col 
+                    justify-center  
+                    gap-2 
+                    flex 
+                    text-pretty;
+
+                .service-details-label {
+                    @apply 
+                        text-slate-600  
+                        font-bold;
+                }
+
+                .service-detail-text {
+                    @apply 
+                        text-slate-500;
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES LG
+
+@screen lg {
+    .calculatorService-card-container {
+        .service-info-container:nth-of-type(4) {
+            order: 1;
+        }
+
+        .service-info-container {
+            @apply 
+                gap-2 
+                px-5 
+                ;
+            grid-template-columns: repeat(22, 1fr);
+
+            .service-info-container:nth-of-type(4) {
+                order: 1;
+            }
+
+            .service-carrier-info {
+                @apply 
+                    place-content-start 
+                    items-center 
+                    col-span-6
+                    ;
+
+                .carrier-info-imgContainer {
+                    @apply 
+                        w-12 
+                        h-12 
+                        rounded-[9px]
+                        ;
+
+                    img {
+                        @apply 
+                            w-7 
+                            h-7
+                            ;
+                    }
+                }
+
+                span {
+                    @apply 
+                        text-sm;
+                }
+            }
+
+            .service-duration-container {
+                @apply 
+                    col-span-3 
+                    justify-end 
+                    ;
+
+                .service-duration-info {
+                    @apply 
+                        w-auto
+                        ;
+                }
+            }
+
+            .service-price-container {
+                @apply 
+                    order-6
+                    col-span-3
+                    flex
+                    flex-col
+                    justify-center
+                    ;
+
+                .service-price-info {
+                    @apply 
+                        leading-none
+                        ;
+
+                    span {
+                        @apply 
+                            leading-none;
+                    }
+                }
+
+            }
+
+            .service-branch-container {
+                @apply 
+                    col-span-5
+                   ;
+            }
+
+            .service-address-container {
+                @apply 
+                    col-span-5
+                    items-center 
+                    flex-row 
+                    ;
+            }
+
+            .service-branch-address-info {
+                .service-branch-address-label {
+                    @apply 
+                        text-sm;
+                }
+
+                .service-branch-address-data {
+                    @apply 
+                        items-center;
+
+                    img {
+                        @apply 
+                            h-4 
+                            w-4 
+                            ;
+                    }
+
+                    span {
+                        @apply 
+                            text-sm;
+                    }
+                }
+            }
+        }
+
+        // DETALLES
+
+        .calculatorService-details-container {
+            @apply
+            px-5
+            ;
+            .calculatorService-details-content {
+                @apply 
+                    flex-row 
+                    justify-center 
+                    ;
+
+                .service-details-info {
+                    @apply 
+                        justify-start
+                        min-w-[202px]
+                        max-w-[496px]
+                        ;
+                }
+            }
+        }
+    }
+}

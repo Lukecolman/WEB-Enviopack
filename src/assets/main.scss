@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,3 +28,6 @@
 @import 'styles/pages/components/overlayService.scss';
 @import 'styles/pages/components/integrationCards.scss';
 @import 'styles/pages/components/form.scss';
+@import 'styles/pages/components/calculator.scss';
+@import 'styles/pages/components/serviceCard.scss';
+@import 'styles/pages/components/serviceCardContainer.scss';

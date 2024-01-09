@@ -16,6 +16,15 @@
 
   }
 
+.text-balance{
+  text-wrap: balance
+}
+
+.text-pretty{
+  text-wrap: pretty
+}
+
+
   
   .flexCenter{
     @apply
@@ -95,15 +104,27 @@
   
   .buttonBasics{
     @apply
-    bg-blue-500
+    bg-ep-500
     hover:bg-ep-600
     rounded-[40px]
     justify-center
     items-center
     inline-flex
     cursor-pointer
+    text-white
   }
 
+  .buttonDisable{
+    @apply
+    bg-ep-100
+    cursor-not-allowed
+    rounded-[40px]
+    justify-center
+    items-center
+    inline-flex
+    text-white
+    ;
+  }
 
 @screen sm{
 

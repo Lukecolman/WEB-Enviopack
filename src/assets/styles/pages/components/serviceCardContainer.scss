@@ -1,0 +1,215 @@
+.calculator-serviceCardContainer{
+    @apply
+    w-full max-w-[810px] px-6 pt-10 pb-[60px] flex-col justify-start items-start gap-4 inline-flex font-dmSans
+    ;
+
+
+    .calculator-main-container{
+        @apply
+        max-w-[312px] w-full h-[232px] px-6 pt-6 pb-4 bg-white rounded-lg flex-col justify-center items-center gap-6 inline-flex self-center shadow-xl
+
+        ;
+
+    }
+
+    // CARATULA
+        .calculator-defaultStatus-container{
+            @apply
+            self-stretch h-[100px] text-center flex-col justify-center items-center gap-2 flex 
+            ;
+
+            .calculator-defaultStatus-icon{
+                @apply
+                w-6 h-6 
+                ;
+            }
+            .calculator-defaultStatus-title{
+                @apply
+                text-sky-950 text-base font-medium 
+                ;
+            }
+            .calculator-defaultStatus-content{
+                @apply
+                max-w-[10rem] text-slate-600 text-xs font-normal  leading-none  
+                ;
+            }
+        }
+
+
+    // LOADER
+
+    .calculator-spinner{
+        @apply
+        w-6 h-6 animate-spin
+        ;
+    }
+
+    // ORDER DROPDOWN
+    .calculator-orderDropdown{
+        @apply
+        flex flex-col select-none
+        ;
+        .calculator-orderDropdown-toggle{
+            @apply
+            px-2 py-1 justify-start items-center gap-2 inline-flex  cursor-pointer text-blue-500 text-sm font-medium  leading-tight 
+            ;
+            img{
+                @apply
+                w-2.5 h-2.5 pt-0.5  
+                ;
+            }
+        }
+        .calculator-dropdownOpen{
+            @apply
+            mt-4 justify-start items-start gap-4 inline-flex px-2 py-1 text-blue-500 text-sm font-medium  leading-tight  
+            ;
+            span{
+                @apply
+                cursor-pointer
+                ;}
+        }
+
+    }
+    
+
+    // ERROR STATUS
+
+    .calculator-errorStatus{
+        @apply
+        self-stretch h-[100px] flex-col justify-center items-center gap-2 flex
+        ;
+        img{
+            @apply
+            w-6 h-6
+            ;
+        }
+        .calculator-errorStatus-title{
+            @apply
+            text-center text-sky-950 text-base font-medium  leading-normal
+            ;
+        }
+
+        .calculator-errorStatus-content{
+            @apply
+            max-w-[10rem] text-slate-600 text-xs font-normal  leading-none  
+            text-center 
+            ;
+        }
+    }
+
+
+
+}
+
+
+// MEDIA QUERIES XS
+
+@screen xs{
+    .calculator-serviceCardContainer{
+        @apply
+        py-10
+        px-0
+        max-w-[416px]
+        ;
+
+        
+        .calculator-main-container{
+            @apply
+            max-w-[416px]
+            w-full 
+            h-[416px]
+            ;
+        
+        }
+
+        // CARATULA
+        .calculator-defaultStatus-container{
+            @apply
+            w-full h-full
+            ;
+        
+            .calculator-defaultStatus-icon{
+                @apply
+                w-9 h-9
+                ;
+            }
+            .calculator-defaultStatus-title{
+                @apply
+                text-[26px] leading-relaxed
+                ;
+            }
+            .calculator-defaultStatus-content{
+                @apply
+                max-w-none text-base 
+                ;
+            }
+
+
+            // LOADER
+
+            .calculator-spinner{
+                @apply
+                w-8 h-8 animate-spin
+                ;
+            }
+        
+        }
+
+            // ERROR STATUS
+
+           .calculator-errorStatus{
+                img{
+                    @apply
+                    w-9 h-9 
+                    ;
+                }
+                .calculator-errorStatus-title{
+                    @apply
+                    text-[26px] 
+                    leading-relaxed
+                    ;
+                }
+
+                .calculator-errorStatus-content{
+                    @apply
+                    max-w-none text-base 
+                    ;
+                }
+            }
+
+    }
+
+
+}
+
+// MEDIA QUERIES SM
+
+
+@screen sm{
+    .calculator-serviceCardContainer{
+        @apply
+        pt-0
+        mx-6
+        max-w-[810px]
+        ;
+
+        
+        .calculator-main-container{
+            @apply
+            w-full 
+            min-h-full
+            h-[644px]
+            max-w-[810px]
+            ;
+        
+        }
+
+
+
+
+}
+
+
+}
+
+

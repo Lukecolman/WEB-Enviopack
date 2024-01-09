@@ -107,7 +107,9 @@ const ContactForm = () => {
                             <input
                                 id='companyName'
                                 name='companyName'
-                                type='text'
+                                type='tel'
+                                // se usa el tipo tel ya que number no permite colocar maxlenght
+                                maxlength='4'
                                 onChange={formik.handleChange}
                                 value={formik.values.companyName}
                                 placeholder={t('contactPage.companyName')}
