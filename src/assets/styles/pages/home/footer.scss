@@ -154,13 +154,14 @@
     flex 
     flex-col 
     justify-start 
-    mr-10;
+    mr-0;
   }
 
   .footer-logo {
     @apply 
     w-[50px] 
-    object-contain;
+    object-contain
+    ;
   }
 
   .footer-links-container {
@@ -169,9 +170,11 @@
     w-full 
     flex 
     flex-row 
-    justify-between 
-    flex-wrap 
-    mt-10;
+    flex-wrap
+    gap-[60px]
+    justify-end 
+    mt-0
+    ;
   }
 
   .footer-link-section {
@@ -179,7 +182,9 @@
     flex 
     flex-col 
     ss:my-0 
-    my-4;
+    my-4
+   ;
+
   }
 
   .footer-link-title {
@@ -188,7 +193,8 @@
     text-white 
     text-lg 
     font-normal 
-    mb-[30px];
+    mb-[30px]
+    ;
   }
 
   .footer-link {
@@ -213,6 +219,7 @@
     items-center 
     flex-row
     pt-6
+    mt-20
     ;
   }
 
@@ -220,7 +227,7 @@
     @apply 
     flex 
     flex-row 
-    mt-6;
+    mt-0;
   }
 
   .footer-social-icon {
@@ -246,7 +253,7 @@
     text-center 
     text-sm
     leading-[28px] 
-    mt-[0]
+    mt-[0px]
     ;
     color: rgba(255, 255, 255, 0.8);
   }

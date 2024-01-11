@@ -37,21 +37,21 @@ export const footerLinks = [
         }
       ]
     },
-    {
-      title: "Empresa",
-      links: [
-        {
-          id: 3,
-          linkKey: "footer.sections.Empresa.links.Partners",
-          linkUrl: '#'
-        },
-        {
-          id: 4,
-          linkKey: "footer.sections.Empresa.links.Blog",
-          linkUrl: '#'
-        }
-      ]
-    },
+    // {
+    //   title: "Empresa",
+    //   links: [
+    //     {
+    //       id: 3,
+    //       linkKey: "footer.sections.Empresa.links.Partners",
+    //       linkUrl: '#'
+    //     },
+    //     {
+    //       id: 4,
+    //       linkKey: "footer.sections.Empresa.links.Blog",
+    //       linkUrl: '#'
+    //     }
+    //   ]
+    // },
     {
       title: "Recursos",
       links: [
