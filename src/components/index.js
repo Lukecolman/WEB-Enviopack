@@ -32,6 +32,11 @@ import Header from './Colecta/Header';
 import Steps from './Colecta/Steps';
 import SubBeneficios from './Colecta/SubBeneficios';
 
+//TRACKING
+import TrackingDetails from './pages/TrackingDetails';
+import TrackingDetailsItems from './pages/TrackingDetailsItems';
+
+
 //EXTRAS
 import WorkInProgress from './WorkInProgress';
 
@@ -66,6 +71,10 @@ export{
     Header,
     Steps,
     SubBeneficios,
+
+    //TRACKING
+    TrackingDetails,
+    TrackingDetailsItems,
 
     //EXTRAS
     WorkInProgress,

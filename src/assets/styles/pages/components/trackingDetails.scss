@@ -1,0 +1,373 @@
+// TRACKING DETAILS
+.trackingDetails-section{
+    @apply
+    bg-ep-25
+    w-full 
+    h-full 
+    sectionCenter 
+    pt-20
+    pb-16
+    ;
+}
+.trackingDetails-container {
+    @apply 
+        max-w-[400px] 
+        mx-6 
+        py-[60px] 
+        bg-white 
+        rounded-lg 
+        flex-col 
+        justify-start 
+        items-center  
+        inline-flex 
+        font-dmSans;
+}
+
+// HEADER
+.trackingDetails-header {
+    @apply 
+        self-stretch 
+        px-2 
+        flex-col 
+        justify-start 
+        items-center 
+        gap-4 
+        flex
+        pb-10
+        ;
+
+    .trackingDetails-title {
+        @apply 
+            self-stretch 
+            text-center 
+            text-gray-700 
+            text-2xl 
+            font-bold 
+            leading-[30px]    
+            w-full
+            ;
+
+        span {
+            @apply 
+                uppercase 
+                ;
+        }
+    }
+}
+
+.trackingDetails-carrier-container {
+    @apply
+        flex-col 
+        justify-start 
+        items-center 
+        gap-2 
+        flex 
+        w-[280px] 
+        text-center 
+        text-gray-700 
+        text-sm 
+        font-normal  
+        leading-tight;
+
+    .trackingDetails-carrier {
+        @apply
+            justify-start 
+            items-center 
+            gap-2 
+            inline-flex 
+            ;
+
+
+        img {
+            @apply
+                w-5 
+                h-5  
+                justify-center 
+                items-center 
+                flex                 
+                ;
+        }
+
+        span {
+            @apply
+                text-gray-700 
+                text-sm 
+                font-normal 
+                leading-tight
+                ;
+        }
+    }
+}
+
+// DETAILS
+.trackingDetails-details-container {
+    @apply
+        w-full 
+        px-4 
+        flex-col 
+        justify-start 
+        items-start 
+        gap-8 
+        flex 
+        ;
+}
+
+// TRACKING DETAILS ITEMS
+.trackingDetailsItems-container {
+    @apply
+        self-stretch 
+        justify-start 
+        items-center 
+        gap-4 
+        inline-flex 
+        font-dmSans 
+        ;
+
+    // DATE AND TIME
+    .trackingDetailsItems-DaT-container {
+        @apply
+            text-right 
+            max-w-[66px] 
+            w-full;
+
+        .trackingDetailsItems-date {
+            @apply
+                text-ep-500 
+                text-xs 
+                font-medium 
+                leading-snug 
+                ;
+        }
+
+        .trackingDetailsItems-time {
+            @apply
+                text-slate-400 
+                text-xs 
+                font-normal 
+                leading-[18px];
+        }
+    }
+
+    // MARKERS
+    .marker-container {
+        @apply
+            w-6 
+            h-6 
+            flex
+            justify-center
+            ;
+
+        .marker-outer {
+            @apply
+                w-6 
+                h-6 
+                flex
+                justify-center
+                items-center
+                bg-ep-100 
+                rounded-full
+                ;
+        }
+
+        .marker-inner {
+            @apply
+                w-3 
+                h-3 
+                bg-ep-300 
+                rounded-full
+                ;
+        }
+    }
+
+    &.disabled {
+        .marker-container .marker-outer {
+            @apply
+                bg-gray-100
+                ;
+        }
+
+        .marker-container .marker-inner {
+            @apply
+                bg-gray-300
+                ;
+        }
+    }
+
+    // STATUS
+    .trackingDetailsItems-status {
+        @apply
+            grow 
+            basis-0 
+            text-slate-600 
+            text-xs 
+            font-normal 
+            leading-[18px];
+    }
+}
+
+
+  @screen xs{
+
+  
+// TRACKING DETAILS
+.trackingDetails-container {
+    @apply 
+        max-w-[1021px] 
+        w-full
+        rounded-2xl 
+        ;
+}
+
+// HEADER
+.trackingDetails-header {
+    @apply 
+        gap-3
+        pb-16
+        ;
+    .trackingDetails-truckIcon{
+        @apply 
+        mb-6
+        ;
+    }
+
+    .trackingDetails-title {
+        @apply 
+            text-[28px] 
+            font-medium
+            justify-center
+            ;
+
+        span {
+            @apply 
+                ml-2
+                ;
+        }
+    }
+}
+
+.trackingDetails-carrier-container {
+    @apply
+        w-full
+        justify-center 
+        gap-3 
+        text-xl
+        leading-normal
+        ;
+
+    .trackingDetails-carrier {
+
+        img {
+            @apply
+                w-6 
+                h-6  
+                ;
+        }
+
+        span {
+            @apply
+                text-xl
+                leading-normal
+                ;
+        }
+    }
+}
+
+// DETAILS
+.trackingDetails-details-container {
+    @apply
+        w-full 
+        max-w-[538px]
+        px-0 
+        gap-11
+        ;
+}
+
+// TRACKING DETAILS ITEMS
+.trackingDetailsItems-container {
+    @apply
+        gap-4 
+        ;
+
+    // DATE AND TIME
+    .trackingDetailsItems-DaT-container {
+        @apply
+            max-w-[153px] 
+            ;
+
+        .trackingDetailsItems-date {
+            @apply
+                text-base 
+                leading-snug 
+                ;
+        }
+
+        .trackingDetailsItems-time {
+            @apply
+                text-base 
+                leading-[20px];
+        }
+    }
+
+    // MARKERS
+    .marker-container {
+        @apply
+            w-8 
+            h-8 
+            ;
+
+        .marker-outer {
+            @apply
+                w-8 
+                h-8 
+                ;
+        }
+
+        .marker-inner {
+            @apply
+                w-4 
+                h-4 
+                ;
+        }
+    }
+
+
+    // STATUS
+    .trackingDetailsItems-status {
+        @apply
+            text-base 
+            ;
+    }
+}
+
+
+  }
+
+
+  @screen ss{
+    .trackingDetails-section{
+        @apply
+
+        py-20
+        ;
+    }
+
+    .trackingDetails-header {
+        @apply 
+            flex
+            pb-10
+            ;
+
+    
+        .trackingDetails-title {
+            @apply 
+                flex
+                ;
+    }
+    
+    .trackingDetails-carrier-container {
+        @apply
+            flex-row 
+            ;
+    }
+  }
+}

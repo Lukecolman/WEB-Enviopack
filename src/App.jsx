@@ -11,6 +11,7 @@ import Tracking from './pages/Tracking';
 import { Navbar, Footer } from './components';
 
 const App = () => {
+
     return (
         <BrowserRouter>
             <>
@@ -25,6 +26,7 @@ const App = () => {
                     <Route path='/rates' element={<Rates />} />
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/tracking' element={<Tracking />} />
+
                 </Routes>
                 <Footer />
             </>

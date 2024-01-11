@@ -1,0 +1,287 @@
+// MAIN
+.tracking-container {
+    @apply
+        w-full 
+        h-[711px] 
+        px-5 
+        flex 
+        flex-col 
+        items-center 
+        relative 
+        gap-20 
+        pt-24 
+        font-dmSans;
+}
+
+.tracking-header-container {
+    @apply
+        w-[312px] 
+        relative  
+        flex-col 
+        gap-4 
+        inline-flex 
+        text-[#3D4550];
+    
+    .tracking-header-title {
+        @apply
+            text-2xl 
+            font-bold;
+    }
+
+    .tracking-header-content {
+        @apply
+            w-[199px] 
+            text-sm 
+            font-normal;
+    }
+
+    .tracking-header-img {
+        @apply
+            origin-top-left 
+            rotate-[32.09deg] 
+            w-[155.91px] 
+            h-[62.75px] 
+            left-[202.34px] 
+            -top-[21px] 
+            absolute 
+            ;
+    }
+}
+
+.tracking-form {
+    @apply
+        w-[312px] 
+        flex-col 
+        justify-start 
+        font-medium 
+        items-start 
+        gap-1 
+        inline-flex 
+        ;
+    
+    label {
+        @apply
+            text-neutral-700 
+            text-sm 
+            leading-none
+            ;
+    }
+
+    input {
+        @apply
+            self-stretch 
+            p-2.5 
+            h-[38px] 
+            text-[14px] 
+            tracking-tight 
+            rounded-md 
+            border 
+            text-[#707A8C] 
+            border-gray-300 
+            hover:border-ep-500
+            ;
+    }
+
+    input:focus {
+        outline: 1px solid #064cf9;
+    }
+}
+
+.tracking-button-container {
+    @apply
+        flex 
+        self-center;
+}
+
+.tracking-button {
+    @apply
+        bg-ep-500 
+        gap-2 
+        inline-flex 
+        text-white 
+        text-xs 
+        leading-normal
+        h-12 
+        px-10 
+        py-4  
+        rounded-[34px] 
+        justify-center 
+        items-center
+        mt-10
+        shadow-md
+        hover:bg-ep-600 
+        disabled:bg-ep-100
+        ;
+}
+
+// ERROR
+.tracking-error-section {
+    @apply
+        w-full 
+        h-[711px] 
+        px-6 
+        flex 
+        flex-col 
+        items-center 
+        bg-ep-25 
+        gap-20 
+        pt-24 
+        font-dmSans
+        ;
+}
+
+.tracking-error-container {
+    @apply
+        w-full 
+        max-w-[400px] 
+        h-[358px] 
+        py-[60px] 
+        bg-white 
+        rounded-[9px] 
+        flex-col 
+        items-center 
+        gap-10 
+        inline-flex 
+        self-center
+        ;
+}
+
+.tracking-header-error {
+    @apply
+        px-4 
+        flex-col 
+        gap-4 
+        flex 
+        text-gray-700 
+        text-center
+        ;
+    
+    img {
+        @apply
+            w-12 
+            self-center
+            ;
+    }
+
+    .error-title {
+        @apply
+            text-2xl 
+            font-bold 
+            leading-[30px]
+            ;
+    }
+
+    .error-content {
+        @apply
+            self-stretch 
+            text-sm 
+            font-normal 
+            leading-tight
+            ;
+    }
+}
+
+// MEDIA QUERIES XS
+@screen xs {
+    .tracking-container {
+        @apply
+            min-h-[780px] 
+            px-5  
+            gap-8 
+            pt-0 
+            justify-center 
+            overflow-hidden
+            ;
+    }
+
+    .tracking-header-container {
+        @apply
+            max-w-[516px] 
+            w-full 
+            ;
+        
+        .tracking-header-title {
+            @apply
+                text-[50px] 
+                ;
+        }
+
+        .tracking-header-content {
+            @apply
+                w-full 
+                text-xl
+                ;
+        }
+
+        .tracking-header-img {
+            @apply
+                origin-top-right 
+                w-[155.91px] 
+                h-[50.75px] 
+                -right-[50px] 
+                top-14  
+                left-auto
+                ;
+        }
+    }
+
+    .tracking-form {
+        @apply
+            max-w-[516px] 
+            w-full 
+            ;
+    }
+
+    .tracking-button {
+        @apply
+            text-base 
+            py-2.5
+            px-11
+            ;
+    }
+
+    // ERROR
+    .tracking-error-section {
+        @apply
+            h-[780px] 
+            pt-14 
+            ;
+    }
+
+    .tracking-error-container {
+        @apply
+            w-full 
+            max-w-[1001px] 
+            h-[589px] 
+            rounded-2xl 
+            gap-2 
+            justify-center
+            ;
+    }
+
+    .tracking-header-error {
+        @apply
+            gap-[28px]
+            ;
+        
+        img {
+            @apply
+                w-16
+                ;
+        }
+
+        .error-title {
+            @apply
+                text-4xl 
+                leading-[36px]
+                ;
+        }
+
+        .error-content {
+            @apply
+                text-xl  
+                leading-6
+                ;
+        }
+    }
+}

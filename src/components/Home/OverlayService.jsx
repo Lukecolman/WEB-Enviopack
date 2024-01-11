@@ -67,7 +67,7 @@ const OverlayService = () => {
         },
         {
             bgColor: 'bg-gradient-to-tl from-cyan-600 to-blue-800',
-            image: 'assets/carriersLogos/partners/Rayo entregas.svg',
+            image: 'assets/carriersLogos/partners/Rayo-entregas.svg',
             alt: 'Rayo Entregas',
         },
         {
@@ -102,7 +102,7 @@ const OverlayService = () => {
         },
         {
             bgColor: 'bg-sky-800',
-            image: 'assets/carriersLogos/partners/Integral Pack.svg',
+            image: 'assets/carriersLogos/partners/Integral-Pack.svg',
             alt: 'Integral Pack',
         },
         {
@@ -127,7 +127,7 @@ const OverlayService = () => {
         },
         {
             bgColor: 'bg-blue-900',
-            image: 'assets/carriersLogos/partners/Cruz del Sur.svg',
+            image: 'assets/carriersLogos/partners/Cruz-del-Sur.svg',
             alt: 'Cruz del Sur',
         },
         {

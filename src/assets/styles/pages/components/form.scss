@@ -77,7 +77,8 @@
             border-gray-300
             text-slate-500
             leading-[18px] 
-            hover:border-[#50555C];
+            hover:border-ep-500
+            ;
         }
         input:focus {
             outline: 1.2px solid #387af8;
@@ -91,7 +92,13 @@
             border-gray-300
             text-slate-500
             leading-[18px]   
-            hover:cursor-pointer;
+            hover:cursor-pointer
+            hover:border-ep-500
+            ;
+        }
+        select:focus {
+            outline: 1.2px solid #387af8;
+            transition: 0.2s all ease-in-out;
         }
         textarea {
             @apply min-h-[74px]
@@ -102,12 +109,14 @@
             border-gray-300
             text-slate-500
             leading-[18px]   
-            hover:border-[#50555C];
+            hover:border-ep-500;
         }
         textarea:focus {
             outline: 1.2px solid #387af8;
             transition: 0.2s all ease-in-out;
         }
+
+        
 
         .radio-container {
             @apply flex 
@@ -123,12 +132,17 @@
                 @apply appearance-none
                 w-[16px]
                 self-center
-                hover:cursor-pointer;
+                hover:cursor-pointer
+                ;
 
                 border-radius: 15%;
                 outline: 2px solid #586474;
                 outline-offset: -2px;
                 transition: 0.2s all ease-in-out;
+            }
+            .radio-input:hover {
+                outline: 2px solid #2E90FA;
+
             }
             .radio-input:checked {
                 @apply bg-[#064CF9]
@@ -186,6 +200,10 @@
                 @apply underline;
             }
         }
+    }
+    .terminos-container input[type='checkbox']:hover {
+        outline: 2px solid #2E90FA;
+
     }
 
     .form-button {

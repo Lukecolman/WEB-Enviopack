@@ -423,48 +423,77 @@ export const kpiImages = [
 
       export const carriersIcons = [
         {
-            img: 'assets/carriersLogos/carriersIcons/OCA.svg',
+          img: 'assets/carriersLogos/carriersIcons/OCA.svg',
+          name: "OCA",
+          key: '0'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Rayo Entregas.svg',
+          img: 'assets/carriersLogos/carriersIcons/Rayo Entregas.svg',
+          name: "Rayo Entregas",
+          key: '1'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Andreani.svg',
+          img: 'assets/carriersLogos/carriersIcons/Andreani.svg',
+          name: "Andreani",
+          key: '2'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Urbano.svg',
+          img: 'assets/carriersLogos/carriersIcons/Urbano.svg',
+          name: "Urbano",
+          key: '3'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Smart Post.svg',
+          img: 'assets/carriersLogos/carriersIcons/Smart Post.svg',
+          name: "Smart Post",
+          key: '4'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Andesmar.svg',
+          img: 'assets/carriersLogos/carriersIcons/Andesmar.svg',
+          name: "Andesmar",
+          key: '5'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Fast Track.svg',
+          img: 'assets/carriersLogos/carriersIcons/Fast Track.svg',
+          name: "Fast Track",
+          key: '6'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Chazki.svg',
+          img: 'assets/carriersLogos/carriersIcons/Chazki.svg',
+          name: "Chazki",
+          key: '7'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Integral Pack.svg',
+          img: 'assets/carriersLogos/carriersIcons/Integral Pack.svg',
+          name: "Integral Pack",
+          key: '8'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/HOP.svg',
+          img: 'assets/carriersLogos/carriersIcons/HOP.svg',
+          name: "HOP",
+          key: '9'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/LionXpress.svg',
+          img: 'assets/carriersLogos/carriersIcons/LionXpress.svg',
+          name: "LionXpress",
+          key: '10'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Treggo.svg',
+          img: 'assets/carriersLogos/carriersIcons/Treggo.svg',
+          name: "Treggo",
+          key: '11'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/Expreso Demonte.svg',
+          img: 'assets/carriersLogos/carriersIcons/Expreso Demonte.svg',
+          name: "Expreso Demonte",
+          key: '12'
         },
         {
-            img: 'assets/carriersLogos/carriersIcons/OCASA.svg',
+          img: 'assets/carriersLogos/carriersIcons/OCASA.svg',
+          name: "OCASA",
+          key: '13'
         },
-    ];
+      ];
+      
 
     export const carriersHighlight =[
         {
