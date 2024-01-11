@@ -386,7 +386,6 @@
 
 },
 
-
 "carriersPage": {
   "header":{
     "title": "Una plataforma todos los operadores logísticos",
@@ -640,8 +639,38 @@
   "sendButton": "Enviar"
   
 
-}
+},
+
+"trackingPage": {
+  "mainScreen":{
+    "title": "Seguí tu envío",
+    "description": "Enterate al instante dónde está tu paquete",
+    "form":{
+      "label":"Nº de seguimiento",
+      "placeholder":"Ingresá acá el nº de seguimiento de tu envío",
+      "button":"Buscar"
+    }
+  },
+
+  "errorScreen":{
+    "title": "¡Lo sentimos!",
+    "description": "No encontramos resultados para tu búsqueda",
+    "button":"Volver a intentar"
+  },
+
+  "trackingDetails":{
+    "header":{
+      "title":"Detalle del envío",
+      "carrier":"El correo que realizará la entrega es"
+    },
+    "shipmentDeliveredSuccessfully": "El envío ha sido entregado exitósamente",
+    "courierHasYourPackage": "El correo ya tiene tu paquete",
+    "shipmentRetiredByCourier": "El envío fue retirado por el correo",
+    "shipmentReadyForDispatch": "El envío está listo para ser despachado",
+    "shipmentInSellerDepot": "El envío está en el depósito del vendedor",
+    "button":"Volver a la búsqueda"
+  }  
 
 }
 
-
+}

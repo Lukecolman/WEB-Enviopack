@@ -9,6 +9,8 @@ const Tracking = () => {
     const [loading, setLoading] = useState(false); // Agrega estado para controlar el loader
     const [selectedCourier] = useState(carriersIcons[2]); //Envia el carrier elegido a al componente TrackingDetails
 
+    const { t } = useTranslation();
+
     const formik = useFormik({
         initialValues: {
             trackingNumber: '',
@@ -25,7 +27,6 @@ const Tracking = () => {
         },
     });
 
-
     const onChangeEstado = (newEstado) => {
         console.log('Cambiando estado a:', newEstado);
         setEstado(newEstado);
@@ -38,26 +39,27 @@ const Tracking = () => {
                     // Vista de carátula
                     <div className='tracking-container'>
                         <div className='tracking-header-container'>
-                            <div className='tracking-header-title'>Seguí tu envío</div>
-                            <div className='tracking-header-content'>Enterate al instante dónde está tu paquete</div>
+                            <div className='tracking-header-title'>{t('trackingPage.mainScreen.title')}</div>
+                            <div className='tracking-header-content'>{t('trackingPage.mainScreen.description')}</div>
                             <img src='assets/icons/arrowTracking.svg' className='tracking-header-img' />
                         </div>
                         <form className='tracking-form' onSubmit={formik.handleSubmit}>
-                            <label>Nº de seguimiento</label>
+                            <label>{t('trackingPage.mainScreen.form.label')}</label>
                             <input
                                 id='trackingNumber'
                                 name='trackingNumber'
                                 type='text'
+                                // minLength={6}
                                 onChange={formik.handleChange}
                                 value={formik.values.trackingNumber}
-                                placeholder='Ingresá acá el nº de seguimiento de tu envío'
+                                placeholder={t('trackingPage.mainScreen.form.placeholder')}
                             />
                             <div className='tracking-button-container'>
                                 <button disabled={!formik.dirty} className='tracking-button' type='submit'>
                                     {loading ? (
                                         <img src='assets/spinnerWhite.svg' className='w-5 animate-spin' />
                                     ) : (
-                                        <span>Buscar</span>
+                                        <span>{t('trackingPage.mainScreen.form.button')}</span>
                                     )}
                                 </button>
                             </div>
@@ -72,11 +74,11 @@ const Tracking = () => {
                         <div className='tracking-error-container'>
                             <div className='tracking-header-error'>
                                 <img src='assets/icons/tracking-error-icon.svg' alt='error' />
-                                <div className='error-title'>¡Lo sentimos!</div>
-                                <div className='error-content'>No encontramos resultados para tu búsqueda</div>
+                                <div className='error-title'>{t('trackingPage.errorScreen.title')}</div>
+                                <div className='error-content'>{t('trackingPage.errorScreen.description')}</div>
                             </div>
                             <button className='tracking-button' onClick={() => setEstado('mainScreen')}>
-                                Volver a intentar
+                                {t('trackingPage.errorScreen.button')}
                             </button>
                         </div>
                     </div>
@@ -87,6 +89,7 @@ const Tracking = () => {
                     <TrackingDetails
                         selectedCourier={selectedCourier}
                         onChangeEstado={(newEstado) => setEstado(newEstado)}
+                        trackingNumber={formik.values.trackingNumber}
                     />
                 )}
             </section>
