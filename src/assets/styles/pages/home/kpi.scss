@@ -166,39 +166,39 @@ display: none;
 }
 
 
-
 //   MEDIA QUERIES SM
 
 @screen sm{
 
   .kpi-container {
-    @apply w-[100%] 
-    z-10 
+    @apply
     pt-[76.65px] 
     pb-[160.19px] 
-
-    flex-col 
-    justify-start 
-    items-center 
-    gap-[64.37px] 
-    inline-flex 
-    bg-gray-600
-    bg-gradient-to-br from-[#EFF4FE] to-[#C5E2FC];
+    ;
     @include paddingX-sm;
 
-
     .kpi-text-box {
-        @apply flex-col justify-start items-center gap-4 inline-flex;
+
         .kpi-title {
-            @apply text-center text-slate-700 text-5xl font-semibold font-outfit leading-[78px];
+            @apply 
+            text-5xl 
+            leading-[78px]
+            ;
         }
         .kpi-content {
             @apply 
             px-0 
-            max-w-[723px] text-center text-slate-700 text-lg font-normal font-dmSans leading-[30px];
+            text-lg 
+            leading-[30px];
         }
     }
 }
+}
+
+
+//   MEDIA QUERIES MD
+@screen md{
+
 
 /* Estilos generales */
 .kpi-grid {
@@ -206,75 +206,26 @@ display: none;
       grid-cols-7 
       grid-rows-2 
       gap-4 
-      max-w-[1132px] 
       h-[416px] 
-      relative
       ;
 }
 
-/* Estilos específicos para las imágenes */
-@mixin kpi-image {
-    @apply rounded-xl 
-      shadow 
-      flex 
-      overflow-hidden;
-      img {
-        @apply 
-        object-cover 
-          w-full 
-          h-full
-          bg-blue-400;
-    }
-    
-}
-
-/* Estilos específicos para los textos */
-@mixin kpi-text {
-    @apply bg-white 
-      rounded-xl 
-      shadow;
-}
-
 /* Clases para cajas más grandes */
-@mixin kpi-box {
-    @apply col-span-1 
-      row-span-1;
-}
-
-@mixin kpi-box-wide {
-    @apply col-span-2 
-      row-span-1;
-}
 
 @mixin kpi-box-big {
     @apply col-span-2 
       row-span-2;
 }
 
-/* Estilos comunes para la estructura del contenido */
-.kpi-content {
-    @apply p-4 
-      flex 
-      flex-col 
-      justify-between 
-      h-[100%]
-      text-[#2C3640];
-}
-
 /* Estilos específicos para el texto en el contenido */
 .kpi-text-title {
     @apply text-base 
-      font-medium 
-      font-inter 
-      leading-[18px]
-      w-24;
+      ;
 }
 
 .kpi-text-number {
     @apply text-[40px] 
-      font-semibold 
-      font-inter 
-      leading-[45px];
+      ;
 }
 
 /* Estilos específicos para la imagen en el contenido */
@@ -327,7 +278,7 @@ display: none;
 
 }
 
-@screen md{
+@screen lg{
   .kpi-text-number {
     @apply text-[56px] 
       font-semibold 

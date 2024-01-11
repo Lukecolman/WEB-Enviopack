@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const CardCarousel = () => {
-    const { t } = useTranslation(); // Agrega esto aquí
+    const { t } = useTranslation(); 
 
     const cardItems = [
         {

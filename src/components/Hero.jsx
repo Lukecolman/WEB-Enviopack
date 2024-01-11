@@ -11,11 +11,11 @@ const Hero = () => {
             <section className='hero-container'>
                 <img className='hero-bg' src='assets\hero-circle-bg.svg' alt='' />
                 <div
-                    className='hero-title font-dmSans'
+                    className='hero-title'
                     dangerouslySetInnerHTML={{ __html: t('hero.solutionTechnology') }}
                 />
                 <div
-                    className='hero-subtitle font-dmSans'
+                    className='hero-subtitle'
                     dangerouslySetInnerHTML={{ __html: t('hero.iaOrganizeShipments') }}
                 />
                 <button className='hero-button buttonBasics'>

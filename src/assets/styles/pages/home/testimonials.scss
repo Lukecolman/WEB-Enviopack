@@ -86,7 +86,8 @@
           w-1.5
           h-1.5
           rounded-full
-          mx-1;
+          mx-1
+          ;
         }
   
         .card-dot-active{
@@ -127,12 +128,12 @@
     img{
       @apply
       w-max
-      max-w-[140px]
+      max-w-[340px]
       h-max
-      max-h-[60px]
       absolute
       top-[50%]
-      translate-y-[-50%];
+      translate-y-[-50%]
+      ;
     }
     }
   
@@ -204,7 +205,7 @@
         max-w-[556.43px]  
         pt-8
         px-4 
-        text-[12px]
+        text-xs
         font-outfit
 
         ;
@@ -236,19 +237,126 @@
 //MEDIA QUERIES SM
 
 @screen sm{
+
+  .testimonial-section{
+
+    .testimonial-container{
+      @apply
+      h-[1010px] 
+      ;  
+
+      .card-carousel{
+        @apply
+        top-auto
+        ;
+      }
+  
+    }
+  
+  }
+  
+  
+  // CARD CAROUSEL
+  .card-carousel-container {
+    @apply
+    max-w-[626px]
+    ;
+  
+    .card-carousel-image{
+      
+      .card-image-stack{
+        height: 300px;
+        margin: 50px auto 20px auto;
+ 
+       
+      }
+  
+      .card-dot{
+        @apply
+        top-[220%]
+        ;
+        
+        li{
+          @apply
+          w-2
+          h-2
+          ;
+        }
+        
+      }
+    }
+  }
+  
+  
+    .card {
+      width: 300px;
+      height: 300px;
+
+    }
+  
+  
+  .card-titles-mobile{
+    @apply
+    flex-col
+    gap-2
+    flex
+    ;
+    
+    span{
+      @apply 
+      text-lg 
+      leading-[18px]
+      ;
+    }
+
+    h1{
+      @apply
+      text-5xl 
+      leading-[55px]
+      ; 
+    } 
+  }
+  
+  .card-carousel-text{
+
+  
+    
+    .card-content{
+      .card-content-testimonials{
+        @apply
+        text-base 
+        leading-loose
+        ;
+  
+        .card-content-copy{
+          @apply
+          leading-[25px] 
+          my-6
+          ;
+        }
+        .card-content-ceo{
+          @apply
+          mb-6
+          ;
+        }
+      }
+    }
+    
+  }
+
+}
+
+//MEDIA QUERIES MD
+
+@screen md{
 .testimonial-section{
     @apply
     bg-white;
 
-    .testimonial-container{
+    .testimonial-container{  
       @apply
-      w-[100%] 
-      h-[890px] 
-      relative
-      overflow-hidden	
-      ;  
-      
-      
+      h-[890px]
+      ;      
       .big-circle{
         @apply
         block
@@ -272,10 +380,11 @@
         flex 
         justify-center 
         relative 
-        top-[173.10px]
         max-w-[1512px]
+        h-[580px]
+        self-center
         ;
-        @include paddingX-sm;
+        @include paddingX-md;
 
       }
     
@@ -300,29 +409,12 @@
       mr-12;
       
       .card-image-stack{
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
         height: 200px;
         margin: 100px auto 130px auto;
-        align-items: center;
-        position: relative;
-        @apply
-        justify-center 
-        flex;
-    
-       
       }
     
       .card-dot{
         @apply
-        flex
-        flex-row
-        justify-center
-        pt-4
-        absolute
-        left-[45%]
         top-auto
         ;
         
@@ -330,21 +422,9 @@
           @apply
           w-2.5
           h-2.5
-          rounded-full
-          mx-1;
-        }
-    
-        .card-dot-active{
-          @apply
-          bg-ep-500
           ;
         }
     
-        .card-dot-inactive{
-          @apply
-          bg-ep-100
-          ;
-        }
         
       }
     }
@@ -352,62 +432,18 @@
     
     
     .card {
-    background: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #eeeeee;
-    padding: 30px;
-    box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
-    -webkit-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 30px 60px 0px rgba(0,0,0,0.15);
     width: 400px;
-    height: 400px;
-    transition: all 0.75s ease;
-    opacity: 0;
-    position: absolute;
-    transform: scale(0.90) translateX(50px);
-    background-color: white;
-    justify-content: center;
-    
+    height: 400px;    
     
     img{
     @apply
-    w-max
-    h-max
-    absolute
-    top-[50%]
-    translate-y-[-50%];
+    max-w-[250px]
+    w-full
+    ;
     }
     }
     
-    
-    
-    .card.active {
-    opacity: 1;
-    transform: scale(1) translateX(0);
-    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    }
-    
-    .card.next {
-    opacity: 1;
-    z-index: 0;
-    }
-    
-    .card.prev {
-    transform: scale(1.1) translateX(-50px);
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    }
-    
-    .active{
-    display: flex;
-    }
-    
-    .hide{
-    display: none;
-    }
-    
+
     .card-titles-mobile{
       @apply
       hidden
@@ -446,7 +482,6 @@
         pt-8 
         text-lg 
         leading-9
-        font-outfit 
         ;
     
         .card-content-copy{
@@ -457,13 +492,7 @@
         .card-content-ceo{
           @apply
           mb-8 
-          font-dmSans 
-          italic;
-        }
-        .card-content-url{
-          @apply
-          font-medium 
-          text-ep-400;
+          ;
         }
       }
     }

@@ -234,9 +234,8 @@
     grid-cols-3 
     max-[1090px]:grid-cols-2
     gap-[3.27rem] 
-    justify-center 
-    items-center 
-    content-center;
+    place-items-center
+    ;
   }
 
   .beneficios-card {

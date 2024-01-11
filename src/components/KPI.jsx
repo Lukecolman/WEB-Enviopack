@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import KpiGallery from './Home/KpiGallery';
+import {KpiGallery} from './';
 
 const KPI = () => {
     const { t } = useTranslation();

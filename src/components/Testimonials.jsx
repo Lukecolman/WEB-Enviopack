@@ -1,5 +1,5 @@
 import React from 'react';
-import CardCarousel from './Home/CardCarousel';
+import {CardCarousel} from './';
 
 
 const Testimonials = () => {

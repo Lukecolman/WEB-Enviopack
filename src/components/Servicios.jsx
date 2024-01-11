@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { serviciosItems } from '../constants';
-import Carousel from '/src/components/Home/Carousel.jsx';
+import {Carousel} from './';
 
 const Servicios = () => {
     const { t } = useTranslation();

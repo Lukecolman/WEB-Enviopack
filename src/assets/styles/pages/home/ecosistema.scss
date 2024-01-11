@@ -78,23 +78,11 @@
 
   // MEDIA QUERIES SM
 @screen sm {
-  .ecosistema-section {
-    @apply
-    w-[100%]
-    bg-white;
-  }
 
   .ecosistema-container {
     @apply 
-    w-full
     max-w-[1512px] 
-    h-[784px] 
-    bg-white 
-    justify-between 
-    items-start 
-    inline-flex 
-    font-dmSans
-    flex-row
+    h-full
     ;
     @include paddingX-sm;
     @include maxContainer;
@@ -103,43 +91,21 @@
 
   .ecosistema-content {
     @apply 
-    flex-col 
-    justify-start 
-    items-start 
-    gap-12 
-    inline-flex
     w-auto
     max-w-none
     ;
   }
 
-  .ecosistema-header {
-    @apply 
-    text-sky-950 
-    flex-col 
-    justify-start 
-    items-start 
-    gap-6 
-    flex;
-  }
-
   .ecosistema-text {
     @apply 
     text-base 
-    font-bold 
     leading-[18px];
   }
 
   .ecosistema-title {
     @apply 
     text-[40px] 
-    font-semibold 
     leading-[52px];
-  }
-
-  .ecosistema-highlight {
-    @apply 
-    text-sky-500;
   }
 
   .ecosistema-description {
@@ -147,8 +113,26 @@
     max-w-none
     w-[363.33px]
     text-lg 
-    font-normal 
     leading-[30px];
+  }
+
+  .ecosistema-image-container {
+    @apply 
+    max-w-[450px]
+    ;
+  }
+}
+
+@screen md{
+  
+  .ecosistema-container {
+    @apply 
+    max-w-[1512px] 
+    justify-between 
+    items-start 
+    inline-flex 
+    flex-row
+    ;
   }
 
   .ecosistema-image-container {
@@ -156,6 +140,6 @@
     w-[633px] 
     h-[536px] 
     max-w-none
-    relative ;
+    ;
   }
 }

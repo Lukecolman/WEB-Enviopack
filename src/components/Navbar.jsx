@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import OverlayService from './Home/OverlayService';
+import {OverlayService} from './';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {

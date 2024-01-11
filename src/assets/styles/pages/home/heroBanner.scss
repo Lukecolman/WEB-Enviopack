@@ -19,7 +19,8 @@
       gap-10 
       inline-flex 
       pt-[85px] 
-      pb-32;
+      pb-32
+      ;
   }
   
   .hero-title {
@@ -28,7 +29,9 @@
       text-gray-700
       text-2xl
       font-bold
-      leading-[30px];
+      leading-[30px]
+      font-dmSans
+      ;
   }
   
   .hero-subtitle {
@@ -38,7 +41,9 @@
       text-sm
       font-normal
       leading-tight
-      mx-6;
+      mx-6
+      font-dmSans
+      ;
   }
   
   .hero-button {
@@ -63,12 +68,11 @@
   
   .text-container {
     @apply
-      text-sky-950
+      text-[#002152]
       pt-14
       px-5
       pb-14
       text-lg
-      font-medium
       font-dmSans
       leading-normal
       text-center
@@ -89,70 +93,57 @@
     }
     }
   
+  @screen ss{
+    .hero-title {
+      @apply 
+        text-4xl
+        ;
+    }
+    
+    .hero-subtitle {
+      @apply 
+        text-sm
+        ;
+    }
 
+  }
 
   // MEDIA QUERIES SM
 @screen sm{
 
   
    /*HERO BANNER*/
-  
-   .hero-bg{
-    @apply
-    w-[100%]
-    max-w-[1920px]
-    absolute
-    top-0
-    -z-50
-    ;
-  }
-  
   .hero-container {
     @apply  
-    w-full 
-    h-full 
-    flex-col 
-    justify-start 
-    items-center 
     gap-8 
-    inline-flex 
-    pt-[85px] 
-    pb-32;
+    ;
   }
   
   .hero-title {
     @apply 
-    w-[848px] 
-    text-center 
-    text-gray-700 
-    text-[64px] 
-    font-bold 
-    leading-[74px];
-  }
+    w-full
+    text-5xl
+    ; 
+   }
   
   .hero-subtitle {
     @apply 
     w-[709.14px] 
-    text-center 
-    text-gray-700 
     text-xl 
-    font-normal 
     leading-loose;
   }
   
   .hero-button {
     @apply 
     px-7 
-    py-4;
+    ;
   }
   
   .hero-button-text {
     @apply 
-    text-white 
     text-lg 
-    font-medium 
     leading-7
-    font-dmSans;
+    ;
   }
   
   .hero-image {
@@ -163,26 +154,31 @@
   
   .text-container {
   @apply
-    text-sky-950
     pt-[100px]
-    pb-14
-    text-lg
     leading-relaxed;
   }
   
   // Estilos para el marquee
-  .marquee-container {
-  @apply h-full ;
-  
+  .marquee-container {  
   .marquee-item {
     @apply px-6;
           img{
         @apply
-        // bg-red-200
         h-14
         ;
       }
   }
   }
 
+}
+
+
+@screen md{
+
+  .hero-title {
+    @apply 
+    text-[64px] 
+    leading-[74px]
+    ; 
+   }
 }
