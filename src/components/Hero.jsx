@@ -14,7 +14,7 @@ const Hero = () => {
                     className='hero-title'
                     dangerouslySetInnerHTML={{ __html: t('hero.solutionTechnology') }}
                 />
-                <div
+                <div    
                     className='hero-subtitle'
                     dangerouslySetInnerHTML={{ __html: t('hero.iaOrganizeShipments') }}
                 />
@@ -26,9 +26,9 @@ const Hero = () => {
                 <div className='text-container'>{t('hero.carriers')}</div>
 
                 <Marquee className='marquee-container'>
-                    {carriersLogos.map((carrier, alt) => (
-                        <div className='marquee-item' key={alt.name}>
-                            <img src={carrier.img} alt={alt.name} />
+                    {carriersLogos.map((carrier) => (
+                        <div className='marquee-item' key={carrier.name}>
+                            <img src={carrier.img} alt={carrier.name} />
                         </div>
                     ))}
                 </Marquee>

@@ -1,4 +1,4 @@
-// Tu archivo de estilos SCSS
+//HEADER.SCSS
 
 .header-section {
     @extend .sectionCenter;
@@ -21,7 +21,8 @@
         justify-center
         items-center
         gap-[60px]
-        flex;
+        flex
+        ;
 }
 
 .header-content {
@@ -95,10 +96,11 @@
     -z-30;
 }
 
+// MEDIA QUERIES SM
 @screen sm {
     .header-container {
         @include paddingX-sm;
-        @apply max-w-[1420px]
+        @apply 
         h-[1412px]
         w-full
         flex
@@ -118,9 +120,9 @@
     }
 
     .header-title {
-        @apply text-[56px]
+        @apply text-[40px]
             font-semibold
-            leading-[66px]
+            leading-[50px]
             tracking-tight;
     }
 
@@ -176,10 +178,12 @@
     }
 }
 
+
+// MEDIA QUERIES MS
 @screen md {
     .header-container {
         @include paddingX-md;
-        @apply max-w-[1420px]
+        @apply max-w-[1320px]
         h-[1412px]
         w-full
         flex
@@ -206,4 +210,13 @@
         -mt-5
         ;
     }
+
+    
+    .header-title {
+        @apply text-[56px]
+            font-semibold
+            leading-[66px]
+            tracking-tight;
+    }
+
 }
