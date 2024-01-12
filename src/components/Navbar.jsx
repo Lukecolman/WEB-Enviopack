@@ -8,6 +8,8 @@ const Navbar = () => {
     const [openService, setOpenService] = useState(false);
     const [toggle, setToggle] = useState(false);
 
+
+    
     useEffect(() => {
         const handleBodyClick = () => {
             if (openService) {
@@ -22,8 +24,11 @@ const Navbar = () => {
         };
     }, [openService]);
 
+
+
+
     const handleMenuClick = (e) => {
-        e.stopPropagation(); // Evita que el clic llegue al body y cierre el menú
+        e.stopPropagation(); 
         setOpenService(!openService);
     };
 
@@ -105,7 +110,7 @@ const Navbar = () => {
                         <div className='flex justify-end items-start flex-1 flex-col '>
                             <div className='logo-container-mobile'>
                                 <div className='nav-item-mobile-container'>
-                                    <div onClick={() => setOpenService(!openService)} className='nav-item-mobile'>
+                                <div onClick={handleMenuClick} className='nav-item-mobile'>
                                         <div className='nav-item-text'>{t('navbar.services')}</div>
                                         <svg
                                             width='11'
@@ -164,3 +169,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
