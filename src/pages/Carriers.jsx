@@ -1,13 +1,6 @@
-import React from 'react';
-
-import Steps from '../components/Colecta/Steps';
-import CTA from '../components/CTA';
-import HighlightSection from '../components/pages/HighlightSection';
-import TextHeader from '../components/pages/TextHeader';
-import CarriersLogos from '../components/pages/CarriersLogos';
-
+import React, { useEffect } from 'react';
+import { Steps, CTA, HighlightSection, TextHeader, CarriersLogos } from '../components';
 import { carriersHighlight, carriersSteps } from '../constants';
-
 import { carriersPage } from '../lang/es_AR.json';
 import { useTranslation } from 'react-i18next';
 
@@ -15,6 +8,14 @@ function Collect() {
     const { t } = useTranslation();
     const fillColor = '#38B3F8';
     const visibleItems = [1, 2];
+
+    // FUNCIONES
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0 , behavior: 'instant' })
+      }
+      useEffect(() => {
+        scrollToTop()
+      },[])
 
     return (
         <>

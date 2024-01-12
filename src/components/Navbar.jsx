@@ -8,13 +8,10 @@ const Navbar = () => {
     const [openService, setOpenService] = useState(false);
     const [toggle, setToggle] = useState(false);
 
-
-    
     useEffect(() => {
         const handleBodyClick = () => {
-            if (openService) {
-                setOpenService(false);
-            }
+            setOpenService(false);
+            setToggle(false);
         };
 
         document.body.addEventListener('click', handleBodyClick);
@@ -22,14 +19,16 @@ const Navbar = () => {
         return () => {
             document.body.removeEventListener('click', handleBodyClick);
         };
-    }, [openService]);
-
-
-
+    }, []);
 
     const handleMenuClick = (e) => {
-        e.stopPropagation(); 
+        e.stopPropagation();
         setOpenService(!openService);
+    };
+
+    const handleToggleClick = (e) => {
+        e.stopPropagation();
+        setToggle(!toggle);
     };
 
     return (
@@ -41,6 +40,7 @@ const Navbar = () => {
                     </Link>
                 </div>
 
+                {/* LINKS MENU */}
                 <div className='navbar-menu  flex-grow justify-between ml-3 hidden lg:flex'>
                     <div className='logo-container'>
                         <div className='relative'>
@@ -97,20 +97,22 @@ const Navbar = () => {
 
                 {/* MOBILE */}
                 <div className='lg:hidden flex flex-1 justify-end  '>
+                    {/* TOGGLE MOBILE */}
                     <img
                         src={toggle ? 'assets/ep-cross-outline.svg' : 'assets/Icon-menu.svg'}
                         alt='menu'
                         className='w-[28px] h-[20px] object-contain z-50 cursor-pointer'
-                        onClick={() => setToggle(!toggle)}
+                        onClick={handleToggleClick}
                     />
                     <div
                         className={`${
                             !toggle ? 'hidden' : 'flex'
                         } bg-black-gradient absolute top-0 right-0  w-full rounded-b-xl sidebar bg-white pt-20 z-20 `}>
-                        <div className='flex justify-end items-start flex-1 flex-col '>
+                        {/* LINKS MENU */}
+                        <div className='flex justify-end items-start flex-1 flex-col font-dmSans'>
                             <div className='logo-container-mobile'>
                                 <div className='nav-item-mobile-container'>
-                                <div onClick={handleMenuClick} className='nav-item-mobile'>
+                                    <div onClick={handleMenuClick} className='nav-item-mobile'>
                                         <div className='nav-item-text'>{t('navbar.services')}</div>
                                         <svg
                                             width='11'
@@ -132,20 +134,20 @@ const Navbar = () => {
                                     )}
                                 </div>
 
-                                <div className='nav-link '>
-                                    <Link to='/rates' className='nav-item-text'>
+                                <div className='nav-item-mobile-container'>
+                                    <Link to='/rates' className='nav-item-mobile'>
                                         {t('navbar.rates')}
                                     </Link>
                                 </div>
 
-                                <div className='nav-link'>
-                                    <Link to='/tracking' className='nav-item-text'>
+                                <div className='nav-item-mobile-container'>
+                                    <Link to='/tracking' className='nav-item-mobile'>
                                         {t('navbar.trackShipment')}
                                     </Link>
                                 </div>
 
-                                <div className='nav-link'>
-                                    <Link to='/contact' className='nav-item-text'>
+                                <div className='nav-item-mobile-container'>
+                                    <Link to='/contact' className='nav-item-mobile'>
                                         {t('navbar.contact')}
                                     </Link>
                                 </div>
@@ -169,7 +171,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-

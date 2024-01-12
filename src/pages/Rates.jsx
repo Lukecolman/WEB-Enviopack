@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ratesPage } from '../lang/es_AR.json';
 import Marquee from 'react-fast-marquee';
@@ -9,6 +9,15 @@ const Rates = () => {
     const { t } = useTranslation();
     const fillColor = '#38B3F8';
     const visibleItems = [0, 1, 2];
+
+    // FUNCIONES
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0 , behavior: 'instant' })
+      }
+      useEffect(() => {
+        scrollToTop()
+      },[])
+
 
     return (
         <>

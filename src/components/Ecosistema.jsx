@@ -1,5 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 
 const Ecosistema = () => {
   const { t } = useTranslation();
@@ -20,9 +22,9 @@ const Ecosistema = () => {
             </div>
           </div>
 
-          <button className='buttonSm'>
+          <Link to="/integrations" className='buttonSm'>
             <span>{t('ecosistema.connect')}</span>
-          </button>
+          </Link>
         </div>
 
         <div className='ecosistema-image-container'>

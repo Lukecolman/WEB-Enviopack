@@ -1,20 +1,22 @@
-import React from 'react';
-
-import Header from '../components/Colecta/Header';
-import SubBeneficios from '../components/Colecta/SubBeneficios';
-import Steps from '../components/Colecta/Steps';
-import Carousel from '../components/Home/Carousel';
-import CTAPages from '../components/Colecta/CTAPages';
-
+import React, { useEffect } from 'react';
+import { Header, SubBeneficios, Steps, Carousel, CTAPages } from '../components';
 import { fullpackBenefitsIcon, fullpackSteps } from '../constants';
-
 import { fullpackPage } from '../lang/es_AR.json';
 import { useTranslation } from 'react-i18next';
+
 
 function Fullpack() {
     const { t } = useTranslation();
     const fillColor = '#38B3F8';
     const visibleItems = [1, 2];
+
+    // FUNCIONES
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0 , behavior: 'instant' })
+      }
+      useEffect(() => {
+        scrollToTop()
+      },[])
 
     return (
         <>

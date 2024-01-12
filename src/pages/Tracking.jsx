@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useFormik } from 'formik';
 import { useTranslation } from 'react-i18next';
 import { TrackingDetails } from '../components';
@@ -8,8 +8,14 @@ const Tracking = () => {
     const [estado, setEstado] = useState('mainScreen'); // Agrega estado para controlar las vistas
     const [loading, setLoading] = useState(false); // Agrega estado para controlar el loader
     const [selectedCourier] = useState(carriersIcons[2]); //Envia el carrier elegido a al componente TrackingDetails
-
     const { t } = useTranslation();
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0 , behavior: 'instant' })
+      }
+      useEffect(() => {
+        scrollToTop()
+      },[])
 
     const formik = useFormik({
         initialValues: {
@@ -31,6 +37,8 @@ const Tracking = () => {
         console.log('Cambiando estado a:', newEstado);
         setEstado(newEstado);
     };
+
+
 
     return (
         <div>

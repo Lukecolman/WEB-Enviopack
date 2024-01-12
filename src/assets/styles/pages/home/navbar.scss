@@ -66,7 +66,6 @@
       gap-1 
       flex 
       w-full
-      hover:text-ep-400
       ;
   }
   
@@ -239,7 +238,8 @@
     font-normal 
     leading-loose 
     font-dmSans   
-    hover:text-ep-400;
+    hover:text-ep-400
+    ;
   }
 
   .submenu {
