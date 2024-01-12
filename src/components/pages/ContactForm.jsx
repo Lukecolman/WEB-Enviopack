@@ -54,6 +54,7 @@ const ContactForm = () => {
                                 id='Nombre'
                                 name='name'
                                 type='text'
+                                required
                                 onChange={formik.handleChange}
                                 value={formik.values.nombre}
                                 placeholder={t('contactPage.name')}
@@ -67,6 +68,7 @@ const ContactForm = () => {
                                 id='lastName'
                                 name='lastName'
                                 type='text'
+                                required
                                 onChange={formik.handleChange}
                                 value={formik.values.apellido}
                                 placeholder={t('contactPage.lastName')}
@@ -80,6 +82,7 @@ const ContactForm = () => {
                                 id='email'
                                 name='email'
                                 type='email'
+                                required
                                 onChange={formik.handleChange}
                                 value={formik.values.email}
                                 placeholder={t('contactPage.email')}
@@ -107,9 +110,8 @@ const ContactForm = () => {
                             <input
                                 id='companyName'
                                 name='companyName'
-                                type='tel'
-                                // se usa el tipo tel ya que number no permite colocar maxlenght
-                                maxlength='4'
+                                type='text'
+                                required
                                 onChange={formik.handleChange}
                                 value={formik.values.companyName}
                                 placeholder={t('contactPage.companyName')}
@@ -128,6 +130,7 @@ const ContactForm = () => {
                                             id={type.toLowerCase()}
                                             name='companyType'
                                             value={type}
+                                            required
                                             checked={formik.values.companyType === type}
                                             onChange={formik.handleChange}
                                         />
@@ -143,6 +146,7 @@ const ContactForm = () => {
                             <select
                                 id='estimatedShipments'
                                 name='estimatedShipments'
+                                required
                                 onChange={formik.handleChange}
                                 value={formik.values.estimatedShipments}>
                                 <option value='' label={t('contactPage.estimatedShipments.placeholder')} />
@@ -172,7 +176,7 @@ const ContactForm = () => {
                                 id='acceptTerms'
                                 name='acceptTerms'
                                 type='checkbox'
-                                className=''
+                                required
                                 onChange={formik.handleChange}
                                 checked={formik.values.acceptTerms}
                             />
@@ -185,13 +189,13 @@ const ContactForm = () => {
                         </div>
 
                         {/* BUTTON */}
-                        <button className='form-button' type='submit'>
+                        <button disabled={!formik.dirty} className='form-button' type='submit'>
                             {t('contactPage.sendButton')}
                         </button>
                     </form>
                 </div>
                 <div className='contactForm-img-container'>
-                    <img src='assets/BNBA1h-NgdY.jpg' alt='' srcset='' />
+                    <img src='assets/BNBA1h-NgdY.jpg' />
                 </div>
             </section>
         </>

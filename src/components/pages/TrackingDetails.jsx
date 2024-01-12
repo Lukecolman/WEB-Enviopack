@@ -30,31 +30,26 @@ const TrackingDetails = ({ selectedCourier, trackingNumber, onChangeEstado }) =>
                         date='23 de Septiembre'
                         time='12:42 hs'
                         status={t('trackingPage.trackingDetails.shipmentDeliveredSuccessfully')}
-                        disabled={true}
                     />
                     <TrackingDetailsItems
                         date='29 de Mayo'
                         time='11:26 hs'
                         status={t('trackingPage.trackingDetails.courierHasYourPackage')}
-                        disabled={false}
                     />
                     <TrackingDetailsItems
                         date='29 de Mayo'
                         time='11:26 hs'
                         status={t('trackingPage.trackingDetails.shipmentRetiredByCourier')}
-                        disabled={false}
                     />
                     <TrackingDetailsItems
                         date='24 de Mayo'
                         time='17:29 hs'
                         status={t('trackingPage.trackingDetails.shipmentReadyForDispatch')}
-                        disabled={false}
                     />
                     <TrackingDetailsItems
                         date='24 de Mayo'
                         time='17:16 hs'
                         status={t('trackingPage.trackingDetails.shipmentInSellerDepot')}
-                        disabled={false}
                     />
                 </div>
 

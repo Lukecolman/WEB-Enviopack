@@ -49,7 +49,7 @@ const Tracking = () => {
                                 id='trackingNumber'
                                 name='trackingNumber'
                                 type='text'
-                                // minLength={6}
+                                minLength={5}
                                 onChange={formik.handleChange}
                                 value={formik.values.trackingNumber}
                                 placeholder={t('trackingPage.mainScreen.form.placeholder')}

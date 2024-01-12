@@ -28,12 +28,15 @@ export const footerLinks = [
         {
           id: 1,
           linkKey: "footer.sections.Developers.links.API",
-          linkUrl: 'https://www.enviopack.com/documentacion/consideraciones-iniciales'
+          linkUrl: 'https://www.enviopack.com/documentacion/consideraciones-iniciales',
+          target: '_blank',
         },
         {
           id: 2,
           linkKey: "footer.sections.Developers.links.Integrations",
-          linkUrl: '#'
+          linkUrl: '/integrations',
+          target: '_self',
+
         }
       ]
     },
@@ -58,7 +61,9 @@ export const footerLinks = [
         {
           id: 5,
           linkKey: "footer.sections.Recursos.links.HelpCenter",
-          linkUrl: 'https://ayuda.enviopack.com/hc/es-419'
+          linkUrl: 'https://ayuda.enviopack.com/hc/es-419',
+          target: '_blank',
+
         },
         // {
         //   id: 6,
@@ -68,7 +73,9 @@ export const footerLinks = [
         {
           id: 7,
           linkKey: "footer.sections.Recursos.links.Contacto",
-          linkUrl: '#'
+          linkUrl: '/contact',
+          target: '_self',
+
         },
         // {
         //   id: 8,
@@ -154,6 +161,7 @@ export const carriersLogos = [
     {
         name: "Andesmar",
         img: 'assets/carriersLogos/andesmar.svg',
+        key: "0",
     },
     {
         name: "Rayo Entregas",
@@ -493,6 +501,84 @@ export const kpiImages = [
           key: '13'
         },
       ];
+
+    export const carrierSimpleIcons=[
+      {
+        img: 'assets/carriersLogos/partners/Almafuerte.svg',
+        name: "Almafuerte",
+        key: '0'
+      },
+      {
+        img: 'assets/carriersLogos/partners/Andreani.svg',
+        name: "Andreani",
+        key: '1'
+      },
+      {
+        img: 'assets/carriersLogos/partners/CCCargas.svg',
+        name: "CCCargas",
+        key: '2'
+      },
+      {
+        img: 'assets/carriersLogos/partners/Chazki.svg',
+        name: "Chazki",
+        key: '3'
+      },
+      {
+        img: 'assets/carriersLogos/partners/Cruz-del-Sur.svg',
+        name: "Cruz del Sur",
+        key: '4'
+      },
+      {
+        img: 'assets/carriersLogos/partners/D.svg',
+        name: "Expreso Demonte",
+        key: '5'
+      },
+      {
+        img: 'assets/carriersLogos/partners/fast-track.svg',
+        name: "Fast Track",
+        key: '6'
+      },
+      {
+        img: 'assets/carriersLogos/partners/hop.svg',
+        name: "HOP",
+        key: '7'
+      },
+      {
+        img: 'assets/carriersLogos/partners/Integral-Pack.svg',
+        name: "Integral Pack",
+        key: '8'
+      },
+      {
+        img: 'assets/carriersLogos/partners/lionxpress.svg',
+        name: "LionXpress",
+        key: '9'
+      },
+      {
+        img: 'assets/carriersLogos/partners/moova.svg',
+        name: "Moova",
+        key: '10'
+      },
+      {
+        img: 'assets/carriersLogos/partners/oca.svg',
+        name: "OCA",
+        key: '11'
+      },
+      {
+        img: 'assets/carriersLogos/partners/Rayo-entregas.svg',
+        name: "Rayo Entregas",
+        key: '12'
+      },
+      {
+        img: 'assets/carriersLogos/partners/smart-post.svg',
+        name: "SmartPOST",
+        key: '13'
+      },
+      {
+        img: 'assets/carriersLogos/partners/Urbano.svg',
+        name: "Urbano",
+        key: '14'
+      },
+    ]
       
 
     export const carriersHighlight =[

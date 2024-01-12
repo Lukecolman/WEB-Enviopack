@@ -179,19 +179,6 @@
         }
     }
 
-    &.disabled {
-        .marker-container .marker-outer {
-            @apply
-                bg-gray-100
-                ;
-        }
-
-        .marker-container .marker-inner {
-            @apply
-                bg-gray-300
-                ;
-        }
-    }
 
     // STATUS
     .trackingDetailsItems-status {

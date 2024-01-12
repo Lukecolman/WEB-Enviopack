@@ -90,15 +90,19 @@
         p-2.5
         rounded
         border
-        border-gray-300
-        text-neutral-700
         text-sm
         font-medium
         font-dmSans
         leading-[18px]
+        text-[#707A8C] 
+        border-gray-300 
+        hover:border-ep-500
     ;
 }
 
+.calculator-input:focus {
+    outline: 1px solid #064cf9;
+}
 
 
 .calculator-measuredPrice-container{

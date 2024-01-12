@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-
 const Header = ({ currentService }) => {
     const { t } = useTranslation();
 
@@ -10,7 +9,7 @@ const Header = ({ currentService }) => {
             {
                 title: t('collectPage.header.title'),
                 subtitle: t('collectPage.header.subtitle'),
-                content:t('collectPage.header.content'),
+                content: t('collectPage.header.content'),
                 img: './assets/image 165.png',
             },
         ],
@@ -18,7 +17,7 @@ const Header = ({ currentService }) => {
             {
                 title: t('fullpackPage.header.title'),
                 subtitle: t('fullpackPage.header.subtitle'),
-                content:t('fullpackPage.header.content'),
+                content: t('fullpackPage.header.content'),
                 img: './assets/Rectangle 3643.png',
             },
         ],
@@ -26,7 +25,7 @@ const Header = ({ currentService }) => {
             {
                 title: t('dispatchPage.header.title'),
                 subtitle: t('dispatchPage.header.subtitle'),
-                content:t('dispatchPage.header.content'),
+                content: t('dispatchPage.header.content'),
                 img: './assets/image_112.png',
             },
         ],
@@ -44,28 +43,26 @@ const Header = ({ currentService }) => {
         <div>
             <div className='header-section '>
                 <div className='header-container '>
-                    <div className="header-content">
-                        <div className="header-title">
-                            <span className="header-title-bold">
+                    <div className='header-content'>
+                        <div className='header-title'>
+                            <span className='header-title-bold'>
                                 {currentServiceItem.title}
                                 <br />
                             </span>
-                            <span>
-                                {currentServiceItem.subtitle}
-                            </span>
+                            <span>{currentServiceItem.subtitle}</span>
                         </div>
-                        <div className="header-description">
-                            {currentServiceItem.content}
-                        </div>
+                        <div className='header-description'>{currentServiceItem.content}</div>
                         <button className='header-button'>
-                            <div className="button-text">
-                            {t('pagesHeaderButton')}
-                            </div>
+                            <div className='button-text'>{t('pagesHeaderButton')}</div>
                         </button>
                     </div>
 
                     <div className='header-image relative'>
-                        <img className='header-image-content' src={currentServiceItem.img} alt={currentServiceItem.title} />
+                        <img
+                            className='header-image-content'
+                            src={currentServiceItem.img}
+                            alt={currentServiceItem.title}
+                        />
                         <img className='header-bg-circle' src='public\assets\circle-small.png' />
                     </div>
                 </div>

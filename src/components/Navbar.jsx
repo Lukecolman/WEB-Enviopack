@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import {OverlayService} from './';
+import { OverlayService } from './';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -8,19 +8,38 @@ const Navbar = () => {
     const [openService, setOpenService] = useState(false);
     const [toggle, setToggle] = useState(false);
 
+    useEffect(() => {
+        const handleBodyClick = () => {
+            if (openService) {
+                setOpenService(false);
+            }
+        };
+
+        document.body.addEventListener('click', handleBodyClick);
+
+        return () => {
+            document.body.removeEventListener('click', handleBodyClick);
+        };
+    }, [openService]);
+
+    const handleMenuClick = (e) => {
+        e.stopPropagation(); // Evita que el clic llegue al body y cierre el menú
+        setOpenService(!openService);
+    };
+
     return (
         <nav className='navbar-container'>
             <div className='navbar-inner'>
                 <div className='logo-container'>
                     <Link to='/' className='logo z-50'>
-                        <img src='assets/imagotipo_enviopack.png' alt='Logotipo de Enviopack' />
+                        <img src='assets/imagotipo_enviopack.svg' alt='Logotipo de Enviopack' />
                     </Link>
                 </div>
 
                 <div className='navbar-menu  flex-grow justify-between ml-3 hidden lg:flex'>
                     <div className='logo-container'>
                         <div className='relative'>
-                            <div onClick={() => setOpenService(!openService)} className='nav-item'>
+                            <div onClick={handleMenuClick} className='nav-item'>
                                 <div className='nav-item-text'>{t('navbar.services')}</div>
                                 <svg
                                     width='11'
@@ -128,15 +147,11 @@ const Navbar = () => {
 
                                 <div className='nav-buttons-mobile'>
                                     <Link to='#' className='login-button'>
-                                        <div className='login-text'>
-                                          {t('navbar.login')}
-                                        </div>
+                                        <div className='login-text'>{t('navbar.login')}</div>
                                     </Link>
 
                                     <Link to='#' className='signup-button  buttonBasics'>
-                                        <div className='signup-text'>
-                                          {t('navbar.createAccount')}
-                                        </div>
+                                        <div className='signup-text'>{t('navbar.createAccount')}</div>
                                     </Link>
                                 </div>
                             </div>

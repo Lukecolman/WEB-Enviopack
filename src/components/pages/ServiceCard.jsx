@@ -6,9 +6,12 @@ import { useTranslation } from 'react-i18next';
 const ServiceCard = ({ serviceIcon, serviceIconBg, serviceCarrier, duration, price, sourceBranch, destinationAddress, serviceDetails, enviopackInformation }) => {
   const [detailsVisible, setDetailsVisible] = useState(false);
   const { t } = useTranslation();
+  const [arrowRotation, setArrowRotation] = useState(0); 
+
 
   const toggleDetails = () => {
     setDetailsVisible(!detailsVisible);
+    setArrowRotation(prevRotation => prevRotation + 180);
   };
 
   const handleContratar = () => {
@@ -83,13 +86,17 @@ const ServiceCard = ({ serviceIcon, serviceIconBg, serviceCarrier, duration, pri
 {/* DETALLE */}
 <div className='calculatorService-details-container'>
   <div className=' details-buttons-container'>
-    <div
+  <div
       onClick={toggleDetails}
       className='details-button'>
       <span>
         {detailsVisible ? t("ratesPage.serviceCards.cardInfo.details.hide") : t("ratesPage.serviceCards.cardInfo.details.display")}
       </span>
-      <img src='assets/icons/calculatorArrowDetails.svg' className={`rotate-${detailsVisible ? '0' : '180'} mt-1 w-3.5 h-3.5 relative`} alt='Icono de detalles' />
+      <img
+              src='assets/icons/calculatorArrowDetails.svg'
+              style={{ transform: `rotate(${arrowRotation}deg)` }}
+              alt='Icono de detalles'
+            />
     </div>
     <div
       onClick={handleContratar}

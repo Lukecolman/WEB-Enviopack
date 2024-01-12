@@ -2,43 +2,43 @@ import React, { useEffect, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const CardCarousel = () => {
-    const { t } = useTranslation(); 
+    const { t } = useTranslation();
 
     const cardItems = [
         {
             id: 1,
-            title: t("testimonials.first.title"),
-            copy: t("testimonials.first.copy"),
-            name: t("testimonials.first.name"),
-            web: t("testimonials.first.web"),
+            title: t('testimonials.first.title'),
+            copy: t('testimonials.first.copy'),
+            name: t('testimonials.first.name'),
+            web: t('testimonials.first.web'),
             img: 'assets/testimonials/Imagotipo_Fravega.svg',
         },
         {
             id: 2,
-            title: t("testimonials.second.title"),
-            copy: t("testimonials.second.copy"),
-            name: t("testimonials.second.name"),
-            web: t("testimonials.second.web"),
+            title: t('testimonials.second.title'),
+            copy: t('testimonials.second.copy'),
+            name: t('testimonials.second.name'),
+            web: t('testimonials.second.web'),
             img: 'assets/testimonials/logo_BGH.svg',
         },
         {
             id: 3,
-            title: t("testimonials.third.title"),
-            copy: t("testimonials.third.copy"),
-            name: t("testimonials.third.name"),
-            web: t("testimonials.third.web"),
+            title: t('testimonials.third.title'),
+            copy: t('testimonials.third.copy'),
+            name: t('testimonials.third.name'),
+            web: t('testimonials.third.web'),
             img: 'assets/testimonials/logo_TIFN.svg',
         },
         {
             id: 4,
-            title: t("testimonials.fourth.title"),
-            copy: t("testimonials.fourth.copy"),
-            name: t("testimonials.fourth.name"),
-            web: t("testimonials.fourth.web"),
+            title: t('testimonials.fourth.title'),
+            copy: t('testimonials.fourth.copy'),
+            name: t('testimonials.fourth.name'),
+            web: t('testimonials.fourth.web'),
             img: 'assets/testimonials/logo_Wallmart.svg',
         },
     ];
-    
+
     function determineClasses(indexes, cardIndex) {
         if (indexes.currentIndex === cardIndex) {
             return 'active';
@@ -84,10 +84,9 @@ const CardCarousel = () => {
         <div className='card-carousel-container'>
             {/* IMAGE CAROUSEL */}
             <div className='card-titles-mobile'>
-                    <span>{t("testimonials.span")}</span>
-                    <h1 dangerouslySetInnerHTML={{ __html: t("testimonials.title") }} />
-
-                </div>
+                <span>{t('testimonials.span')}</span>
+                <h1 dangerouslySetInnerHTML={{ __html: t('testimonials.title') }} />
+            </div>
             <div className='card-carousel-image'>
                 <ul className='card-image-stack'>
                     {cardItems.map((card, index) => (
@@ -98,8 +97,8 @@ const CardCarousel = () => {
                 </ul>
                 <ul className='card-dot'>
                     {cardItems.map((card, index) => (
-                        <li className={`${index === indexes.currentIndex ? 'card-dot-active' : 'card-dot-inactive'
-                            } `}
+                        <li
+                            className={`${index === indexes.currentIndex ? 'card-dot-active' : 'card-dot-inactive'} `}
                             key={card.id}></li>
                     ))}
                 </ul>
@@ -108,16 +107,14 @@ const CardCarousel = () => {
             {/* TEXT CAROUSEL */}
             <div className='card-carousel-text'>
                 <div className='card-titles'>
-                    <span>{t("testimonials.span")}</span>
-                    <h1 dangerouslySetInnerHTML={{ __html: t("testimonials.title") }} />
-
+                    <span>{t('testimonials.span')}</span>
+                    <h1 dangerouslySetInnerHTML={{ __html: t('testimonials.title') }} />
                 </div>
 
                 <div className='card-content'>
                     {cardItems.map((card, index) => (
                         <div
-                            className={`${
-                                index === indexes.currentIndex ? 'block' : 'hide' } 
+                            className={`${index === indexes.currentIndex ? 'block' : 'hide'} 
                                 card-content-testimonials`}
                             key={index}>
                             <img src='assets\comillas.svg' alt='' />
@@ -125,7 +122,11 @@ const CardCarousel = () => {
 
                             <p className='card-content-ceo '>{card.name}</p>
 
-                            <a className='card-content-url' target="_blank" href={`http://${card.web}`} rel="noopener noreferrer">
+                            <a
+                                className='card-content-url'
+                                target='_blank'
+                                href={`http://${card.web}`}
+                                rel='noopener noreferrer'>
                                 {card.web}
                             </a>
                         </div>

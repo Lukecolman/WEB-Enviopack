@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { footerLinks, socialMedia } from '../constants';
 import { useTranslation } from 'react-i18next';
 
@@ -10,28 +11,19 @@ const Footer = () => {
             <section className='footer-container'>
                 <div className='footer-top'>
                     <div className='footer-logo-container'>
-                        <img
-                            src='assets\Isotipo_Envíopack.svg'
-                            alt='enviopack'
-                            className='footer-logo'
-                        />
+                        <img src='assets\Isotipo_Envíopack.svg' alt='enviopack' className='footer-logo' />
                     </div>
-                    
+
                     <div className='footer-links-container'>
                         {footerLinks.map((footerLink) => (
                             <div key={footerLink.title} className='footer-link-section'>
-                                <h4 className='footer-link-title'>
-                                    {t(`footer.sections.${footerLink.title}.title`)}
-                                </h4>
+                                <h4 className='footer-link-title'>{t(`footer.sections.${footerLink.title}.title`)}</h4>
                                 <ul>
                                     {footerLink.links.map((link) => (
-                                        <li
-                                            key={link.id}
-                                            className='footer-link'
-                                        >
-                                            <a href={link.linkUrl} target="_blank" rel="noopener noreferrer">
+                                        <li key={link.id} className='footer-link'>
+                                            <Link to={link.linkUrl} target={link.target} rel='noopener noreferrer'>
                                                 {t(link.linkKey)}
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

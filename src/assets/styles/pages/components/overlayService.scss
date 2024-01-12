@@ -1,6 +1,6 @@
 
 .overlay-service {
-    @apply max-w-[683px] min-h-[464px] px-10 py-6 rounded-3xl shadow justify-center items-start gap-9 flex flex-col md:inline-flex sm:flex-row bg-white;
+    @apply max-w-[683px] min-h-[464px] px-10 py-6 rounded-3xl shadow justify-center items-center gap-9 flex flex-col md:inline-flex sm:flex-row bg-white;
 }
 
 .overlay-service-menu {
@@ -61,9 +61,17 @@
 }
 
 .overlay-service-link {
-    @apply text-sky-500 text-base font-medium font-dmSans leading-normal;
+    @apply text-sky-500 text-base font-medium font-dmSans leading-normal gap-2 flex items-center;
 }
 
 .overlay-service-forward-icon {
     @apply w-4 h-4 relative;
+}
+
+
+@screen sm{
+
+    .overlay-service {
+        @apply max-w-[683px] min-h-[464px] px-10 py-6 rounded-3xl shadow justify-center items-start gap-9 flex flex-col md:inline-flex sm:flex-row bg-white;
+    }
 }

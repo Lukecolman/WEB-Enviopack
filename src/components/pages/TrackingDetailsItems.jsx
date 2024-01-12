@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TrackingDetailItem = ({ date, time, status, disabled }) => {
+const TrackingDetailItem = ({ date, time, status}) => {
   return (
-    <div className={`trackingDetailsItems-container ${disabled ? 'disabled' : ''}`}>
+    <div className={`trackingDetailsItems-container`}>
     
 
         {/* DATE AND TIME */}
@@ -16,7 +16,7 @@ const TrackingDetailItem = ({ date, time, status, disabled }) => {
       </div>
 
       {/* MARKER */}
-      <div className={`marker-container ${disabled ? 'disabled' : ''}`}>
+      <div className={`marker-container`}>
         <div className='marker-outer'>
         <div className='marker-inner' />
             </div>
