@@ -1,4 +1,9 @@
 //GLOBALS
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: white; /* Fondo blanco en modo oscuro */
+  }
+}
 
 *{ 
     margin: 0px;  
