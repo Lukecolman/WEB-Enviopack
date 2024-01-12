@@ -16,9 +16,13 @@ const Calculator = () => {
     const [detailsVisible, setDetailsVisible] = useState(false);
     const [loading, setLoading] = useState(false);
     const [searchError, setSearchError] = useState(false);
+    const [arrowRotation, setArrowRotation] = useState(0); 
+
 
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
+        setArrowRotation(prevRotation => prevRotation + 180);
+
     };
 
     const toggleDetails = () => {
@@ -275,7 +279,8 @@ const Calculator = () => {
                             <div onClick={toggleDropdown} className='calculator-orderDropdown-toggle'>
                                 <span>{t('ratesPage.serviceCards.dropdownOrder.order')}</span>
                                 <img
-                                    className={`rotate-${dropdownOpen ? '180' : '0'}`}
+                                    style={{ transform: `rotate(${arrowRotation}deg)` }}
+
                                     src='assets/icons/calculatorOrderArrow.svg'
                                 />
                             </div>
